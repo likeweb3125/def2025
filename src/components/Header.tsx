@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -27,15 +28,15 @@ export default function Header() {
 
   return (
     <header className="relative z-50 bg-white sticky top-0">
-      <div className="flex max-w-[1920px] mx-auto px-[100px]">
+      <div className="flex max-w-[1920px] mx-auto px-[100px] max-[1280px]:pl-0 max-[1280px]:pr-10">
         {/* 왼쪽 로고 블록 */}
-        <div className="relative min-w-[280px]">
-          <div className="flex items-center absolute top-0 left-0 inset-0 min-h-[160px] bg-[linear-gradient(123.75deg,#055DA5_2.12%,#02243F_100%)] overflow-hidden rounded-br-2xl rounded-bl-2xl flex justify-center items-center shadow-[8px_8px_24px_0px_#00000040]">
+        <div className="relative min-w-[280px] max-[1000px]:min-w-[160px] max-[768px]:translate-x-10">
+          <div className="flex items-center absolute top-0 left-0 inset-0 min-h-[160px] max-[1000px]:min-h-[100px] bg-[linear-gradient(123.75deg,#055DA5_2.12%,#02243F_100%)] overflow-hidden rounded-br-2xl rounded-bl-2xl flex justify-center items-center shadow-[8px_8px_24px_0px_#00000040]">
             <h1>
               <Link
                 href="/"
                 style={{ backgroundImage: `url(/images/logos/logo.png)` }}
-                className="w-[132px] h-[64px] bg-cover bg-center block"
+                className="w-[132px] h-[64px] bg-cover bg-center block max-[1000px]:w-[100px] max-[1000px]:h-12"
               >
                 <span className="sr-only">
                   DEF - Digital Economy Forum 2025
@@ -46,9 +47,9 @@ export default function Header() {
         </div>
 
         {/* 오른쪽 네비게이션 바 */}
-        <div className="flex-1 flex items-center justify-between">
+        <div className="flex-1 flex items-center justify-between max-[768px]:py-4">
           {/* 메인 네비게이션 */}
-          <nav className="flex items-center w-full max-w-[800px] mx-auto py-2">
+          <nav className="max-[768px]:hidden flex items-center w-full max-w-[800px] mx-auto py-2 max-[1280px]:max-w-[640px] max-[1280px]:ml-10 max-[1280px]:mr-auto max-[1140px]:mx-10 max-[1140px]:max-w-full max-[1000px]:mx-5">
             {/* 행사소개 */}
             <div className="relative flex-1 text-center">
               <Link
@@ -72,19 +73,19 @@ export default function Header() {
                   <div className="py-[18px] bg-[#055DA5] rounded-md shadow-lg">
                     <Link
                       href="/event-overview"
-                      className="block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold"
+                      className="block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold whitespace-nowrap"
                     >
                       {t.nav.eventOverview}
                     </Link>
                     <Link
                       href="/past-events"
-                      className="block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold"
+                      className="block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold whitespace-nowrap"
                     >
                       {t.nav.pastEvents}
                     </Link>
                     <Link
                       href="/location"
-                      className="block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold"
+                      className="block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold whitespace-nowrap"
                     >
                       {t.nav.directions}
                     </Link>
@@ -128,64 +129,76 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* 언어 선택 */}
-          <div
-            className={`relative border rounded-[30px] ${
-              isLanguageDropdownOpen
-                ? "border-[#055DA5] "
-                : "border-transparent"
-            }`}
-          >
-            <button
-              onClick={toggleLanguageDropdown}
-              className="flex items-center w-[96px] justify-between text-gray-900 hover:text-[#055DA5] px-3 py-2 font-medium transition-colors"
+          <div className="max-[768px]:ml-auto flex items-center gap-5">
+            {/* 언어 선택 */}
+            <div
+              className={`relative border rounded-[30px] ${
+                isLanguageDropdownOpen
+                  ? "border-[#055DA5] "
+                  : "border-transparent"
+              }`}
             >
-              <LanguageIcon
-                className={`${
-                  isLanguageDropdownOpen && "[&_path]:fill-[#055DA5]"
-                }`}
-              />
-
-              <span
-                className={`text-[18px] ${
-                  isLanguageDropdownOpen ? "text-[#055DA5]" : "text-gray-900"
-                }`}
+              <button
+                onClick={toggleLanguageDropdown}
+                className="flex items-center w-[96px] justify-between text-gray-900 hover:text-[#055DA5] px-3 py-2 font-medium transition-colors"
               >
-                {language === "ko" ? t.common.kor : t.common.eng}
-              </span>
-            </button>
-            {isLanguageDropdownOpen && (
-              <div className="absolute w-[96px] top-full left-1/2 -translate-x-1/2 mt-1 w-32 bg-white rounded-[20px] overflow-hidden shadow-lg z-50">
-                <div className="py-2">
-                  <button
-                    onClick={() => {
-                      setLanguage("ko");
-                      setIsLanguageDropdownOpen(false);
-                    }}
-                    className={`w-full text-center px-4 py-2 text-sm cursor-pointer hover:bg-blue-50 ${
-                      language === "ko"
-                        ? "bg-blue-100 text-[#055DA5]"
-                        : "text-gray-700"
-                    }`}
-                  >
-                    {t.common.kor}
-                  </button>
-                  <button
-                    onClick={() => {
-                      setLanguage("en");
-                      setIsLanguageDropdownOpen(false);
-                    }}
-                    className={`w-full text-center px-4 py-2 text-sm cursor-pointer hover:bg-blue-50 ${
-                      language === "en"
-                        ? "bg-blue-100 text-[#055DA5]"
-                        : "text-gray-700"
-                    }`}
-                  >
-                    {t.common.eng}
-                  </button>
+                <LanguageIcon
+                  className={`${
+                    isLanguageDropdownOpen && "[&_path]:fill-[#055DA5]"
+                  }`}
+                />
+
+                <span
+                  className={`text-[18px] ${
+                    isLanguageDropdownOpen ? "text-[#055DA5]" : "text-gray-900"
+                  }`}
+                >
+                  {language === "ko" ? t.common.kor : t.common.eng}
+                </span>
+              </button>
+              {isLanguageDropdownOpen && (
+                <div className="absolute w-[96px] top-full left-1/2 -translate-x-1/2 mt-1 w-32 bg-white rounded-[20px] overflow-hidden shadow-lg z-50">
+                  <div className="py-2">
+                    <button
+                      onClick={() => {
+                        setLanguage("ko");
+                        setIsLanguageDropdownOpen(false);
+                      }}
+                      className={`w-full text-center px-4 py-2 text-sm cursor-pointer hover:bg-blue-50 ${
+                        language === "ko"
+                          ? "bg-blue-100 text-[#055DA5]"
+                          : "text-gray-700"
+                      }`}
+                    >
+                      {t.common.kor}
+                    </button>
+                    <button
+                      onClick={() => {
+                        setLanguage("en");
+                        setIsLanguageDropdownOpen(false);
+                      }}
+                      className={`w-full text-center px-4 py-2 text-sm cursor-pointer hover:bg-blue-50 ${
+                        language === "en"
+                          ? "bg-blue-100 text-[#055DA5]"
+                          : "text-gray-700"
+                      }`}
+                    >
+                      {t.common.eng}
+                    </button>
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
+
+            <button className="max-[768px]:block hidden w-10 h-10 flex items-center justify-center cursor-pointer">
+              <span className="sr-only">메뉴</span>
+              <Image
+                src="/images/icons/menu.png"
+                alt="메뉴"
+                width={40}
+                height={40}
+              />
+            </button>
           </div>
         </div>
       </div>
