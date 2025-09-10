@@ -10,7 +10,6 @@ export default function ProgramPage() {
   return (
     <div className="font-sans">
       {/* 프로그램 헤더 섹션 */}
-
       <section className="px-10 max-[768px]:px-0">
         <div className="relative h-[360px] max-w-[1920px] max-[768px]:pt-[50px] rounded-[40px_0_40px_0] overflow-hidden mx-auto flex-col flex items-center justify-center max-[768px]:rounded-none max-[500px]:h-[227px]">
           {/* 배경 이미지 */}
@@ -33,11 +32,11 @@ export default function ProgramPage() {
       </section>
 
       {/* 프로그램 컨텐츠 준비중 섹션 */}
-      <section className="py-16 px-10 max-[500px]:p-[60px_20px]">
+      <div className="py-16 px-10 max-[500px]:p-[60px_20px]">
         <div className="max-w-[1360px] mx-auto min-h-[480px] [&>div]:py-[100px] max-[500px]:[&>div]:py-[70px]">
           <ComingSoon />
         </div>
-      </section>
+      </div>
     </div>
   );
 }
