@@ -5,12 +5,11 @@ pipeline {
         REPO_URL            = 'https://github.com/likeweb3125/def2025.git'
         APP_DIR             = '/home/def2025'
         DOCKER_COMPOSE_FILE = "${APP_DIR}/docker-compose.yml"
-        RECIPIENTS          = 'crazin@likeweb.co.kr'
+        RECIPIENTS = 'ohsjwe@likeweb.co.kr,crazin@likeweb.co.kr,syeon@likeweb.co.kr'
 
         // 🔧 Docker/서비스 설정
         COMPOSE_PROJECT_NAME = 'def2025'
         SERVICE_NAME         = 'nextjs'
-        HEALTHCHECK_URL      = 'http://127.0.0.1:3040/' // 호스트 3040 → 컨테이너 3000
     }
 
     stages {
