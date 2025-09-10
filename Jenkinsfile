@@ -65,37 +65,31 @@ pipeline {
                     dir(APP_DIR) {
                         echo "🚀 컨테이너 재시작"
 
-                        // 이전 프로젝트 내려주기(없어도 성공)
+                        // 1) 기존 프로젝트 내려주기
                         sh '''
-                          set -e
-                          docker compose down --remove-orphans || true
+                        set -e
+                        docker compose down --remove-orphans || true
                         '''
 
-                        // 재빌드 & 강제 재생성
+                        // 2) 🔧 프리워밍: node_modules 볼륨을 채워둠 (빈 볼륨 덮어쓰기로 인한 즉시 종료 방지)
+                        //    compose 서비스명이 nextjs인 것을 전제로 합니다.
                         sh '''
-                          set -e
-                          docker compose up -d --build --force-recreate
+                        set -euxo pipefail
+                        echo "[prewarm] npm ci in ephemeral container"
+                        docker compose run --rm nextjs npm ci
                         '''
 
-                        // 기동 헬스체크 (3040 응답 대기, 최대 60초)
-                        sh """
-                          set +e
-                          for i in \$(seq 1 60); do
-                            if curl -sSf ${HEALTHCHECK_URL} >/dev/null; then
-                              echo "Service is up ✅ (${HEALTHCHECK_URL})"
-                              exit 0
-                            fi
-                            sleep 1
-                          done
-                          echo "Service did not become healthy in time ❌"
-                          docker compose ps
-                          docker compose logs --no-color --tail=200 ${SERVICE_NAME} || true
-                          exit 1
-                        """
+                        // 3) 재빌드 & 재생성
+                        sh '''
+                        set -e
+                        docker compose up -d --build --force-recreate
+                        '''
+
                     }
                 }
             }
         }
+
     }
 
     post {
