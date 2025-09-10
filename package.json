@@ -13,10 +13,16 @@
     "docker:run": "docker run -p 3000:3000 nextjs-app"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
     "@svgr/webpack": "^8.1.0",
+    "clsx": "^2.1.1",
+    "i": "^0.3.7",
+    "lucide-react": "^0.543.0",
     "next": "15.5.2",
+    "npm": "^11.6.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

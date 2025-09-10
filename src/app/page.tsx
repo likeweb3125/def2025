@@ -3,6 +3,13 @@
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Link from "next/link";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function Home() {
   const { t, language } = useLanguage();
@@ -244,73 +251,59 @@ export default function Home() {
 
           {/* 썸네일 4개 */}
           <div className="flex gap-4">
-            {/* 썸네일 1 */}
-            <div
-              className="rounded-[20px] overflow-hidden"
-              style={{
-                width: "260px",
-                height: "260px",
-              }}
-            >
-              <Image
-                src="/images/mediaroom_img01.jpg"
-                alt="미디어룸 이미지 1"
-                width={260}
-                height={260}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* 썸네일 2 */}
-            <div
-              className="rounded-[20px] overflow-hidden"
-              style={{
-                width: "260px",
-                height: "260px",
-              }}
-            >
-              <Image
-                src="/images/mediaroom_img01.jpg"
-                alt="미디어룸 이미지 2"
-                width={260}
-                height={260}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* 썸네일 3 */}
-            <div
-              className="rounded-[20px] overflow-hidden"
-              style={{
-                width: "260px",
-                height: "260px",
-              }}
-            >
-              <Image
-                src="/images/mediaroom_img01.jpg"
-                alt="미디어룸 이미지 3"
-                width={260}
-                height={260}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* 썸네일 4 */}
-            <div
-              className="rounded-[20px] overflow-hidden"
-              style={{
-                width: "260px",
-                height: "260px",
-              }}
-            >
-              <Image
-                src="/images/mediaroom_img01.jpg"
-                alt="미디어룸 이미지 4"
-                width={260}
-                height={260}
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {[
+              {
+                src: "/images/mediaroom_img01.jpg",
+                bigSrc: "/images/mediaroom_img01_big.jpg",
+                alt: "미디어룸 이미지 1",
+              },
+              {
+                src: "/images/mediaroom_img02.png",
+                bigSrc: "/images/mediaroom_img01_big.jpg",
+                alt: "미디어룸 이미지 2",
+              },
+              {
+                src: "/images/mediaroom_img03.png",
+                bigSrc: "/images/mediaroom_img01_big.jpg",
+                alt: "미디어룸 이미지 3",
+              },
+              {
+                src: "/images/mediaroom_img04.png",
+                bigSrc: "/images/mediaroom_img01_big.jpg",
+                alt: "미디어룸 이미지 4",
+              },
+            ].map((item, index) => (
+              <Dialog key={index}>
+                <DialogTrigger asChild>
+                  <figure
+                    className="rounded-[20px] overflow-hidden"
+                    style={{
+                      width: "260px",
+                      height: "260px",
+                    }}
+                  >
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      width={260}
+                      height={260}
+                      className="w-full h-full object-cover"
+                    />
+                  </figure>
+                </DialogTrigger>
+                <DialogContent className="rounded-[20px] pt-14 w-full !max-w-[720px] bg-white text-black border-none">
+                  <DialogTitle hidden>{item.alt}</DialogTitle>
+                  <DialogDescription hidden>{item.alt}</DialogDescription>
+                  <Image
+                    src={item.bigSrc}
+                    alt={item.alt}
+                    width={260}
+                    height={260}
+                    className="w-full h-full object-cover"
+                  />
+                </DialogContent>
+              </Dialog>
+            ))}
           </div>
         </div>
       </section>
