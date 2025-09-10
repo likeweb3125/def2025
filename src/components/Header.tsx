@@ -26,7 +26,7 @@ export default function Header() {
   };
 
   return (
-    <header className="relative z-50 bg-white">
+    <header className="relative z-50 bg-white sticky top-0">
       <div className="flex max-w-[1920px] mx-auto px-[100px]">
         {/* 왼쪽 로고 블록 */}
         <div className="relative min-w-[280px]">
