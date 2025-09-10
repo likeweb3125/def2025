@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 import LanguageIcon from "/public/images/icons/language.svg?component";
@@ -22,6 +22,7 @@ export default function Header() {
   const pathname = usePathname();
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   const handleMouseEnter = (dropdown: string) => {
     setActiveDropdown(dropdown);
@@ -33,6 +34,10 @@ export default function Header() {
 
   const toggleLanguageDropdown = () => {
     setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
+  };
+
+  const handleSheetLinkClick = (href: string) => {
+    setIsSheetOpen(false);
   };
 
   const menuList = [
@@ -232,7 +237,7 @@ export default function Header() {
               )}
             </div>
 
-            <Sheet>
+            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild className="max-[768px]:block hidden">
                 <button className="w-[46px] h-[46px] flex items-center justify-center cursor-pointer">
                   <span className="sr-only">메뉴</span>
@@ -305,7 +310,8 @@ export default function Header() {
                       <li key={menu.title}>
                         <Link
                           href={menu.href}
-                          className="text-[48px] text-white font-bold max-[360px]:text-[32px] max-[360px]:leading-[37px] text-center block"
+                          onClick={() => handleSheetLinkClick(menu.href)}
+                          className="text-[48px] text-white font-bold max-[360px]:text-[32px] max-[360px]:leading-[37px] text-center block hover:text-white/80 transition-colors"
                         >
                           {menu.title}
                         </Link>
@@ -316,7 +322,10 @@ export default function Header() {
                                 <li key={sub.title}>
                                   <Link
                                     href={sub.href}
-                                    className="text-[28px] text-white font-[500] py-3 block max-[360px]:text-[20px] max-[360px]:leading-[23px] max-[360px]:py-[10px]"
+                                    onClick={() =>
+                                      handleSheetLinkClick(sub.href)
+                                    }
+                                    className="text-[28px] text-white font-[500] py-3 block max-[360px]:text-[20px] max-[360px]:leading-[23px] max-[360px]:py-[10px] hover:text-white/80 transition-colors"
                                   >
                                     {sub.title}
                                   </Link>
