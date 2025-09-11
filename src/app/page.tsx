@@ -34,7 +34,7 @@ export default function Home() {
           <div className="font-montserrat relative z-10 max-w-[1360px] w-full m-[120px_auto_40px] py-10 px-10 max-[500px]:px-5 text-center max-[768px]:mt-0">
             {/* 1번째 텍스트 - 제8회 디지털 이코노미 포럼 */}
             <div
-              className={`text-white text-[32px] mb-6 font-bold max-[460px]:text-[20px] max-[460px]:leading-[23px] max-[460px]:mb-4 tracking-[-2px] ${
+              className={`text-white text-[32px] mb-6 font-bold max-[500px]:text-[20px] max-[500px]:leading-[23px] max-[500px]:mb-4 tracking-[-2px] ${
                 language === "ko" ? "tracking-[2px]" : ""
               }`}
             >
@@ -48,8 +48,11 @@ export default function Home() {
             </div>
 
             {/* 2번째 텍스트 - 2025 DIGITAL ECONOMY FORUM */}
-            <h2 className="text-white text-[100px] leading-[100px] flex flex-col gap-y-4 font-[500] max-[1280px]:text-[80px] font-bold mb-8 leading-none tracking-tight max-[460px]:gap-y-2 max-[460px]:text-[48px] max-[460px]:leading-[48px]">
-              <span>2025 DIGITAL</span>
+            <h2 className="text-white text-[100px] leading-[100px] flex flex-col gap-y-4 font-[500] max-[1280px]:text-[80px] font-bold mb-8 leading-none tracking-tight max-[500px]:gap-y-2 max-[500px]:text-[60px] max-[500px]:leading-[60px] max-[360px]:text-[48px] max-[360px]:leading-[48px]">
+              <p className="flex gap-4 justify-center max-[600px]:flex-col max-[460px]:gap-y-2">
+                <span>2025</span>
+                <span>DIGITAL</span>
+              </p>
               <p className="flex gap-4 justify-center max-[850px]:flex-col max-[460px]:gap-y-2">
                 <span>ECONOMY</span>
                 <span>FORUM</span>
@@ -137,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* 다음 섹션 */}
-      <section className="px-10 pt-[120px] pb-[160px] max-[768px]:py-[120px] max-[500px]:py-40 max-[500px]:px-5">
+      <section className="px-10 pt-[120px] pb-[160px] max-[768px]:py-[120px] max-[500px]:py-[80px] max-[500px]:px-5">
         <div className="max-w-[1360px] w-full mx-auto  flex flex-col items-center justify-center">
           {/* 아이콘 */}
           <div
@@ -218,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* 미디어룸 영역 */}
-      <section className="relative py-[160px] max-[768px]:py-[120px] max-[500px]:py-40">
+      <section className="relative py-[160px] max-[768px]:py-[120px] max-[500px]:py-[80px]">
         {/* 배경 이미지 */}
         <div className="absolute inset-0">
           <Image
