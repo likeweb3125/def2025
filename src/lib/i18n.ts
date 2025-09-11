@@ -132,6 +132,7 @@ export const translations = {
       busDesc: "강남 순환버스, 시내버스 다수 노선",
       parking: "주차",
       parkingDesc: "코엑스 지하주차장 이용 가능",
+      eventAddress: "인천광역시 중구 공항문화로 127",
     },
     program: {
       title: "프로그램",
@@ -305,6 +306,8 @@ export const translations = {
       busDesc: "Gangnam circulation bus, multiple city bus routes",
       parking: "Parking",
       parkingDesc: "COEX underground parking available",
+      eventAddress:
+        "127, Gonghangmunhwa-ro, Jung-gu, INCHEON, REPUBLIC OF KOREA 22382",
     },
     program: {
       title: "Program",
