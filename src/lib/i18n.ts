@@ -267,7 +267,7 @@ export const translations = {
       comingSoon: "Program information will be announced soon.",
     },
     speakers: {
-      title: "Speakers",
+      title: "Speaker",
       subtitle: "Introducing DEF 2025 speakers.",
       comingSoon: "Speaker information\ncoming soon",
       haJeongWoo: "Ha Jeong-woo",
