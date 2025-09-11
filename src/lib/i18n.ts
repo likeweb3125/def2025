@@ -150,15 +150,15 @@ export const translations = {
   },
   en: {
     nav: {
-      eventIntro: "Event Introduction",
+      eventIntro: "Conference",
       program: "Program",
-      speakers: "Speakers",
+      speakers: "Speaker",
       registration: "Registration",
-      eventOverview: "Event Overview",
-      pastEvents: "Past Events",
-      directions: "Directions",
-      register: "Register",
-      registrationConfirmation: "Registration Confirmation",
+      eventOverview: "Overview",
+      pastEvents: "Past Conference",
+      directions: "Location",
+      register: "Registration",
+      registrationConfirmation: "Confirmation of registration",
     },
     common: {
       language: "Language",
