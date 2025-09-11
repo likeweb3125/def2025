@@ -85,7 +85,17 @@ export default function Header() {
     },
     {
       title: t.nav.registration,
-      href: "https://naver.com",
+      href: "https://event-us.kr/disitaleconomyforum/event/111541",
+      subList: [
+        {
+          title: t.nav.register,
+          href: "https://event-us.kr/disitaleconomyforum/event/111541",
+        },
+        {
+          title: t.nav.registrationConfirmation,
+          href: "https://event-us.kr/disitaleconomyforum/event/111541",
+        },
+      ],
     },
   ];
 
@@ -129,7 +139,7 @@ export default function Header() {
               </LoadingLink>
               {activeDropdown === "eventIntro" && (
                 <div
-                  className="absolute top-full left-0 right-0 pt-[30px] z-50"
+                  className="absolute top-full left-1/2 -translate-x-1/2 min-w-[200px] pt-[30px] z-50"
                   onMouseEnter={() => handleMouseEnter("eventIntro")}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -152,10 +162,10 @@ export default function Header() {
                         <LoadingLink
                           key={index}
                           href={item.href}
-                          className={`block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold whitespace-nowrap ${
+                          className={`block px-4 py-[10px] text-[20px] break-keep ${
                             pathname.startsWith(item.href)
                               ? "text-white font-bold"
-                              : ""
+                              : "hover:text-white/80 text-white/80"
                           }`}
                         >
                           {item.text}
@@ -192,14 +202,65 @@ export default function Header() {
             </LoadingLink>
 
             {/* 참가등록 */}
-            <Link
-              href="https://naver.com"
+            {/* <Link
+              href="https://event-us.kr/disitaleconomyforum/event/111541"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 py-4 text-center text-[20px] font-medium text-[#333333] hover:text-[#055DA5] hover:bg-[#F4F7F9] transition-all rounded-[8px]"
             >
               {t.nav.registration}
-            </Link>
+            </Link> */}
+
+            <div className="relative flex-1 text-center">
+              <LoadingLink
+                href="https://event-us.kr/disitaleconomyforum/event/111541"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => handleMouseEnter("registration")}
+                onMouseLeave={handleMouseLeave}
+                className={`py-4 block text-[20px] rounded-[8px] font-medium text-[#333333] hover:text-[#055DA5] hover:bg-[#F4F7F9] transition-all rounded-[8px]`}
+              >
+                {t.nav.registration}
+              </LoadingLink>
+              {activeDropdown === "registration" && (
+                <div
+                  className="absolute top-full left-1/2 -translate-x-1/2 min-w-[200px] pt-[30px] z-50"
+                  onMouseEnter={() => handleMouseEnter("registration")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="py-[18px] bg-[#055DA5] rounded-md shadow-lg">
+                    {[
+                      {
+                        href: "https://event-us.kr/disitaleconomyforum/event/111541",
+                        text: t.nav.register,
+                      },
+                      {
+                        href: "https://event-us.kr/disitaleconomyforum/event/111541",
+                        text: t.nav.registrationConfirmation,
+                      },
+                    ].map((item, index) => {
+                      return (
+                        <LoadingLink
+                          key={index}
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`block px-4 py-[10px] text-white/80 text-[20px] break-keep flex items-center gap-x-2 justify-center hover:text-white`}
+                        >
+                          <span>{item.text}</span>
+                          <Image
+                            src="/images/icons/open_in_new.png"
+                            alt="open in new"
+                            width={20}
+                            height={20}
+                          />
+                        </LoadingLink>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
           </nav>
 
           <div className="max-[768px]:ml-auto flex items-center gap-4">
@@ -352,63 +413,93 @@ export default function Header() {
                   {menuList.map((menu, menuIndex) => {
                     return (
                       <li key={menu.title}>
-                        <LoadingLink
-                          href={menu.href}
-                          onClick={(e) =>
-                            handleSheetLinkClick(
-                              e,
-                              menu.subList ? true : false,
-                              menuIndex
-                            )
-                          }
-                          className={`text-[48px] font-bold max-[360px]:text-[32px] max-[360px]:leading-[37px] text-center block transition-colors ${
-                            menu.subList
-                              ? menu.subList.some((sub) =>
+                        {menu.subList ? (
+                          <>
+                            <Link
+                              href={menu.href}
+                              onClick={(e) =>
+                                handleSheetLinkClick(e, true, menuIndex)
+                              }
+                              className={`text-[48px] font-bold max-[360px]:text-[32px] max-[360px]:leading-[37px] text-center block transition-colors ${
+                                menu.subList.some((sub) =>
                                   pathname.startsWith(sub.href)
                                 )
-                                ? "text-[#4AC8F4]"
-                                : "text-white"
-                              : pathname.startsWith(menu.href)
-                              ? "text-[#4AC8F4]"
-                              : "text-white"
-                          }`}
-                        >
-                          {menu.title}
-                        </LoadingLink>
-                        {menu.subList && (
-                          <motion.ul
-                            initial={{
-                              height:
-                                hamburgerDropdown === menuIndex ? "auto" : 0,
-                            }}
-                            animate={{
-                              height:
-                                hamburgerDropdown === menuIndex ? "auto" : 0,
-                            }}
-                            // exit={{ height: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="overflow-hidden mt-7 flex flex-col items-center justify-center max-[360px]:mt-5"
-                          >
-                            {menu.subList.map((sub, subIndex) => {
-                              return (
-                                <li key={sub.title}>
-                                  <LoadingLink
-                                    href={sub.href}
-                                    onClick={(e) =>
-                                      handleSheetLinkClick(e, false, subIndex)
-                                    }
-                                    className={`text-[28px] font-[500] py-3 block max-[360px]:text-[20px] max-[360px]:leading-[23px] max-[360px]:py-[10px] transition-colors ${
-                                      pathname.startsWith(sub.href)
-                                        ? "text-[#4AC8F4]"
-                                        : "text-white"
-                                    }`}
-                                  >
-                                    {sub.title}
-                                  </LoadingLink>
-                                </li>
-                              );
-                            })}
-                          </motion.ul>
+                                  ? "text-[#4AC8F4]"
+                                  : "text-white"
+                              }`}
+                            >
+                              {menu.title}
+                            </Link>
+
+                            <motion.ul
+                              initial={{
+                                height:
+                                  hamburgerDropdown === menuIndex ? "auto" : 0,
+                                marginTop:
+                                  hamburgerDropdown === menuIndex ? "28px" : 0,
+                              }}
+                              animate={{
+                                height:
+                                  hamburgerDropdown === menuIndex ? "auto" : 0,
+                                marginTop:
+                                  hamburgerDropdown === menuIndex ? "28px" : 0,
+                              }}
+                              // exit={{ height: 0 }}
+                              transition={{ duration: 0.3 }}
+                              className="overflow-hidden flex flex-col items-center justify-center"
+                            >
+                              {menu.subList.map((sub, subIndex) => {
+                                const last = menuIndex === menuList.length - 1;
+                                return (
+                                  <li key={sub.title}>
+                                    <LoadingLink
+                                      href={sub.href}
+                                      target={last ? "_blank" : "_self"}
+                                      rel={last ? "noopener noreferrer" : ""}
+                                      onClick={(e) =>
+                                        handleSheetLinkClick(e, false, subIndex)
+                                      }
+                                      className={`text-[28px] font-[500] py-3 block max-[360px]:text-[20px] max-[360px]:leading-[23px] max-[360px]:py-[10px] transition-colors flex items-center justify-center gap-x-2 ${
+                                        pathname.startsWith(sub.href)
+                                          ? "text-[#4AC8F4]"
+                                          : "text-white"
+                                      }`}
+                                    >
+                                      <span>{sub.title}</span>
+                                      {last && (
+                                        <Image
+                                          src="/images/icons/open_in_new.png"
+                                          alt="open in new"
+                                          width={20}
+                                          height={20}
+                                        />
+                                      )}
+                                    </LoadingLink>
+                                  </li>
+                                );
+                              })}
+                            </motion.ul>
+                          </>
+                        ) : (
+                          <>
+                            <LoadingLink
+                              href={menu.href}
+                              onClick={(e) =>
+                                handleSheetLinkClick(
+                                  e,
+                                  menu.subList ? true : false,
+                                  menuIndex
+                                )
+                              }
+                              className={`text-[48px] font-bold max-[360px]:text-[32px] max-[360px]:leading-[37px] text-center block transition-colors ${
+                                pathname.startsWith(menu.href)
+                                  ? "text-[#4AC8F4]"
+                                  : "text-white"
+                              }`}
+                            >
+                              {menu.title}
+                            </LoadingLink>
+                          </>
                         )}
                       </li>
                     );
