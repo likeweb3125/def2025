@@ -2,99 +2,34 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SubNavigationButton from "@/components/common/SubNavigationButton";
 import ComingSoon from "@/components/common/ComingSoon";
+import { useEffect, useRef, useState } from "react";
 
-export default function PastEventsPage() {
-  const { t, language } = useLanguage();
-
-  const FORUM_LIST = [
-    {
-      year: "2024",
-      thumb: "/images/past-events-thumb-2024.png",
-      link: null,
-      title: t.pastEvents.def2024ForumTitle,
-      date: t.pastEvents.def2024ForumDate,
-      content: t.pastEvents.def2024ForumDesc,
-      isContent: true,
-    },
-    {
-      year: "2023",
-      thumb: "/images/past-events-thumb-2023.png",
-      link: null,
-      title: t.pastEvents.def2023ForumTitle,
-      date: t.pastEvents.def2023ForumDate,
-      content: t.pastEvents.def2023ForumDesc,
-      isContent: true,
-    },
-    {
-      year: "2022",
-      thumb: "/images/past-events-thumb-2022.png",
-      link: "https://youtu.be/lpcaIFaGEm8",
-      title: t.pastEvents.def2022ForumTitle,
-      date: t.pastEvents.def2022ForumDate,
-      content: t.pastEvents.def2022ForumDesc,
-      isContent: true,
-    },
-
-    {
-      year: "2021",
-      thumb: "/images/past-events-thumb-2021.png",
-      link: "https://youtu.be/tsoI_iUSsX0",
-      title: t.pastEvents.def2021ForumTitle,
-      date: t.pastEvents.def2021ForumDate,
-      content: t.pastEvents.def2021ForumDesc,
-      isContent: true,
-    },
-    {
-      year: "2020",
-      thumb: "/images/past-events-thumb-2020.png",
-      link: "https://youtu.be/PYSAShUawbU",
-      title: t.pastEvents.def2020ForumTitle,
-      date: t.pastEvents.def2020ForumDate,
-      content: t.pastEvents.def2020ForumDesc,
-      isContent: true,
-    },
-    {
-      year: "2019",
-      thumb: "/images/past-events-thumb-2019.png",
-      link: "https://youtu.be/5AqsVutuYic",
-      title: t.pastEvents.def2019ForumTitle,
-      date: t.pastEvents.def2019ForumDate,
-      content: t.pastEvents.def2019ForumDesc,
-      isContent: true,
-    },
-    {
-      year: "2018",
-      thumb: "/images/past-events-thumb-2018.png",
-      link: "https://youtu.be/71s_hJKNoyk",
-      title: t.pastEvents.def2018ForumTitle,
-      date: t.pastEvents.def2018ForumDate,
-      content: t.pastEvents.def2018ForumDesc,
-      isContent: true,
-    },
-  ];
-
-  const EventSection = ({
-    id,
-    year,
-    bgColor = "bg-gray-50",
-    thumb,
-    link,
-    item,
-  }: {
-    id: string;
-    year: string;
-    bgColor?: string;
-    thumb: string;
-    link: string | null;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    item: any;
-  }) => (
-    // <div className={` ${bgColor}`}>
+const EventSection = ({
+  id,
+  year,
+  thumb,
+  link,
+  item,
+}: {
+  id: string;
+  year: string;
+  bgColor?: string;
+  thumb: string;
+  link: string | null;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  item: any;
+}) => {
+  const { t } = useLanguage();
+  return (
     <div
-      className="flex gap-[60px] max-[1280px]:gap-[30px] max-[1200px]:flex-col max-[1200px]:items-center max-[360px]:gap-6"
+      className="section pb-[100px] max-[500px]:pb-12 flex gap-[60px] max-[1280px]:gap-[30px] max-[1200px]:flex-col max-[1200px]:items-center max-[360px]:gap-6"
       id={id}
       style={{ scrollMarginTop: "160px" }}
     >
@@ -166,9 +101,116 @@ export default function PastEventsPage() {
       </div>
     </div>
   );
+};
+
+export default function PastEventsPage() {
+  const container = useRef<HTMLDivElement | null>(null);
+  const [activeSectionIndex, setActiveSectionIndex] = useState(0);
+  const { t, language } = useLanguage();
+
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+    return () => {
+      document.documentElement.style.scrollBehavior = "auto";
+    };
+  }, [activeSectionIndex]);
+
+  useGSAP(
+    () => {
+      gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+      const sections = gsap.utils.toArray(".section") as HTMLElement[];
+
+      sections.forEach((section, index) => {
+        gsap.to(section as Element, {
+          ease: "none",
+          scrollTrigger: {
+            trigger: section as Element,
+            start: "top 60%",
+            end: "bottom 60%",
+            scrub: true,
+            // markers: true,
+            onToggle: () => {
+              setActiveSectionIndex(index);
+            },
+          },
+        });
+      });
+
+      ScrollTrigger.refresh();
+    },
+    { scope: container }
+  );
+
+  const FORUM_LIST = [
+    {
+      year: "2024",
+      thumb: "/images/past-events-thumb-2024.png",
+      link: null,
+      title: t.pastEvents.def2024ForumTitle,
+      date: t.pastEvents.def2024ForumDate,
+      content: t.pastEvents.def2024ForumDesc,
+      isContent: true,
+    },
+    {
+      year: "2023",
+      thumb: "/images/past-events-thumb-2023.png",
+      link: null,
+      title: t.pastEvents.def2023ForumTitle,
+      date: t.pastEvents.def2023ForumDate,
+      content: t.pastEvents.def2023ForumDesc,
+      isContent: true,
+    },
+    {
+      year: "2022",
+      thumb: "/images/past-events-thumb-2022.png",
+      link: "https://youtu.be/lpcaIFaGEm8",
+      title: t.pastEvents.def2022ForumTitle,
+      date: t.pastEvents.def2022ForumDate,
+      content: t.pastEvents.def2022ForumDesc,
+      isContent: true,
+    },
+
+    {
+      year: "2021",
+      thumb: "/images/past-events-thumb-2021.png",
+      link: "https://youtu.be/tsoI_iUSsX0",
+      title: t.pastEvents.def2021ForumTitle,
+      date: t.pastEvents.def2021ForumDate,
+      content: t.pastEvents.def2021ForumDesc,
+      isContent: true,
+    },
+    {
+      year: "2020",
+      thumb: "/images/past-events-thumb-2020.png",
+      link: "https://youtu.be/PYSAShUawbU",
+      title: t.pastEvents.def2020ForumTitle,
+      date: t.pastEvents.def2020ForumDate,
+      content: t.pastEvents.def2020ForumDesc,
+      isContent: true,
+    },
+    {
+      year: "2019",
+      thumb: "/images/past-events-thumb-2019.png",
+      link: "https://youtu.be/5AqsVutuYic",
+      title: t.pastEvents.def2019ForumTitle,
+      date: t.pastEvents.def2019ForumDate,
+      content: t.pastEvents.def2019ForumDesc,
+      isContent: true,
+    },
+    {
+      year: "2018",
+      thumb: "/images/past-events-thumb-2018.png",
+      link: "https://youtu.be/71s_hJKNoyk",
+      title: t.pastEvents.def2018ForumTitle,
+      date: t.pastEvents.def2018ForumDate,
+      content: t.pastEvents.def2018ForumDesc,
+      isContent: true,
+    },
+  ];
 
   return (
-    <div className="font-sans">
+    <div className="font-sans" ref={container}>
       {/* 지난 행사 헤더 섹션 */}
       <section className="px-10 max-[768px]:px-0">
         <div className="relative h-[360px] max-w-[1920px] max-[768px]:pt-[50px] rounded-[40px_0_40px_0] overflow-hidden mx-auto flex-col flex items-center justify-center max-[768px]:rounded-none max-[500px]:h-[227px]">
@@ -211,9 +253,9 @@ export default function PastEventsPage() {
 
       {/* 각 연도별 섹션 */}
       <div className="px-10 grid grid-cols-[310px_1fr] gap-[90px] w-full max-w-[1360px] mx-auto py-[120px] max-[1280px]:gap-[50px] max-[1280px]:grid-cols-[260px_1fr] max-[950px]:grid-cols-[220px_1fr] max-[768px]:px-0 max-[768px]:pt-0 max-[768px]:grid-cols-1">
-        <div className="flex flex-col max-[768px]:sticky max-[768px]:top-[100px] max-[768px]:bg-[#F4F7F9] max-[768px]:z-[2]">
+        <div className="flex flex-col max-[768px]:sticky max-[768px]:top-[78px] max-[768px]:bg-[#F4F7F9] max-[768px]:z-[2] max-[500px]:top-[61px]">
           <div className="sticky top-[160px] max-[1280px]:top-[170px] max-[768px]:relative max-[768px]:!top-0">
-            <div className="flex flex-col gap-y-2 max-[768px]:flex-row max-[768px]:gap-x-6 max-[768px]:overflow-x-auto max-[768px]:px-10 max-[768px]:py-6">
+            <div className="flex flex-col gap-y-2 max-[768px]:flex-row max-[768px]:gap-x-6 max-[768px]:overflow-x-auto max-[768px]:px-10 max-[768px]:py-10 max-[500px]:py-6 max-[500px]:px-5">
               <style>
                 {`
                   .outline-text {
@@ -227,15 +269,15 @@ export default function PastEventsPage() {
                 `}
               </style>
               {FORUM_LIST.map((item, index) => {
-                const isActive = index === 0;
+                const isActive = index === activeSectionIndex;
                 return (
                   <Link
                     href={`#${item.year}`}
                     key={index}
-                    className={`grid grid-cols-[130px_1fr] gap-4 max-[1280px]:grid-cols-[100px_1fr] max-[950px]:grid-cols-[80px_1fr] items-center ${
+                    className={`grid grid-cols-[130px_1fr] gap-4 max-[1280px]:grid-cols-[100px_1fr] max-[950px]:grid-cols-[80px_1fr] max-[500px]:grid-cols-[40px_1fr] max-[500px]:gap-2 items-center ${
                       isActive
-                        ? "text-[#055DA5] leading-[76px] text-[62px] max-[1280px]:text-[50px] max-[1280px]:leading-[40px] max-[950px]:text-[40px] max-[950px]:leading-[40px]"
-                        : "text-[#000000] leading-[49px] text-[40px] max-[1280px]:text-[30px] max-[1280px]:leading-[30px] max-[950px]:text-[28px] max-[950px]:leading-[28px] max-[768px]:grid-cols-1 max-[768px]:inline-flex"
+                        ? "text-[#055DA5] leading-[76px] text-[62px] max-[1280px]:text-[50px] max-[1280px]:leading-[40px] max-[950px]:text-[40px] max-[950px]:leading-[40px] max-[500px]:text-[20px] max-[500px]:leading-[20px]"
+                        : "text-[#000000] leading-[49px] text-[40px] max-[1280px]:text-[30px] max-[1280px]:leading-[30px] max-[950px]:text-[28px] max-[950px]:leading-[28px] max-[768px]:grid-cols-1 max-[768px]:inline-flex max-[500px]:text-[18px] max-[500px]:leading-[18px]"
                     }`}
                   >
                     <p
@@ -263,7 +305,7 @@ export default function PastEventsPage() {
           </div>
         </div>
 
-        <div className="max-[1080px]:px-10 max-[500px]:px-5 space-y-[100px] max-[500px]:space-y-12 max-[950px]:px-5">
+        <div className="max-[1080px]:px-10 max-[500px]:px-5 max-[950px]:px-5">
           {FORUM_LIST.map((item, index) => {
             const isActive = index === 0;
             return (

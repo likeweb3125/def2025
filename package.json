@@ -13,11 +13,13 @@
     "docker:run": "docker run -p 3000:3000 nextjs-app"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@radix-ui/react-dialog": "^1.1.15",
     "@svgr/webpack": "^8.1.0",
     "aos": "^2.3.4",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.12",
+    "gsap": "^3.13.0",
     "i": "^0.3.7",
     "lucide-react": "^0.543.0",
     "next": "15.5.2",
