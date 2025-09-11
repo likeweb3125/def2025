@@ -231,28 +231,28 @@ export default function Home() {
             {[
               {
                 src: "/images/mediaroom_img01.jpg",
-                bigSrc: "/images/mediaroom_img01_big.jpg",
+                bigSrc: "/images/mediaroom_img01_big.jpeg",
                 alt: "미디어룸 이미지 1",
               },
               {
                 src: "/images/mediaroom_img02.png",
-                bigSrc: "/images/mediaroom_img01_big.jpg",
+                bigSrc: "/images/mediaroom_img02_big.jpeg",
                 alt: "미디어룸 이미지 2",
               },
               {
                 src: "/images/mediaroom_img03.png",
-                bigSrc: "/images/mediaroom_img01_big.jpg",
+                bigSrc: "/images/mediaroom_img03_big.jpeg",
                 alt: "미디어룸 이미지 3",
               },
               {
                 src: "/images/mediaroom_img04.png",
-                bigSrc: "/images/mediaroom_img01_big.jpg",
+                bigSrc: "/images/mediaroom_img04_big.jpeg",
                 alt: "미디어룸 이미지 4",
               },
             ].map((item, index) => (
               <Dialog key={index}>
                 <DialogTrigger asChild>
-                  <figure className="rounded-[20px] overflow-hidden w-full max-w-[260px] aspect-square max-[1390px]:max-w-full">
+                  <figure className="cursor-pointer rounded-[20px] overflow-hidden w-full max-w-[260px] aspect-square max-[1390px]:max-w-full">
                     <Image
                       src={item.src}
                       alt={item.alt}
@@ -262,16 +262,18 @@ export default function Home() {
                     />
                   </figure>
                 </DialogTrigger>
-                <DialogContent className="rounded-[20px] pt-14 w-full !max-w-[720px] bg-white text-black border-none max-[768px]:!max-w-[90%]">
+                <DialogContent className="rounded-[20px] pt-14 w-full !max-w-[900px] bg-white text-black border-none max-[768px]:!max-w-[90%]">
                   <DialogTitle hidden>{item.alt}</DialogTitle>
                   <DialogDescription hidden>{item.alt}</DialogDescription>
-                  <Image
-                    src={item.bigSrc}
-                    alt={item.alt}
-                    width={260}
-                    height={260}
-                    className="w-full h-full object-cover"
-                  />
+                  <div className="w-full h-auto">
+                    <Image
+                      src={item.bigSrc}
+                      alt={item.alt}
+                      width={900}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </DialogContent>
               </Dialog>
             ))}
