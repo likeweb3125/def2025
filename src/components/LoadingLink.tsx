@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useLoading } from "@/contexts/LoadingContext";
 import { ReactNode } from "react";
 
@@ -20,10 +21,15 @@ export default function LoadingLink({
   ...props
 }: LoadingLinkProps) {
   const { setIsLoading } = useLoading();
+  const pathname = usePathname();
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // 외부 링크가 아닌 경우에만 로딩 상태 활성화
-    if (!href.startsWith("http") && !href.startsWith("mailto:")) {
+    // 외부 링크가 아니고, 현재 경로와 다른 경우에만 로딩 상태 활성화
+    if (
+      !href.startsWith("http") &&
+      !href.startsWith("mailto:") &&
+      href !== pathname
+    ) {
       setIsLoading(true);
     }
 
