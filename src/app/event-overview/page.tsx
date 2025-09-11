@@ -49,7 +49,11 @@ export default function EventOverviewPage() {
             />
           </div>
 
-          <div className="relative pt-8">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="relative pt-8"
+          >
             <Image
               src="/images/icons/double_quotes_blue.png"
               alt=""
@@ -68,83 +72,41 @@ export default function EventOverviewPage() {
       </section>
 
       {/* 추가 영역 - 추후 사용 예정 */}
-      <section className="px-10 min-h-full pt-[160px] pb-[147px] relative min-h-full h-auto flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_back.jpg')] max-[768px]:bg-[url('/images/event-overview_back-768.jpg')] max-[460px]:bg-[url('/images/event-overview_back-360.jpg')] max-[500px]:p-[100px_20px_120px]">
+      <section className="px-10 min-h-full pt-[160px] pb-[147px] relative min-h-full h-auto  bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_back.jpg')] max-[768px]:bg-[url('/images/event-overview_back-768.jpg')] max-[460px]:bg-[url('/images/event-overview_back-360.jpg')] max-[500px]:p-[100px_20px_120px]">
         <div className="absolute inset-0 bg-black/20"></div>
 
-        <h2 className="text-4xl font-bold text-white mb-10 text-center max-[500px]:text-[24px]">
-          {t.eventOverview.title}
-        </h2>
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h2 className="text-4xl font-bold text-white mb-10 text-center max-[500px]:text-[24px]">
+            {t.eventOverview.title}
+          </h2>
 
-        {/* 콘텐츠 */}
-        <div className="relative gap-5 border border-[rgba(255,255,255,0.2)] p-10 flex flex-col justify-center z-10 mx-auto max-w-[900px] w-full bg-black/20 rounded-[20px_0px_20px_0px] backdrop-blur-sm max-[500px]:backdrop-blur-none max-[500px]:bg-transparent max-[500px]:border-none max-[500px]:p-0">
-          {/* 행사 정보 */}
-          <ul className="space-y-5">
-            {[
-              {
-                title: t.eventOverview.table.title,
-                content: t.eventOverview.table.titleContent,
-              },
-              {
-                title: t.eventOverview.table.topic,
-                content: t.eventOverview.table.topicContent,
-              },
-              {
-                title: t.eventOverview.table.period,
-                content: t.eventOverview.table.periodContent,
-              },
-              {
-                title: t.eventOverview.table.venue,
-                content: t.eventOverview.table.venueContent,
-              },
-            ].map((item, index) => {
-              return (
-                <li className="flex items-center" key={index}>
-                  <div
-                    className="text-center mr-8 w-[120px] h-[46px] max-[500px]:w-[80px] max-[500px]:h-[36px]"
-                    style={{
-                      paddingTop: "8px",
-                      paddingBottom: "8px",
-                      gap: "8px",
-                      opacity: 1,
-                      borderRadius: "8px",
-                      backgroundColor: "#FFFFFF33",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <span className="text-white text-[18px] font-medium max-[500px]:text-[16px]">
-                      {item.title}
-                    </span>
-                  </div>
-                  <div className="text-white text-lg font-medium text-center flex-1 break-keep">
-                    {item.content}
-                  </div>
-                </li>
-              );
-            })}
-
-            <ul className="grid grid-cols-2 max-[680px]:grid-cols-1 gap-y-5">
+          {/* 콘텐츠 */}
+          {/* <div className="relative gap-5 border border-[rgba(255,255,255,0.2)] p-10 flex flex-col justify-center z-10 mx-auto max-w-[900px] w-full bg-black/20 rounded-[20px_0px_20px_0px] backdrop-blur-sm max-[500px]:backdrop-blur-none max-[500px]:bg-transparent max-[500px]:border-none max-[500px]:p-0"> */}
+          <div className="asymmetry-rounded-box relative gap-5 p-10 flex flex-col justify-center z-10 mx-auto max-w-[900px] w-full max-[500px]:!backdrop-blur-none max-[500px]:!bg-transparent max-[500px]:before:!content-[none] max-[500px]:p-0">
+            {/* 행사 정보 */}
+            <ul className="space-y-5">
               {[
                 {
-                  title: t.eventOverview.table.hostedBy,
-                  content: t.eventOverview.table.hostedByContent,
-                  img: t.eventOverview.table.hostedByImage,
-                  iconWidth: language === "ko" ? 159 : 168,
-                  iconHeight: 40,
+                  title: t.eventOverview.table.title,
+                  content: t.eventOverview.table.titleContent,
                 },
                 {
-                  title: t.eventOverview.table.organizedBy,
-                  content: t.eventOverview.table.organizedByContent,
-                  img: t.eventOverview.table.organizedByImage,
-                  iconWidth: language === "ko" ? 186 : 204,
-                  iconHeight: language === "ko" ? 29 : 24,
+                  title: t.eventOverview.table.topic,
+                  content: t.eventOverview.table.topicContent,
                 },
-              ].map((item, i) => {
+                {
+                  title: t.eventOverview.table.period,
+                  content: t.eventOverview.table.periodContent,
+                },
+                {
+                  title: t.eventOverview.table.venue,
+                  content: t.eventOverview.table.venueContent,
+                },
+              ].map((item, index) => {
                 return (
-                  <li className="flex items-center" key={i}>
+                  <li className="flex items-center" key={index}>
                     <div
-                      className="text-center w-[120px] h-[46px] max-[500px]:w-[80px] max-[500px]:h-[36px]"
+                      className="text-center mr-8 w-[120px] h-[46px] max-[500px]:w-[80px] max-[500px]:h-[36px]"
                       style={{
                         paddingTop: "8px",
                         paddingBottom: "8px",
@@ -161,20 +123,65 @@ export default function EventOverviewPage() {
                         {item.title}
                       </span>
                     </div>
-                    <div className="px-2 flex-1">
-                      <Image
-                        src={item.img}
-                        alt={item.content}
-                        width={item.iconWidth}
-                        height={item.iconHeight}
-                        className="object-contain mx-auto"
-                      />
+                    <div className="text-white text-lg font-medium text-center flex-1 break-keep">
+                      {item.content}
                     </div>
                   </li>
                 );
               })}
+
+              <ul className="grid grid-cols-2 max-[680px]:grid-cols-1 gap-y-5">
+                {[
+                  {
+                    title: t.eventOverview.table.hostedBy,
+                    content: t.eventOverview.table.hostedByContent,
+                    img: t.eventOverview.table.hostedByImage,
+                    iconWidth: language === "ko" ? 159 : 168,
+                    iconHeight: 40,
+                  },
+                  {
+                    title: t.eventOverview.table.organizedBy,
+                    content: t.eventOverview.table.organizedByContent,
+                    img: t.eventOverview.table.organizedByImage,
+                    iconWidth: language === "ko" ? 186 : 204,
+                    iconHeight: language === "ko" ? 29 : 24,
+                  },
+                ].map((item, i) => {
+                  return (
+                    <li className="flex items-center" key={i}>
+                      <div
+                        className="text-center w-[120px] h-[46px] max-[500px]:w-[80px] max-[500px]:h-[36px]"
+                        style={{
+                          paddingTop: "8px",
+                          paddingBottom: "8px",
+                          gap: "8px",
+                          opacity: 1,
+                          borderRadius: "8px",
+                          backgroundColor: "#FFFFFF33",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <span className="text-white text-[18px] font-medium max-[500px]:text-[16px]">
+                          {item.title}
+                        </span>
+                      </div>
+                      <div className="px-2 flex-1">
+                        <Image
+                          src={item.img}
+                          alt={item.content}
+                          width={item.iconWidth}
+                          height={item.iconHeight}
+                          className="object-contain mx-auto"
+                        />
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
             </ul>
-          </ul>
+          </div>
         </div>
       </section>
     </div>

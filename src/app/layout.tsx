@@ -9,6 +9,7 @@ import DynamicHtmlLang from "@/components/DynamicHtmlLang";
 import LoadingSpinner from "@/components/common/LoadingSpinner";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { LoadingProvider } from "@/contexts/LoadingContext";
+import AOSInitializer from "@/components/common/AOSInitializer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -52,9 +53,11 @@ export default function RootLayout({
           <LoadingProvider>
             <DynamicHtmlLang />
             <LanguageLoader>
-              <Header />
-              <main className="min-h-screen bg-white">{children}</main>
-              <Footer />
+              <AOSInitializer>
+                <Header />
+                <main className="min-h-screen bg-white">{children}</main>
+                <Footer />
+              </AOSInitializer>
             </LanguageLoader>
             <LoadingSpinner />
           </LoadingProvider>
