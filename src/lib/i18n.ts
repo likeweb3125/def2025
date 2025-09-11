@@ -287,7 +287,7 @@ export const translations = {
       def2022ForumDate: "September 22, 2022 Online & Offline Forum",
       def2022ForumDesc: `<p>DEF2022 focused the discussions on the changes by digital transformation and discussed policies and systems for the sustainable and competitive digital economy.</br></br>DEF2022 featured Jeniffer Zhu Scott, Forbes' Top 50 Women in Tech(2018) and Founding Partner of I.N. Capital, and Steven S. Hoffman, Founder of Founders Space and Author of "The Five Forces That Change Everything: How Technology Is Shaping Our Future," as keynote speakers. Digital Economy Representatives from around the world engaged in panel discussions on topics of Regulatory Innovation, Digital Platform Government, Digital Inclusion, and Startup Investment.</p>`,
       def2023ForumTitle: "Genuine Innovations for Boosting Growth Potential",
-      def2023ForumDate: "September 6, 2023  온·오프라인 포럼",
+      def2023ForumDate: "September 6, 2023 Online & Offline Forum",
       def2023ForumDesc: ``,
       def2024ForumTitle: "AI and the Evolution of the Digital Economy",
       def2024ForumDate: "November 6, 2024  Online & Offline Forum",
