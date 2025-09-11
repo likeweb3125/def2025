@@ -38,9 +38,13 @@ export default function Home() {
                 language === "ko" ? "tracking-[2px]" : ""
               }`}
             >
-              {language === "ko"
-                ? "제8회 디지털 이코노미 포럼"
-                : "8th Digital Economy Forum"}
+              {language === "ko" ? (
+                "제8회 디지털 이코노미 포럼"
+              ) : (
+                <span>
+                  8<sup>th</sup> Digital Economy Forum
+                </span>
+              )}
             </div>
 
             {/* 2번째 텍스트 - 2025 DIGITAL ECONOMY FORUM */}
@@ -67,7 +71,7 @@ export default function Home() {
                 alt="Hosted by Ministry of Economy and Finance, Organized by KIET"
                 width={800}
                 height={120}
-                className="w-full max-w-xs md:max-w-md lg:max-w-2xl h-auto object-contain"
+                className="w-full max-w-[433px] max-[768px]:max-w-full h-auto object-contain"
               />
             </div>
 
@@ -107,7 +111,7 @@ export default function Home() {
                     target={last ? "_blank" : "_self"}
                     rel={last ? "noopener noreferrer" : ""}
                     // className="relative group before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(110.74deg,#000000_0%,#333333_50%,#000000_100%)] hover:before:bg-[#00E2F7] hover:before:bg-none before:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%,0_0,1px_1px,1px_calc(100%-1px),calc(100%-1px)_calc(100%-1px),calc(100%-1px)_1px,1px_1px)] hover:shadow-[0px_0px_40px_0px_#00E2F766] hover:rounded-[20px_0px_20px_0px] hover:overflow-hidden transition-all duration-300"
-                    className="relative group border border-transparent before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(110.74deg,#000000_0%,#333333_50%,#000000_100%)] before:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%,0_0,1px_1px,1px_calc(100%-1px),calc(100%-1px)_calc(100%-1px),calc(100%-1px)_1px,1px_1px)] bg-transparent hover:before:bg-transparent  hover:before:bg-none hover:border-[#00E2F7] hover:rounded-[20px_0px_20px_0px]  hover:shadow-[0px_0px_40px_0px_#00E2F766]  hover:overflow-hidden transition-all duration-300 max- aspect-[1.5/1] max-[1000px]:aspect-square"
+                    className="relative group border border-transparent before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(110.74deg,#000000_0%,#333333_50%,#000000_100%)] before:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%,0_0,1px_1px,1px_calc(100%-1px),calc(100%-1px)_calc(100%-1px),calc(100%-1px)_1px,1px_1px)] bg-transparent hover:before:bg-transparent  hover:before:bg-none hover:border-[#00E2F7] hover:rounded-[20px_0px_20px_0px] hover:shadow-[0px_0px_40px_0px_#00E2F766]  hover:overflow-hidden transition-all duration-300 aspect-[1.5/1] max-[1280px]:aspect-square"
                   >
                     <div className="text-white flex flex-col items-center justify-center relative overflow-hidden bg-transparent h-full group-hover:bg-[#00000066] transition-all duration-300 ">
                       <div className="absolute inset-0 bg-black/20"></div>
@@ -117,7 +121,7 @@ export default function Home() {
                           alt={item.alt}
                           width={80}
                           height={80}
-                          className="object-contain"
+                          className="object-contain max-[1080px]:w-[60px] max-[1080px]:h-[60px] max-[768px]:w-[80px] max-[768px]:h-[80px]"
                         />
                       </div>
                       <div className="text-white relative z-10 font-medium text-base md:text-lg lg:text-xl text-center px-2">
