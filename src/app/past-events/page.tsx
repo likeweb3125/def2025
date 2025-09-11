@@ -13,19 +13,19 @@ export default function PastEventsPage() {
     {
       year: "2024",
       thumb: "/images/past-events-thumb-2024.png",
-      link: "/",
+      link: null,
       isContent: false,
     },
     {
       year: "2023",
       thumb: "/images/past-events-thumb-2023.png",
-      link: "/",
+      link: null,
       isContent: false,
     },
     {
       year: "2022",
       thumb: "/images/past-events-thumb-2022.png",
-      link: "/",
+      link: "https://youtu.be/lpcaIFaGEm8",
       title: t.pastEvents.def2022ForumTitle,
       date: t.pastEvents.def2022ForumDate,
       content: t.pastEvents.def2022ForumDesc,
@@ -35,7 +35,7 @@ export default function PastEventsPage() {
     {
       year: "2021",
       thumb: "/images/past-events-thumb-2021.png",
-      link: "/",
+      link: "https://youtu.be/tsoI_iUSsX0",
       title: t.pastEvents.def2021ForumTitle,
       date: t.pastEvents.def2021ForumDate,
       content: t.pastEvents.def2021ForumDesc,
@@ -44,7 +44,7 @@ export default function PastEventsPage() {
     {
       year: "2020",
       thumb: "/images/past-events-thumb-2020.png",
-      link: "/",
+      link: "https://youtu.be/PYSAShUawbU",
       title: t.pastEvents.def2020ForumTitle,
       date: t.pastEvents.def2020ForumDate,
       content: t.pastEvents.def2020ForumDesc,
@@ -53,7 +53,7 @@ export default function PastEventsPage() {
     {
       year: "2019",
       thumb: "/images/past-events-thumb-2019.png",
-      link: "/",
+      link: "https://youtu.be/5AqsVutuYic",
       title: t.pastEvents.def2019ForumTitle,
       date: t.pastEvents.def2019ForumDate,
       content: t.pastEvents.def2019ForumDesc,
@@ -62,7 +62,7 @@ export default function PastEventsPage() {
     {
       year: "2018",
       thumb: "/images/past-events-thumb-2018.png",
-      link: "/",
+      link: "https://youtu.be/71s_hJKNoyk",
       title: t.pastEvents.def2018ForumTitle,
       date: t.pastEvents.def2018ForumDate,
       content: t.pastEvents.def2018ForumDesc,
@@ -82,7 +82,7 @@ export default function PastEventsPage() {
     year: string;
     bgColor?: string;
     thumb: string;
-    link: string;
+    link: string | null;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     item: any;
   }) => (
@@ -104,20 +104,32 @@ export default function PastEventsPage() {
           />
         </figure>
         <div className="mt-4">
-          <Link
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full lg:w-80 h-[62px] px-6 py-4 bg-[#F4F7F9] border border-[#055DA5] text-[#055DA5] rounded-lg font-semibold text-[20px] hover:opacity-90 transition-opacity flex items-center justify-center flex items-center gap-2"
-          >
-            <Image
-              src="/images/icons/icon-play.png"
-              alt="Play"
-              width={20}
-              height={20}
-            />
-            <span>{t.pastEvents.watchVideo}</span>
-          </Link>
+          {link ? (
+            <Link
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full lg:w-80 h-[62px] px-6 py-4 bg-[#F4F7F9] border border-[#055DA5] text-[#055DA5] rounded-lg font-semibold text-[20px] hover:opacity-90 transition-opacity flex items-center justify-center flex items-center gap-2"
+            >
+              <Image
+                src="/images/icons/icon-play.png"
+                alt="Play"
+                width={20}
+                height={20}
+              />
+              <span>{t.pastEvents.watchVideo}</span>
+            </Link>
+          ) : (
+            <button className="w-full lg:w-80 h-[62px] px-6 py-4 bg-[#F4F7F9] border border-[#055DA5] text-[#055DA5] rounded-lg font-semibold text-[20px] flex items-center justify-center flex items-center gap-2 opacity-50 cursor-not-allowed">
+              <Image
+                src="/images/icons/icon-play.png"
+                alt="Play"
+                width={20}
+                height={20}
+              />
+              <span>{t.pastEvents.watchVideo}</span>
+            </button>
+          )}
         </div>
       </div>
 
