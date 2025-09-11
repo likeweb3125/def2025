@@ -47,8 +47,8 @@ export const translations = {
       title: "행사개요",
       subtitle: "DEF 2025 행사 개요를 소개합니다.",
       aboutTitle: "DEF 2025",
-      aboutDesc:
-        "디지털 경제 포럼(Digital Economy Forum, DEF)은 디지털 전환 시대의 경제적 기회와 도전을 논의하는 글로벌 플랫폼입니다.",
+      aboutDesc: `<div><p class='font-bold text-[28px] max-[500px]:text-[18px]'><span class='font-bold text-[#4AC8F4]'>‘제8회 디지털 이코노미 포럼(DEF2025)’</span>이 10월 20일에 개최됩니다.</p></br>
+      반갑습니다!<br/>기획재정부가 주최하고 산업연구원(KIET)이 주관하는<br/>‘제8회 디지털 이코노미 포럼(DEF2025)’이 오는 10월 20일, 인천 인스파이어리조트에서 개최됩니다.</br></br>2018년 시작된 글로벌 포럼인 DEF는 오피니언 리더들이 지식과 경험을 공유하고 디지털 경제에 대한 인식을 확대하는 플랫폼 역할을 해왔습니다.</br>이는 DEF를 디지털 경제의 미래를 전망하는 주요 행사로 자리매김하게 했습니다.</br></br>최근 AI 기술의 급격한 진전은 이미 우리 삶을 다양한 방식으로 변화시키고 있습니다. <br/>AI가 우리가 일하고 살아가는 방식을 바꾸면서, 글로벌 경제를 지탱하는 산업 구조를 근본적으로 변화시키고 있습니다. </br>이러한 기술의 발전은 새로운 기회를 창출하는 동시에 앞으로 우리가 직면하게 될 도전 과제들을 제시하고 있습니다.</br></br>2025년 DEF는 APEC 회의의 부대 행사로 열리며, ‘인공지능(AI) 시대의 글로벌 협력과 디지털 경제의 미래’라는 주제로 진행됩니다. </br>이번 포럼은 AI 기술이 가져올 경제 및 사회적 변화와 디지털 전환의 진화에 대해 깊이 있는 탐구를 제공할 것입니다.</br>이를 위해 해외 저명 인사들의 기조연설과 국내외 전문가들이 참여하는 패널 토론이 이어질 예정입니다. </br>특히, 네이버·카카오 등 국내 AI 선도기업들의 AI 서비스 피칭을 통해 우리 삶에 적용된 AI 기술과 글로벌 협력 전략에 대한 인사이트를 공유할 것입니다.</br></br>이번 포럼이 여러분들에게 AI와 디지털 경제가 특히 우리 산업 전반에 미치는 영향에 대해</br>폭넓은 이해와 그 본질을 파악할 수 있는 의미 있는 시간이 될 수 있기를 바랍니다.</br></br><P class="text-[20px] max-[500px]:text-right"><span class="font-bold">권남훈</span> 산업연구원 원장</p></div>`,
       visionTitle: "비전",
       visionDesc:
         "디지털 경제의 지속가능한 발전을 위한 정책과 전략을 모색합니다.",
@@ -58,6 +58,22 @@ export const translations = {
       venueDesc: "서울 코엑스 컨벤션센터",
       participantsTitle: "참가대상",
       participantsDesc: "정부 관계자, 기업 임원, 학계 전문가, 연구원 등",
+      table: {
+        title: "행사명",
+        topic: "주제",
+        period: "일시",
+        venue: "장소",
+        hostedBy: "주최",
+        organizedBy: "주관",
+        titleContent: "제8회 디지털 이코노미 포럼",
+        topicContent: "미정",
+        periodContent: "2025년 10월 20일 월요일",
+        venueContent: "인스파이어 엔터테인먼트 리조트",
+        hostedByContent: "기획재정부",
+        organizedByContent: "kiet 산업연구원",
+        hostedByImage: "/images/moef_go_kr_transparent.png",
+        organizedByImage: "/images/kiet_re_kr_transparent.png",
+      },
     },
     pastEvents: {
       title: "지난행사",
@@ -185,11 +201,10 @@ export const translations = {
       mediaRoomDesc: "Check out event-related media materials.",
     },
     eventOverview: {
-      title: "Event Overview",
+      title: "Overview",
       subtitle: "Introducing the overview of DEF 2025.",
       aboutTitle: "DEF 2025",
-      aboutDesc:
-        "The Digital Economy Forum (DEF) is a global platform for discussing economic opportunities and challenges in the digital transformation era.",
+      aboutDesc: `<div><p class='font-bold text-[28px] max-[500px]:text-[18px]'><span class='font-bold text-[#4AC8F4]'>‘DEF2025’</span> : The Future of Digital Economy and Global Cooperation in the Age of AI.</p></br>Welcome!<br/>The 8th Digital Economy Forum (DEF2025), hosted by the Ministry of Strategy and Finance and organized by the Korea Institute for Industrial Economics and Trade (KIET), will be held on October 20, 2025, at Inspire Resort, Incheon.<br/><br/>Since its launch in 2018, the global Digital Economy Forum (DEF) has served as a platform for opinion leaders to share knowledge and experience and expand awareness of the digital economy. <br/>This has made DEF a major venue for forecasting the trajectory of the digital economy.<br/><br/>Artificial intelligence has already transformed our lives in myriad ways. As AI changes the way we work and live, <br/>it is also fundamentally altering the industrial structures that underpin global economies. <br/>These rapid advances in technology are creating new opportunities while also presenting the challenges we will face in the future.<br/><br/>The 8th Digital Economy Forum (DEF 2025) will be held as a host economy’s event of the 2025 APEC meetings under the theme of The Future of Digital Economy and Global Cooperation in the Age of AI. <br/>This year’s forum will provide an in-depth examination of the economic and social changes brought about by AI and the evolution of digital transformation.<br/>Renowned experts from both Korea and abroad will deliver keynote speeches and participate in panel discussions. <br/>In particular, leading Korean AI companies such as Naver and Kakao will present their AI services, offering insights into how AI is being applied to our daily lives and sharing strategies for global cooperation.<br/><br/>We invite you to join us at DEF2025 for a thought-provoking and informative event. <br/>DEF2025 is poised to offer all participants a deeper understanding of AI and the digital economy.</br></br><P class="text-[20px] max-[500px]:text-right"><span class="font-bold">Namhoon KWON</span> President, Korea Institute for Industrial Economics and Trade</p></div>`,
       visionTitle: "Vision",
       visionDesc:
         "Exploring policies and strategies for sustainable development of the digital economy.",
@@ -200,9 +215,26 @@ export const translations = {
       participantsTitle: "Target Participants",
       participantsDesc:
         "Government officials, corporate executives, academic experts, researchers, etc.",
+      table: {
+        title: "Title",
+        topic: "Topic",
+        period: "Period",
+        venue: "Venue",
+        hostedBy: "Hosted By",
+        organizedBy: "Organized by",
+        titleContent: "8th DIGITAL ECONOMY FORUM",
+        topicContent: "미정",
+        periodContent: "20th October 2025",
+        venueContent: "INSPIRE Entertainment Resort",
+        hostedByContent: "Ministry of Economy and Finance",
+        organizedByContent:
+          "Kiet - Korea Institute for Industrial Economics and Trade",
+        hostedByImage: "/images/moef_go_kr_en_transparent.png",
+        organizedByImage: "/images/kiet_re_kr_en_transparent.png",
+      },
     },
     pastEvents: {
-      title: "Past Events",
+      title: "Past Conference",
       subtitle: "Introducing DEF's past events.",
       watchVideo: "Watch Forum Video",
       contentPreparation:
@@ -250,7 +282,7 @@ export const translations = {
       def2022ForumDesc: `<p>DEF2022 focused the discussions on the changes by digital transformation and discussed policies and systems for the sustainable and competitive digital economy.</br></br>DEF2022 featured Jeniffer Zhu Scott, Forbes' Top 50 Women in Tech(2018) and Founding Partner of I.N. Capital, and Steven S. Hoffman, Founder of Founders Space and Author of "The Five Forces That Change Everything: How Technology Is Shaping Our Future," as keynote speakers. Digital Economy Representatives from around the world engaged in panel discussions on topics of Regulatory Innovation, Digital Platform Government, Digital Inclusion, and Startup Investment.</p>`,
     },
     location: {
-      title: "Directions",
+      title: "Location",
       subtitle: "Guide to event venue and transportation.",
       venue: "COEX Seoul",
       address: "513 Yeongdong-daero, Gangnam-gu, Seoul",
