@@ -355,7 +355,7 @@ export default function Header() {
                 </button>
               </SheetTrigger>
               <SheetContent
-                className="gap-0 w-full !max-w-full border-none bg-cover bg-center bg-no-repeat bg-[url('/images/heroes/hero-main-768.png')] max-[460px]:bg-[url('/images/heroes/hero-main-360.png')]"
+                className="font-montserrat gap-0 w-full !max-w-full border-none bg-cover bg-center bg-no-repeat bg-[url('/images/heroes/hero-main-768.png')] max-[460px]:bg-[url('/images/heroes/hero-main-360.png')]"
                 showCloseButton={false}
               >
                 <SheetHeader className="p-0">
