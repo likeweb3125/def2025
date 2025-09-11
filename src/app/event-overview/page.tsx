@@ -1,13 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { usePathname } from "next/navigation";
+import SubNavigationButton from "@/components/common/SubNavigationButton";
 
 export default function EventOverviewPage() {
   const { t } = useLanguage();
-  const pathname = usePathname();
 
   return (
     <div className="font-sans">
@@ -17,51 +15,30 @@ export default function EventOverviewPage() {
 
         {/* 콘텐츠 */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">
+          <h2 className="text-4xl font-bold text-white mb-10 text-center">
             행사 소개
           </h2>
 
           {/* 버튼 3개 */}
-          <div
-            className="flex justify-center mb-8 w-full flex rounded-[40px] border-2 border-[#4AC8F4] overflow-hidden"
-            style={{
-              backgroundColor: "rgba(0, 0, 0, 0.3)",
-              backdropFilter: "blur(10px)",
-            }}
-          >
-            {[
+          <SubNavigationButton
+            tabs={[
               {
+                id: "event-overview",
                 href: "/event-overview",
-                text: "행사 개요",
+                label: "행사 개요",
               },
               {
+                id: "past-events",
                 href: "/past-events",
-                text: "지난 행사",
+                label: "지난 행사",
               },
               {
+                id: "location",
                 href: "/location",
-                text: "오시는 길",
+                label: "오시는 길",
               },
-            ].map((item, index) => (
-              <Link
-                href={item.href}
-                key={index}
-                className="flex-1 text-center block py-4 hover:bg-white/10 max-[500px]:py-3"
-              >
-                <span
-                  className={`cursor-pointer font-medium transition-colors ${
-                    item.href === pathname ? "text-[#4AC8F4]" : "text-white"
-                  }`}
-                  // style={{
-                  //   backgroundColor:
-                  //     index === 0 ? "rgba(59, 130, 246, 0.1)" : "transparent",
-                  // }}
-                >
-                  {item.text}
-                </span>
-              </Link>
-            ))}
-          </div>
+            ]}
+          />
 
           {/* 버튼 아래 영역 */}
           <div className="w-full flex flex-col items-center justify-center min-h-[480px] max-[500px]:min-h-[360px]">
@@ -111,7 +88,7 @@ export default function EventOverviewPage() {
       <section className="px-10 min-h-full pt-[160px] pb-[147px] relative min-h-full h-auto flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_back.jpg')] max-[768px]:bg-[url('/images/event-overview_back-768.jpg')] max-[460px]:bg-[url('/images/event-overview_back-360.jpg')] max-[500px]:p-[100px_20px_120px]">
         <div className="absolute inset-0 bg-black/20"></div>
 
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
+        <h2 className="text-4xl font-bold text-white mb-10 text-center">
           행사개요
         </h2>
 

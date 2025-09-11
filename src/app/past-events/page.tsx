@@ -163,7 +163,7 @@ export default function PastEventsPage() {
               language === "ko" ? "max-w-[410px]" : "max-w-[600px]"
             }`}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 md:mb-12 text-center">
+            <h2 className="text-4xl font-bold text-white mb-10 text-center">
               {t.pastEvents.title}
             </h2>
 

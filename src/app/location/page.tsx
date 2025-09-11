@@ -18,7 +18,7 @@ export default function LocationPage() {
 
           {/* 콘텐츠 */}
           <div className="relative z-10 flex flex-col items-center justify-center h-full w-full max-w-[410px] px-5">
-            <h2 className="text-4xl font-bold text-white mb-12 text-center">
+            <h2 className="text-4xl font-bold text-white mb-10 text-center">
               {t.location.title}
             </h2>
 

@@ -150,7 +150,8 @@ export default function SpeakersPage() {
                     <div
                       className="text-gray-700 text-sm leading-relaxed mb-6 flex-grow transition-colors duration-300 group-hover:text-white"
                       dangerouslySetInnerHTML={{
-                        __html: item.sessionDesc.replace(/\n/g, "<br />"),
+                        // __html: item.sessionDesc.replace(/\n/g, "<br />"),
+                        __html: "",
                       }}
                     />
                   </div>

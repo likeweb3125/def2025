@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useLanguage } from '@/contexts/LanguageContext';
+import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function EventOverview() {
   const { t } = useLanguage();
@@ -22,133 +22,141 @@ export default function EventOverview() {
       </div>
 
       {/* 콘텐츠 */}
-      <div 
+      <div
         className="relative z-10 mx-auto"
         style={{
-          width: '900px',
-          height: '390px',
-          gap: '20px',
+          width: "900px",
+          height: "390px",
+          gap: "20px",
           opacity: 1,
-          borderTopLeftRadius: '20px',
-          borderBottomRightRadius: '20px',
-          borderWidth: '1px',
-          borderColor: 'rgba(255, 255, 255, 0.2)',
-          borderStyle: 'solid',
-          padding: '40px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center'
+          borderTopLeftRadius: "20px",
+          borderBottomRightRadius: "20px",
+          borderWidth: "1px",
+          borderColor: "rgba(255, 255, 255, 0.2)",
+          borderStyle: "solid",
+          padding: "40px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
         }}
       >
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
+        <h2 className="text-4xl font-bold text-white mb-10 text-center">
           행사개요
         </h2>
-        
+
         {/* 행사 정보 */}
         <ul className="space-y-4 mb-8">
           <li className="flex items-center">
-            <div 
+            <div
               className="text-center mr-8"
               style={{
-                width: '120px',
-                height: '46px',
-                paddingTop: '8px',
-                paddingBottom: '8px',
-                gap: '8px',
+                width: "120px",
+                height: "46px",
+                paddingTop: "8px",
+                paddingBottom: "8px",
+                gap: "8px",
                 opacity: 1,
-                borderRadius: '8px',
-                backgroundColor: '#FFFFFF33',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center'
+                borderRadius: "8px",
+                backgroundColor: "#FFFFFF33",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
               }}
             >
               <span className="text-white text-lg font-medium">행사명</span>
             </div>
-            <div className="text-white text-lg font-medium text-center flex-1">제8회 디지털 이코노미 포럼</div>
+            <div className="text-white text-lg font-medium text-center flex-1">
+              제8회 디지털 이코노미 포럼
+            </div>
           </li>
-          
+
           <li className="flex items-center">
-            <div 
+            <div
               className="text-center mr-8"
               style={{
-                width: '120px',
-                height: '46px',
-                paddingTop: '8px',
-                paddingBottom: '8px',
-                gap: '8px',
+                width: "120px",
+                height: "46px",
+                paddingTop: "8px",
+                paddingBottom: "8px",
+                gap: "8px",
                 opacity: 1,
-                borderRadius: '8px',
-                backgroundColor: '#FFFFFF33',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center'
+                borderRadius: "8px",
+                backgroundColor: "#FFFFFF33",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
               }}
             >
               <span className="text-white text-lg font-medium">주제</span>
             </div>
-            <div className="text-white text-lg font-medium text-center flex-1">미정</div>
+            <div className="text-white text-lg font-medium text-center flex-1">
+              미정
+            </div>
           </li>
-          
+
           <li className="flex items-center">
-            <div 
+            <div
               className="text-center mr-8"
               style={{
-                width: '120px',
-                height: '46px',
-                paddingTop: '8px',
-                paddingBottom: '8px',
-                gap: '8px',
+                width: "120px",
+                height: "46px",
+                paddingTop: "8px",
+                paddingBottom: "8px",
+                gap: "8px",
                 opacity: 1,
-                borderRadius: '8px',
-                backgroundColor: '#FFFFFF33',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center'
+                borderRadius: "8px",
+                backgroundColor: "#FFFFFF33",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
               }}
             >
               <span className="text-white text-lg font-medium">일시</span>
             </div>
-            <div className="text-white text-lg font-medium text-center flex-1">2025년 10월 20일 월요일</div>
+            <div className="text-white text-lg font-medium text-center flex-1">
+              2025년 10월 20일 월요일
+            </div>
           </li>
-          
+
           <li className="flex items-center">
-            <div 
+            <div
               className="text-center mr-8"
               style={{
-                width: '120px',
-                height: '46px',
-                paddingTop: '8px',
-                paddingBottom: '8px',
-                gap: '8px',
+                width: "120px",
+                height: "46px",
+                paddingTop: "8px",
+                paddingBottom: "8px",
+                gap: "8px",
                 opacity: 1,
-                borderRadius: '8px',
-                backgroundColor: '#FFFFFF33',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center'
+                borderRadius: "8px",
+                backgroundColor: "#FFFFFF33",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
               }}
             >
               <span className="text-white text-lg font-medium">장소</span>
             </div>
-            <div className="text-white text-lg font-medium text-center flex-1">인스파이어 엔터테인먼트 리조트</div>
+            <div className="text-white text-lg font-medium text-center flex-1">
+              인스파이어 엔터테인먼트 리조트
+            </div>
           </li>
-          
+
           <li className="flex items-center">
-            <div 
+            <div
               className="text-center mr-8"
               style={{
-                width: '120px',
-                height: '46px',
-                paddingTop: '8px',
-                paddingBottom: '8px',
-                gap: '8px',
+                width: "120px",
+                height: "46px",
+                paddingTop: "8px",
+                paddingBottom: "8px",
+                gap: "8px",
                 opacity: 1,
-                borderRadius: '8px',
-                backgroundColor: '#FFFFFF33',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center'
+                borderRadius: "8px",
+                backgroundColor: "#FFFFFF33",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
               }}
             >
               <span className="text-white text-lg font-medium">주최</span>
@@ -163,7 +171,6 @@ export default function EventOverview() {
               />
             </div>
           </li>
-          
         </ul>
       </div>
     </section>

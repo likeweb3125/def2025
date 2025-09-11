@@ -5,7 +5,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LanguageLoader from "@/components/LanguageLoader";
 import DynamicHtmlLang from "@/components/DynamicHtmlLang";
+import LoadingSpinner from "@/components/common/LoadingSpinner";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { LoadingProvider } from "@/contexts/LoadingContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,14 +35,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
       >
         <LanguageProvider>
-          <DynamicHtmlLang />
-          <LanguageLoader>
-            <Header />
-            <main className="min-h-screen bg-white">
-              {children}
-            </main>
-            <Footer />
-          </LanguageLoader>
+          <LoadingProvider>
+            <DynamicHtmlLang />
+            <LanguageLoader>
+              <Header />
+              <main className="min-h-screen bg-white">{children}</main>
+              <Footer />
+            </LanguageLoader>
+            <LoadingSpinner />
+          </LoadingProvider>
         </LanguageProvider>
       </body>
     </html>

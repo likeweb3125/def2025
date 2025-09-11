@@ -10,6 +10,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import LoadingLink from "@/components/LoadingLink";
 
 export default function Home() {
   const { t, language } = useLanguage();
@@ -96,7 +97,7 @@ export default function Home() {
               ].map((item, index) => {
                 const last = index === 3;
                 return (
-                  <Link
+                  <LoadingLink
                     key={index}
                     href={item.href}
                     target={last ? "_blank" : "_self"}
@@ -119,7 +120,7 @@ export default function Home() {
                         {item.text}
                       </div>
                     </div>
-                  </Link>
+                  </LoadingLink>
                 );
               })}
             </div>

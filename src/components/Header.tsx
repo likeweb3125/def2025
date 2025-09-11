@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import LoadingLink from "./LoadingLink";
 
 import LanguageIcon from "/public/images/icons/language.svg?component";
 import {
@@ -21,6 +23,9 @@ export default function Header() {
   const { t, language, setLanguage } = useLanguage();
   const pathname = usePathname();
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [hamburgerDropdown, setHamburgerDropdown] = useState<number | null>(
+    null
+  );
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
@@ -36,7 +41,18 @@ export default function Header() {
     setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
   };
 
-  const handleSheetLinkClick = (href: string) => {
+  const handleSheetLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    hasSubMenu: boolean,
+    index: number
+  ) => {
+    if (hasSubMenu) {
+      e.preventDefault();
+      setHamburgerDropdown((prev) =>
+        prev !== null && prev === index ? null : index
+      );
+      return;
+    }
     setIsSheetOpen(false);
   };
 
@@ -80,7 +96,7 @@ export default function Header() {
         <div className="relative min-w-[280px] max-[1000px]:min-w-[160px] max-[768px]:translate-x-10 max-[428px]:translate-x-5">
           <div className="flex items-center absolute top-0 left-0 inset-0 min-h-[160px] max-[1000px]:min-h-[100px] bg-[linear-gradient(123.75deg,#055DA5_2.12%,#02243F_100%)] overflow-hidden rounded-br-2xl rounded-bl-2xl flex justify-center items-center shadow-[8px_8px_24px_0px_#00000040]">
             <h1>
-              <Link
+              <LoadingLink
                 href="/"
                 style={{ backgroundImage: `url(/images/logos/logo.png)` }}
                 className="w-[132px] h-[64px] bg-cover bg-center block max-[1000px]:w-[100px] max-[1000px]:h-12"
@@ -88,7 +104,7 @@ export default function Header() {
                 <span className="sr-only">
                   DEF - Digital Economy Forum 2025
                 </span>
-              </Link>
+              </LoadingLink>
             </h1>
           </div>
         </div>
@@ -99,7 +115,7 @@ export default function Header() {
           <nav className="max-[768px]:hidden flex items-center w-full max-w-[800px] mx-auto py-2 max-[1280px]:max-w-[640px] max-[1280px]:ml-10 max-[1280px]:mr-auto max-[1140px]:mx-10 max-[1140px]:max-w-full max-[1000px]:mx-5">
             {/* 행사소개 */}
             <div className="relative flex-1 text-center">
-              <Link
+              <LoadingLink
                 href="/event-overview"
                 onMouseEnter={() => handleMouseEnter("eventIntro")}
                 onMouseLeave={handleMouseLeave}
@@ -110,7 +126,7 @@ export default function Header() {
                 }`}
               >
                 {t.nav.eventIntro}
-              </Link>
+              </LoadingLink>
               {activeDropdown === "eventIntro" && (
                 <div
                   className="absolute top-full left-0 right-0 pt-[30px] z-50"
@@ -118,31 +134,41 @@ export default function Header() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="py-[18px] bg-[#055DA5] rounded-md shadow-lg">
-                    <Link
-                      href="/event-overview"
-                      className="block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold whitespace-nowrap"
-                    >
-                      {t.nav.eventOverview}
-                    </Link>
-                    <Link
-                      href="/past-events"
-                      className="block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold whitespace-nowrap"
-                    >
-                      {t.nav.pastEvents}
-                    </Link>
-                    <Link
-                      href="/location"
-                      className="block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold whitespace-nowrap"
-                    >
-                      {t.nav.directions}
-                    </Link>
+                    {[
+                      {
+                        href: "/event-overview",
+                        text: t.nav.eventOverview,
+                      },
+                      {
+                        href: "/past-events",
+                        text: t.nav.pastEvents,
+                      },
+                      {
+                        href: "/location",
+                        text: t.nav.directions,
+                      },
+                    ].map((item, index) => {
+                      return (
+                        <LoadingLink
+                          key={index}
+                          href={item.href}
+                          className={`block px-4 py-[10px] text-white hover:bg-[#055DA5] text-[20px] hover:font-bold whitespace-nowrap ${
+                            pathname.startsWith(item.href)
+                              ? "text-white font-bold"
+                              : ""
+                          }`}
+                        >
+                          {item.text}
+                        </LoadingLink>
+                      );
+                    })}
                   </div>
                 </div>
               )}
             </div>
 
             {/* 프로그램 */}
-            <Link
+            <LoadingLink
               href="/program"
               className={`flex-1 py-4 text-center text-[20px] font-medium text-[#333333] hover:text-[#055DA5] hover:bg-[#F4F7F9] transition-all rounded-[8px] ${
                 pathname.startsWith("/program")
@@ -151,10 +177,10 @@ export default function Header() {
               }`}
             >
               {t.nav.program}
-            </Link>
+            </LoadingLink>
 
             {/* 연사 */}
-            <Link
+            <LoadingLink
               href="/speakers"
               className={`flex-1 py-4 text-center text-[20px] font-medium text-[#333333] hover:text-[#055DA5] hover:bg-[#F4F7F9] transition-all rounded-[8px] ${
                 pathname.startsWith("/speakers")
@@ -163,7 +189,7 @@ export default function Header() {
               }`}
             >
               {t.nav.speakers}
-            </Link>
+            </LoadingLink>
 
             {/* 참가등록 */}
             <Link
@@ -237,7 +263,25 @@ export default function Header() {
               )}
             </div>
 
-            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+            <Sheet
+              open={isSheetOpen}
+              onOpenChange={(open) => {
+                setIsSheetOpen(open);
+                if (open) {
+                  menuList.forEach((menu) => {
+                    if (menu.subList) {
+                      menu.subList.forEach((sub) => {
+                        if (pathname.startsWith(sub.href)) {
+                          setHamburgerDropdown(menuList.indexOf(menu));
+                        }
+                      });
+                    }
+                  });
+                } else {
+                  setHamburgerDropdown(null);
+                }
+              }}
+            >
               <SheetTrigger asChild className="max-[768px]:block hidden">
                 <button className="w-[46px] h-[46px] flex items-center justify-center cursor-pointer">
                   <span className="sr-only">메뉴</span>
@@ -259,14 +303,14 @@ export default function Header() {
 
                   <div className="px-10 py-[18px] flex items-center justify-between max-[360px]:px-5 max-[360px]:py-2">
                     <h2>
-                      <Link
+                      <LoadingLink
                         href="/"
                         className="bg-cover bg-center bg-no-repeat bg-[url('/images/logos/logo_white.png')] w-[74px] h-[36px] block"
                       >
                         <span className="sr-only">
                           DEF - Digital Economy Forum 2025
                         </span>
-                      </Link>
+                      </LoadingLink>
                     </h2>
 
                     <div className="flex items-center gap-3">
@@ -305,34 +349,66 @@ export default function Header() {
                 </SheetHeader>
 
                 <ul className="px-5 flex-1 pt-12 flex flex-col items-center gap-[60px] overflow-y-auto max-[360px]:gap-y-12">
-                  {menuList.map((menu) => {
+                  {menuList.map((menu, menuIndex) => {
                     return (
                       <li key={menu.title}>
-                        <Link
+                        <LoadingLink
                           href={menu.href}
-                          onClick={() => handleSheetLinkClick(menu.href)}
-                          className="text-[48px] text-white font-bold max-[360px]:text-[32px] max-[360px]:leading-[37px] text-center block hover:text-white/80 transition-colors"
+                          onClick={(e) =>
+                            handleSheetLinkClick(
+                              e,
+                              menu.subList ? true : false,
+                              menuIndex
+                            )
+                          }
+                          className={`text-[48px] font-bold max-[360px]:text-[32px] max-[360px]:leading-[37px] text-center block transition-colors ${
+                            menu.subList
+                              ? menu.subList.some((sub) =>
+                                  pathname.startsWith(sub.href)
+                                )
+                                ? "text-[#4AC8F4]"
+                                : "text-white"
+                              : pathname.startsWith(menu.href)
+                              ? "text-[#4AC8F4]"
+                              : "text-white"
+                          }`}
                         >
                           {menu.title}
-                        </Link>
+                        </LoadingLink>
                         {menu.subList && (
-                          <ul className="mt-7 flex flex-col items-center justify-center max-[360px]:mt-5">
-                            {menu.subList.map((sub) => {
+                          <motion.ul
+                            initial={{
+                              height:
+                                hamburgerDropdown === menuIndex ? "auto" : 0,
+                            }}
+                            animate={{
+                              height:
+                                hamburgerDropdown === menuIndex ? "auto" : 0,
+                            }}
+                            // exit={{ height: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="overflow-hidden mt-7 flex flex-col items-center justify-center max-[360px]:mt-5"
+                          >
+                            {menu.subList.map((sub, subIndex) => {
                               return (
                                 <li key={sub.title}>
-                                  <Link
+                                  <LoadingLink
                                     href={sub.href}
-                                    onClick={() =>
-                                      handleSheetLinkClick(sub.href)
+                                    onClick={(e) =>
+                                      handleSheetLinkClick(e, false, subIndex)
                                     }
-                                    className="text-[28px] text-white font-[500] py-3 block max-[360px]:text-[20px] max-[360px]:leading-[23px] max-[360px]:py-[10px] hover:text-white/80 transition-colors"
+                                    className={`text-[28px] font-[500] py-3 block max-[360px]:text-[20px] max-[360px]:leading-[23px] max-[360px]:py-[10px] transition-colors ${
+                                      pathname.startsWith(sub.href)
+                                        ? "text-[#4AC8F4]"
+                                        : "text-white"
+                                    }`}
                                   >
                                     {sub.title}
-                                  </Link>
+                                  </LoadingLink>
                                 </li>
                               );
                             })}
-                          </ul>
+                          </motion.ul>
                         )}
                       </li>
                     );

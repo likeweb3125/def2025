@@ -1,8 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import LoadingLink from "../LoadingLink";
 
 export default function SubNavigationButton({
   tabs,
@@ -25,7 +25,7 @@ export default function SubNavigationButton({
       }}
     >
       {tabs.map((item, index) => (
-        <Link
+        <LoadingLink
           href={item.href}
           key={index}
           className="flex-1 text-center block py-4 hover:bg-white/10 max-[500px]:py-3 px-5"
@@ -37,7 +37,7 @@ export default function SubNavigationButton({
           >
             {item.label}
           </span>
-        </Link>
+        </LoadingLink>
       ))}
     </div>
   );
