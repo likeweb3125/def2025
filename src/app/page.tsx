@@ -15,7 +15,7 @@ import LoadingLink from "@/components/LoadingLink";
 export default function Home() {
   const { t, language } = useLanguage();
   return (
-    <div className="font-sans">
+    <div className="">
       {/* 메인 컨텐츠 영역 */}
       <section className="px-10 max-[768px]:px-0">
         <div className="relative max-w-[1920px] max-[768px]:pt-[50px] rounded-[40px_0_40px_0] overflow-hidden mx-auto flex-col flex items-center justify-center max-[768px]:rounded-none">
@@ -31,9 +31,13 @@ export default function Home() {
           />
 
           {/* 컨텐츠 영역 */}
-          <div className="relative z-10 max-w-[1360px] w-full m-[120px_auto_40px] py-10 px-10 max-[500px]:px-5 text-center max-[768px]:mt-0">
+          <div className="font-montserrat relative z-10 max-w-[1360px] w-full m-[120px_auto_40px] py-10 px-10 max-[500px]:px-5 text-center max-[768px]:mt-0">
             {/* 1번째 텍스트 - 제8회 디지털 이코노미 포럼 */}
-            <div className="text-white text-[32px] mb-6 font-bold max-[460px]:text-[20px] max-[460px]:leading-[23px] max-[460px]:mb-4">
+            <div
+              className={`text-white text-[32px] mb-6 font-bold max-[460px]:text-[20px] max-[460px]:leading-[23px] max-[460px]:mb-4 tracking-[-2px] ${
+                language === "ko" ? "tracking-[2px]" : ""
+              }`}
+            >
               {language === "ko"
                 ? "제8회 디지털 이코노미 포럼"
                 : "8th Digital Economy Forum"}
@@ -162,7 +166,7 @@ export default function Home() {
 
           {/* 하단 영역 */}
           <div
-            className="mt-[62px] px-10 flex gap-24 max-[935px]:gap-6  max-[768px]:py-21  max-[500px]:py-[30px] flex-wrap items-center justify-center py-[100px] w-full max-[500px]:mt-7"
+            className="mt-[62px] px-10 flex gap-24 max-[935px]:gap-6 max-[768px]:py-21  max-[500px]:py-[30px] flex-wrap items-center justify-center py-[100px] w-full max-[500px]:mt-7"
             style={{
               borderTopLeftRadius: "20px",
               borderBottomRightRadius: "20px",
@@ -170,20 +174,41 @@ export default function Home() {
               boxShadow: "0px 0px 20px 0px #00000014",
             }}
           >
-            <Image
-              src="/images/moef_go_kr.png"
-              alt="기획재정부"
-              width={320}
-              height={115}
-              className="object-cover max-[500px]:!w-full max-[768px]:!w-[300px] max-[500px]:!w-[240px] max-w-[320px]"
-            />
-            <Image
-              src="/images/kiet_re_kr.png"
-              alt="산업연구원"
-              width={360}
-              height={56}
-              className="object-cover max-[500px]:!w-full max-[768px]:!w-[300px] max-[500px]:!w-[240px] max-w-[360px]"
-            />
+            {language === "ko" ? (
+              <>
+                <Image
+                  src="/images/moef_go_kr.png"
+                  alt="기획재정부"
+                  width={320}
+                  height={115}
+                  className="object-cover max-[500px]:!w-full max-[768px]:!w-[300px] max-[500px]:!w-[240px] max-w-[320px]"
+                />
+                <Image
+                  src="/images/kiet_re_kr.png"
+                  alt="산업연구원"
+                  width={360}
+                  height={56}
+                  className="object-cover max-[500px]:!w-full max-[768px]:!w-[300px] max-[500px]:!w-[240px] max-w-[360px]"
+                />
+              </>
+            ) : (
+              <>
+                <Image
+                  src="/images/moef_go_kr-en.png"
+                  alt="Ministry of Economy and Finance"
+                  width={480}
+                  height={120}
+                  className="object-cover max-[500px]:!w-full max-[768px]:!w-[300px] max-[500px]:!w-[240px]"
+                />
+                <Image
+                  src="/images/kiet_re_kr-en.png"
+                  alt="KIET - Kore Institute for Industrial Economics & Trade"
+                  width={480}
+                  height={120}
+                  className="object-cover max-[500px]:!w-full max-[768px]:!w-[300px] max-[500px]:!w-[240px]"
+                />
+              </>
+            )}
           </div>
         </div>
       </section>
