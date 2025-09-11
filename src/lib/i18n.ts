@@ -114,6 +114,12 @@ export const translations = {
       def2022ForumTitle: "역동적·혁신적 디지털 경제 실현 방안",
       def2022ForumDate: "2022. 9. 22. 온·오프라인 포럼",
       def2022ForumDesc: `<p>DDEF2022은 디지털 대전환의 변화를 살펴보고, 디지털 경제 사회의 지속가능성과 경쟁력 확보를 위한 정책과 제도를 논의하였습니다.</br></br>포브스 기술분야 가장 영향력 있는 여성50인에 선정된 I.N. Capital 창립 파트너 Jennifer Zhu Scott과 ‘‘The Five Forces That Change Everything: How Technology Is Shaping Our Future(파이브 포스: 인류의 미래를 바꿀 다섯 가지 핵심 기술)’의 저자이자 세계적인 스타트업 액셀러레이터 Founders Space의 창업자인 Steven S.Hoffman의 기조연설을 포함하여 Uber, 우아한형제들 등 국내외 산업계 전문가 및 영국, 에스토니아 등 다양한 해외 디지털 경제 연사들을 모시고, ‘규제혁신, 디지털 플랫폼 정부, 디지털 격차 해소, 스타트업 투자’를 주제로 심도있는 담론을 나누었습니다.</p>`,
+      def2023ForumTitle: "성장잠재력 확충을 위한 진정한 혁신",
+      def2023ForumDate: "2023. 09. 06. 온·오프라인 포럼",
+      def2023ForumDesc: ``,
+      def2024ForumTitle: "AI와 디지털 경제의 진화",
+      def2024ForumDate: "2024. 11. 06. 온·오프라인 포럼",
+      def2024ForumDesc: `<p>AI 기술의 발전과 디지털 전환에 대해 깊이 있게 전망해 보고, 이 기술이 창출하는 새로운 기회와 우리가 직면하게 될 도전 과제를 논의하였습니다.</br></br>해외의 AI 분야 유명 전문가 2인, 구글 클라우드 APJ AI Director인 Craig Stires와 싱가포르 국립대학교 교수인 Ben Leong의 기조연설과 함께 산학연, 그리고 정책담당자 등 국내 전문가 16인의 패널 토의가 이어질 것입니다. 기조연설에서는 두 가지 이슈, "AI의 기술적 진화와 미래", "AI 부상에 따른 사회경제적 영향과 해결해야 할 과제"에 대한 발표가 있었습니다. 그리고 패널 토의에서는 기술과 미래, 산업정책, 혁신과 규제, 일자리를 논의 이슈로 설정하고, 우리의 현실과 잠재력을 고려, ‘디지털 경제 선도 국가’로 나아가기 위한 과제와 정책 방안을 모색하였습니다.</p>`,
     },
     location: {
       title: "오시는길",
@@ -236,7 +242,7 @@ export const translations = {
     pastEvents: {
       title: "Past Conference",
       subtitle: "Introducing DEF's past events.",
-      watchVideo: "Watch Forum Video",
+      watchVideo: "FORUM VIDEO",
       contentPreparation:
         "The content is in <span class='font-bold text-[#055DA5]'>progress.</span>",
       contentPreparationDesc:
@@ -280,6 +286,13 @@ export const translations = {
       def2022ForumTitle: "Toward Dynamic and Innovative Digital Economy",
       def2022ForumDate: "September 22, 2022 Online & Offline Forum",
       def2022ForumDesc: `<p>DEF2022 focused the discussions on the changes by digital transformation and discussed policies and systems for the sustainable and competitive digital economy.</br></br>DEF2022 featured Jeniffer Zhu Scott, Forbes' Top 50 Women in Tech(2018) and Founding Partner of I.N. Capital, and Steven S. Hoffman, Founder of Founders Space and Author of "The Five Forces That Change Everything: How Technology Is Shaping Our Future," as keynote speakers. Digital Economy Representatives from around the world engaged in panel discussions on topics of Regulatory Innovation, Digital Platform Government, Digital Inclusion, and Startup Investment.</p>`,
+      def2023ForumTitle: "Genuine Innovations for Boosting Growth Potential",
+      def2023ForumDate: "September 6, 2023  온·오프라인 포럼",
+      def2023ForumDesc: ``,
+      def2024ForumTitle: "AI and the Evolution of the Digital Economy",
+      def2024ForumDate: "November 6, 2024  Online & Offline Forum",
+      def2024ForumDesc: `<p>The event featured in-depth discussions on the future of AI development and the digital transition, and on the various challenges and opportunities that accompany these two major phenomena.</br></br>The event’s two keynotes were delivered by Craig Stires, Regional Director of Artificial Intelligence for Google Cloud APJ, and Ben Leong, an Associate Professor of Computer Science at the National University of Singapore, both major figures in the field of AI. The speakers gave remarks on the technological evolution of AI as well as its socioeconomic implications. </br>DEF 2024 also featured lively panel discussions staffed by 16 experts from across industrial, academic, and policy circles. Dialogues focused on crucial topics such as technology and the future, industrial policies, innovation, regulation, and employment. </br>Forum participants also explored policy strategies designed to help South Korea become a leading digital economy by leveraging its potential and addressing current realities.</p>
+`,
     },
     location: {
       title: "Location",

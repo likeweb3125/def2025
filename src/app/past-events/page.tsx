@@ -14,13 +14,19 @@ export default function PastEventsPage() {
       year: "2024",
       thumb: "/images/past-events-thumb-2024.png",
       link: null,
-      isContent: false,
+      title: t.pastEvents.def2024ForumTitle,
+      date: t.pastEvents.def2024ForumDate,
+      content: t.pastEvents.def2024ForumDesc,
+      isContent: true,
     },
     {
       year: "2023",
       thumb: "/images/past-events-thumb-2023.png",
       link: null,
-      isContent: false,
+      title: t.pastEvents.def2023ForumTitle,
+      date: t.pastEvents.def2023ForumDate,
+      content: t.pastEvents.def2023ForumDesc,
+      isContent: true,
     },
     {
       year: "2022",
@@ -176,7 +182,7 @@ export default function PastEventsPage() {
             }`}
           >
             <h2 className="text-4xl font-bold text-white mb-10 text-center">
-              {t.pastEvents.title}
+              {language === "ko" ? t.pastEvents.title : "Conference"}
             </h2>
 
             {/* 네비게이션 버튼 */}
