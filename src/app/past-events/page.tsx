@@ -134,7 +134,7 @@ export default function PastEventsPage() {
           {/* 콘텐츠 */}
           <div
             className={`w-full  mx-auto relative z-10 flex flex-col items-center justify-center h-full px-4 ${
-              language === "ko" ? "max-w-[410px]" : "max-w-[600px]"
+              language === "ko" ? "max-w-[410px]" : "max-w-[530px]"
             }`}
           >
             <h2 className="text-4xl font-bold text-white mb-10 text-center">
@@ -143,6 +143,11 @@ export default function PastEventsPage() {
 
             {/* 네비게이션 버튼 */}
             <SubNavigationButton
+              className={`${
+                language === "ko"
+                  ? "max-[410px]:[&>a]:!px-[15px]"
+                  : "max-[530px]:[&>a]:!px-[15px]"
+              }`}
               tabs={[
                 {
                   id: "event-overview",

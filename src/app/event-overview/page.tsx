@@ -18,7 +18,7 @@ export default function EventOverviewPage() {
           className={`relative z-10 flex flex-col items-center justify-center h-full w-full max-w-[1360px] mx-auto`}
         >
           <div
-            className={`w-full flex flex-col items-center justify-center ${
+            className={`${
               language === "ko" ? "max-w-[410px]" : "max-w-[520px]"
             }`}
           >
@@ -28,7 +28,11 @@ export default function EventOverviewPage() {
 
             {/* 네비게이션 버튼 */}
             <SubNavigationButton
-              className="mb-20 max-[500px]:mb-12"
+              className={`mb-20 max-[500px]:mb-12 ${
+                language === "ko"
+                  ? "max-[410px]:[&>a]:!px-[15px]"
+                  : "max-[520px]:[&>a]:!px-[15px]"
+              }`}
               tabs={[
                 {
                   id: "event-overview",
