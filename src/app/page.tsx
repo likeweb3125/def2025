@@ -278,7 +278,11 @@ export default function Home() {
             />
 
             {/* 텍스트 */}
-            <h3 className="font-bold text-[48px] text-white text-left leading-[57px] whitespace-nowrap max-[360px]:text-[24px] max-[360px]:leading-[29px]">
+            <h3
+              className={`font-bold text-[48px] text-white text-left leading-[57px] whitespace-nowrap max-[360px]:text-[24px] max-[360px]:leading-[29px] whitespace-pre-line break-keep ${
+                language === "ko" ? "" : "max-w-[200px] max-[1390px]:max-w-full"
+              }`}
+            >
               {language === "ko" ? "미디어룸" : "Media Room"}
             </h3>
           </div>

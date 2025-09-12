@@ -11,16 +11,6 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { LoadingProvider } from "@/contexts/LoadingContext";
 import AOSInitializer from "@/components/common/AOSInitializer";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 export const metadata: Metadata = {
   title: "DEF 2025",
   description: "DEF 2025",
@@ -46,8 +36,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
-        className={`${pretendard.variable} ${montserrat.variable} !font-pretendard antialiased bg-white`}
+        className={`${pretendard.variable} ${montserrat.variable} antialiased bg-white`}
       >
         <LanguageProvider>
           <LoadingProvider>
