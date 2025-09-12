@@ -37,7 +37,7 @@ export const translations = {
       programDesc: "다양한 세션과 프로그램을 미리 살펴보세요.",
       speakers: "연사 소개",
       speakersDesc: "글로벌 전문가들의 인사이트를 만나보세요.",
-      registration: "등록",
+      registration: "참가 등록",
       registrationDesc: "지금 바로 참가 신청하세요.",
       hostedBy: "주최 및 주관",
       mediaRoom: "미디어룸",
