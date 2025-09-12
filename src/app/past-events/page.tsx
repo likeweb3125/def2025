@@ -60,7 +60,7 @@ export default function PastEventsPage() {
     {
       year: "2024",
       thumb: "/images/past-events-thumb-2024.png",
-      link: null,
+      link: "http://www.youtube.com/@DigitalEconomyForum-p5s",
       title: t.pastEvents.def2024ForumTitle,
       date: t.pastEvents.def2024ForumDate,
       content: t.pastEvents.def2024ForumDesc,
@@ -69,7 +69,7 @@ export default function PastEventsPage() {
     {
       year: "2023",
       thumb: "/images/past-events-thumb-2023.png",
-      link: null,
+      link: "https://www.youtube.com/@officialdef1336/videos",
       title: t.pastEvents.def2023ForumTitle,
       date: t.pastEvents.def2023ForumDate,
       content: t.pastEvents.def2023ForumDesc,
