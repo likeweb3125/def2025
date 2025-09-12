@@ -16,7 +16,7 @@ export default function Footer() {
           <MinistryLogo className="[&_img]:max-[500px]:w-[160px] [&_img]:max-[500px]:h-auto" />
 
           {/* 개인정보처리방침 */}
-          <div className="lg:ml-auto">
+          {/* <div className="lg:ml-auto">
             <Link
               href="#"
               className="text-white hover:underline hover:text-gray-300 transition-colors text-[18px] max-[500px]:text-[16px]"
@@ -28,7 +28,7 @@ export default function Footer() {
             >
               {t.footer.privacyPolicy}
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* 구분선 */}
