@@ -12,8 +12,9 @@ import { LoadingProvider } from "@/contexts/LoadingContext";
 import AOSInitializer from "@/components/common/AOSInitializer";
 
 export const metadata: Metadata = {
-  title: "DEF2025",
-  description: "Digital Economy Forum",
+  title: "DEF2025 - DIGITAL ECONOMY FORUM",
+  description:
+    "기획재정부가 주최하고, 산업연구원이 주관하는 '제8회 디지털 이코노미 포럼(DEF2025)'이 10월 20일에 개최됩니다.",
   icons: [
     {
       rel: "apple-touch-icon",
@@ -76,6 +77,17 @@ export const metadata: Metadata = {
     },
   ],
   manifest: "/favicon/manifest.json",
+  metadataBase: new URL("https://2025.def.or.kr/"),
+  openGraph: {
+    type: "website",
+    url: "https://2025.def.or.kr/",
+    title: "DEF2025 - DIGITAL ECONOMY FORUM",
+    description:
+      "기획재정부가 주최하고, 산업연구원이 주관하는 '제8회 디지털 이코노미 포럼(DEF2025)'이 10월 20일에 개최됩니다.",
+    siteName: "DEF2025 - DIGITAL ECONOMY FORUM",
+    locale: "ko_KR",
+    // images: "/images/def2025_og_image.png",
+  },
 };
 
 const pretendard = localFont({
