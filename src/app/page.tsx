@@ -94,25 +94,25 @@ export default function Home() {
               {[
                 {
                   icon: "/images/icons/icon_introduce.png",
-                  alt: "DEF 2025 소개",
+                  alt: t.home.introduce,
                   href: "/event-overview",
                   text: t.home.introduce,
                 },
                 {
                   icon: "/images/icons/icon_program.png",
-                  alt: "프로그램 소개",
+                  alt: t.home.program,
                   href: "/program",
                   text: t.home.program,
                 },
                 {
                   icon: "/images/icons/icon_speaker.png",
-                  alt: "연사 소개",
+                  alt: t.home.speakers,
                   href: "/speakers",
                   text: t.home.speakers,
                 },
                 {
                   icon: "/images/icons/icon_registration.png",
-                  alt: "등록",
+                  alt: t.home.registration,
                   href: "https://event-us.kr/disitaleconomyforum/event/111541 ",
                   text: t.home.registration,
                 },
