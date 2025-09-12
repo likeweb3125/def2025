@@ -28,6 +28,11 @@ export default function LocationPage() {
 
             {/* 네비게이션 버튼 */}
             <SubNavigationButton
+              className={`${
+                language === "ko"
+                  ? "max-[410px]:[&>a]:!px-[15px]"
+                  : "max-[515px]:[&>a]:!px-[15px]"
+              }`}
               tabs={[
                 {
                   id: "event-overview",

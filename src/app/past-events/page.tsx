@@ -1,111 +1,25 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SubNavigationButton from "@/components/common/SubNavigationButton";
-import ComingSoon from "@/components/common/ComingSoon";
 import { useEffect, useRef, useState } from "react";
 
-const EventSection = ({
-  id,
-  year,
-  thumb,
-  link,
-  item,
-}: {
-  id: string;
-  year: string;
-  bgColor?: string;
-  thumb: string;
-  link: string | null;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  item: any;
-}) => {
-  const { t } = useLanguage();
-  return (
-    <div
-      className="section pb-[100px] max-[500px]:pb-12 flex gap-[60px] max-[1280px]:gap-[30px] max-[1200px]:flex-col max-[1200px]:items-center max-[360px]:gap-6"
-      id={id}
-      style={{ scrollMarginTop: "160px" }}
-    >
-      {/* 중앙: 썸네일 이미지 */}
-      <div className="relative w-full max-w-[320px]">
-        <figure className="w-full h-auto lg:h-[460px] rounded-[20px_0px_20px_0px] overflow-hidden shadow-[12px_12px_24px_0px_#00000029]">
-          <Image
-            src={thumb}
-            alt={`DEF ${year} Digital Economy Forum`}
-            width={320}
-            height={460}
-            className="w-full lg:w-80 h-auto lg:h-[460px] object-cover"
-          />
-        </figure>
-        <div className="mt-4">
-          {link ? (
-            <Link
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full lg:w-80 h-[62px] px-6 py-4 bg-[#F4F7F9] border border-[#055DA5] text-[#055DA5] rounded-lg font-semibold text-[20px] hover:opacity-90 transition-opacity flex items-center justify-center flex items-center gap-2"
-            >
-              <Image
-                src="/images/icons/icon-play.png"
-                alt="Play"
-                width={20}
-                height={20}
-              />
-              <span>{t.pastEvents.watchVideo}</span>
-            </Link>
-          ) : (
-            <button className="w-full lg:w-80 h-[62px] px-6 py-4 bg-[#F4F7F9] border border-[#055DA5] text-[#055DA5] rounded-lg font-semibold text-[20px] flex items-center justify-center flex items-center gap-2 opacity-50 cursor-not-allowed">
-              <Image
-                src="/images/icons/icon-play.png"
-                alt="Play"
-                width={20}
-                height={20}
-              />
-              <span>{t.pastEvents.watchVideo}</span>
-            </button>
-          )}
-        </div>
-      </div>
-
-      {/* 오른쪽: 콘텐츠/준비중 영역 */}
-      <div className="w-full flex-1">
-        {item.isContent ? (
-          <div className="bg-[canvas] h-full flex flex-col">
-            <p className="text-transparent bg-clip-text py-4 bg-[linear-gradient(123.75deg,#055DA5_2.12%,#02243F_100%)] max-[360px]:pt-0">
-              <span className="font-bold text-[28px] break-keep max-[360px]:text-[20px]">
-                {item.title}
-              </span>
-            </p>
-
-            <p className="text-black mb-2 text-[20px] font-[500] break-keep max-[360px]:text-[18px]">
-              {item.date}
-            </p>
-
-            <div
-              className="text-[18px] text-[#666666] break-keep max-[360px]:text-[16px]"
-              dangerouslySetInnerHTML={{
-                __html: item.content.replace(/\n/g, "<br />"),
-              }}
-            />
-          </div>
-        ) : (
-          <ComingSoon />
-        )}
-      </div>
-    </div>
-  );
-};
+import { useDraggable } from "react-use-draggable-scroll";
+import { ForumListType } from "@/types/forum";
+import ForumYearList from "@/components/past-events/ForumYear";
+import ForumSection from "@/components/past-events/ForumSection";
 
 export default function PastEventsPage() {
   const container = useRef<HTMLDivElement | null>(null);
+  const ref = useRef<HTMLDivElement>(
+    null
+  ) as React.MutableRefObject<HTMLInputElement>;
   const [activeSectionIndex, setActiveSectionIndex] = useState(0);
+  const { events } = useDraggable(ref);
   const { t, language } = useLanguage();
 
   useEffect(() => {
@@ -142,11 +56,11 @@ export default function PastEventsPage() {
     { scope: container }
   );
 
-  const FORUM_LIST = [
+  const FORUM_LIST: ForumListType[] = [
     {
       year: "2024",
       thumb: "/images/past-events-thumb-2024.png",
-      link: null,
+      link: "http://www.youtube.com/@DigitalEconomyForum-p5s",
       title: t.pastEvents.def2024ForumTitle,
       date: t.pastEvents.def2024ForumDate,
       content: t.pastEvents.def2024ForumDesc,
@@ -155,7 +69,7 @@ export default function PastEventsPage() {
     {
       year: "2023",
       thumb: "/images/past-events-thumb-2023.png",
-      link: null,
+      link: "https://www.youtube.com/@officialdef1336/videos",
       title: t.pastEvents.def2023ForumTitle,
       date: t.pastEvents.def2023ForumDate,
       content: t.pastEvents.def2023ForumDesc,
@@ -220,7 +134,7 @@ export default function PastEventsPage() {
           {/* 콘텐츠 */}
           <div
             className={`w-full  mx-auto relative z-10 flex flex-col items-center justify-center h-full px-4 ${
-              language === "ko" ? "max-w-[410px]" : "max-w-[600px]"
+              language === "ko" ? "max-w-[410px]" : "max-w-[530px]"
             }`}
           >
             <h2 className="text-4xl font-bold text-white mb-10 text-center">
@@ -229,6 +143,11 @@ export default function PastEventsPage() {
 
             {/* 네비게이션 버튼 */}
             <SubNavigationButton
+              className={`${
+                language === "ko"
+                  ? "max-[410px]:[&>a]:!px-[15px]"
+                  : "max-[530px]:[&>a]:!px-[15px]"
+              }`}
               tabs={[
                 {
                   id: "event-overview",
@@ -254,8 +173,8 @@ export default function PastEventsPage() {
       {/* 각 연도별 섹션 */}
       <div className="px-10 grid grid-cols-[310px_1fr] gap-[90px] w-full max-w-[1360px] mx-auto py-[120px] max-[1280px]:gap-[50px] max-[1280px]:grid-cols-[260px_1fr] max-[950px]:grid-cols-[220px_1fr] max-[768px]:px-0 max-[768px]:pt-0 max-[768px]:grid-cols-1">
         <div className="flex flex-col max-[768px]:sticky max-[768px]:top-[78px] max-[768px]:bg-[#F4F7F9] max-[768px]:z-[2] max-[500px]:top-[61px]">
-          <div className="sticky top-[160px] max-[1280px]:top-[170px] max-[768px]:relative max-[768px]:!top-0">
-            <div className="flex flex-col gap-y-2 max-[768px]:flex-row max-[768px]:gap-x-6 max-[768px]:overflow-x-auto max-[768px]:px-10 max-[768px]:py-10 max-[500px]:py-6 max-[500px]:px-5">
+          <div className="max-[768px]:hidden sticky top-[160px] max-[1280px]:top-[170px] max-[768px]:relative max-[768px]:!top-0">
+            <div className="flex flex-col gap-y-2 max-[768px]:flex-row max-[768px]:gap-x-6 max-[768px]:px-10 max-[768px]:py-10 max-[768px]:overflow-x-auto max-[500px]:py-6 max-[500px]:px-5">
               <style>
                 {`
                   .outline-text {
@@ -268,37 +187,25 @@ export default function PastEventsPage() {
                   }
                 `}
               </style>
+
               {FORUM_LIST.map((item, index) => {
                 const isActive = index === activeSectionIndex;
                 return (
-                  <Link
-                    href={`#${item.year}`}
-                    key={index}
-                    className={`grid grid-cols-[130px_1fr] gap-4 max-[1280px]:grid-cols-[100px_1fr] max-[950px]:grid-cols-[80px_1fr] max-[500px]:grid-cols-[40px_1fr] max-[500px]:gap-2 items-center ${
-                      isActive
-                        ? "text-[#055DA5] leading-[76px] text-[62px] max-[1280px]:text-[50px] max-[1280px]:leading-[40px] max-[950px]:text-[40px] max-[950px]:leading-[40px] max-[500px]:text-[20px] max-[500px]:leading-[20px]"
-                        : "text-[#000000] leading-[49px] text-[40px] max-[1280px]:text-[30px] max-[1280px]:leading-[30px] max-[950px]:text-[28px] max-[950px]:leading-[28px] max-[768px]:grid-cols-1 max-[768px]:inline-flex max-[500px]:text-[18px] max-[500px]:leading-[18px]"
-                    }`}
-                  >
-                    <p
-                      className={`text-transparent bg-clip-text bg-[linear-gradient(123.75deg,#055DA5_2.12%,#02243F_100%)] ${
-                        isActive ? "" : "max-[768px]:hidden"
-                      }`}
-                    >
-                      <span className="font-bold">{isActive ? "DEF" : ""}</span>
-                    </p>
-                    <p className="text-right bg-[canvas] max-[768px]:bg-transparent">
-                      <span
-                        className={`font-bold ${
-                          isActive
-                            ? "text-[#333333]"
-                            : "outline-text  max-[768px]:!text-[#F4F7F9]"
-                        }`}
-                      >
-                        {item.year}
-                      </span>
-                    </p>
-                  </Link>
+                  <ForumYearList key={index} item={item} isActive={isActive} />
+                );
+              })}
+            </div>
+          </div>
+          <div className="hidden max-[768px]:block">
+            <div
+              className="flex max-w-full space-x-3 overflow-x-scroll scrollbar-hide py-10 px-5 max-[500px]:px-5 max-[500px]:py-6"
+              {...events}
+              ref={ref}
+            >
+              {FORUM_LIST.map((item, index) => {
+                const isActive = index === activeSectionIndex;
+                return (
+                  <ForumYearList key={index} item={item} isActive={isActive} />
                 );
               })}
             </div>
@@ -307,14 +214,12 @@ export default function PastEventsPage() {
 
         <div className="max-[1080px]:px-10 max-[500px]:px-5 max-[950px]:px-5">
           {FORUM_LIST.map((item, index) => {
-            const isActive = index === 0;
             return (
-              <EventSection
+              <ForumSection
                 id={item.year}
                 key={index}
                 item={item}
                 year={item.year}
-                bgColor={isActive ? "bg-gray-50" : "bg-[canvas]"}
                 thumb={item.thumb}
                 link={item.link}
               />

@@ -15,10 +15,10 @@ export default function EventOverviewPage() {
 
         {/* 콘텐츠 */}
         <div
-          className={`relative z-10 flex flex-col items-center justify-center h-full w-full`}
+          className={`relative z-10 flex flex-col items-center justify-center h-full w-full max-w-[1360px] mx-auto`}
         >
           <div
-            className={`w-full flex flex-col items-center justify-center ${
+            className={`${
               language === "ko" ? "max-w-[410px]" : "max-w-[520px]"
             }`}
           >
@@ -28,7 +28,11 @@ export default function EventOverviewPage() {
 
             {/* 네비게이션 버튼 */}
             <SubNavigationButton
-              className="mb-20 max-[500px]:mb-12"
+              className={`mb-20 max-[500px]:mb-12 ${
+                language === "ko"
+                  ? "max-[410px]:[&>a]:!px-[15px]"
+                  : "max-[520px]:[&>a]:!px-[15px]"
+              }`}
               tabs={[
                 {
                   id: "event-overview",
@@ -52,7 +56,7 @@ export default function EventOverviewPage() {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="relative pt-8"
+            className="relative pt-6"
           >
             <Image
               src="/images/icons/double_quotes_blue.png"
