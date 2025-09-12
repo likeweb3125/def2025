@@ -113,7 +113,7 @@ export default function Home() {
                 {
                   icon: "/images/icons/icon_registration.png",
                   alt: "등록",
-                  href: "https://naver.com",
+                  href: "https://event-us.kr/disitaleconomyforum/event/111541 ",
                   text: t.home.registration,
                 },
               ].map((item, index) => {
@@ -130,11 +130,10 @@ export default function Home() {
                   >
                     <LoadingLink
                       href={item.href}
-                      target={last ? "_blank" : "_self"}
-                      className="h-full"
+                      // target={last ? "_blank" : "_self"}
+                      className="h-full h-full relative"
                     >
                       <div className="h-full text-white flex flex-col items-center justify-center">
-                        {/* <div className="absolute inset-0 bg-black/20"></div> */}
                         <div className="flex items-center justify-center relative z-10 mb-4">
                           <Image
                             src={item.icon}
