@@ -28,7 +28,7 @@ export default function SubNavigationButton({
         <LoadingLink
           href={item.href}
           key={index}
-          className="flex-1 text-center block py-4 hover:bg-white/10 max-[500px]:py-3 px-5"
+          className={`text-center block py-4 hover:bg-white/10 max-[500px]:py-3 px-5 h-full flex items-center justify-center ${"px-[30px]"}`}
         >
           <span
             className={`cursor-pointer font-medium transition-colors ${

@@ -38,3 +38,59 @@ body {
   font-family: var(--font-pretendard), -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+.asymmetry-rounded-shadow-box {
+  position: relative;
+  background: #00000033;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.asymmetry-rounded-shadow-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0px;
+  padding: 1.5px;
+  background: linear-gradient(110.74deg, #000000 0%, #333333 50%, #000000 100%);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  transition: all 0.3s ease;
+}
+.asymmetry-rounded-shadow-box:hover::before {
+  background: linear-gradient(
+    110.74deg,
+    #00e2f7 0%,
+    rgba(0, 226, 247, 0) 50%,
+    #00e2f7 100%
+  );
+  border-radius: 20px 0px 20px 0px;
+}
+
+.asymmetry-rounded-shadow-box:hover {
+  border-radius: 20px 0px 20px 0px;
+  overflow: hidden;
+  box-shadow: 0px 0px 40px 0px #00e2f766;
+}
+
+.asymmetry-rounded-box {
+  position: relative;
+  background: #00000033;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  border-radius: 20px 0px 20px 0px;
+}
+.asymmetry-rounded-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px 0px 20px 0px;
+  padding: 1.5px;
+  background: linear-gradient(
+    110.74deg,
+    #00e2f7 0%,
+    rgba(0, 226, 247, 0) 50%,
+    #00e2f7 100%
+  );
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}

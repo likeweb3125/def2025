@@ -103,13 +103,13 @@ export default function Header() {
     <header className="relative z-50 bg-white sticky top-0">
       <div className="flex max-w-[1920px] mx-auto px-[100px] max-[1280px]:pl-0 max-[1280px]:pr-9 max-[428px]:pr-4">
         {/* 왼쪽 로고 블록 */}
-        <div className="relative min-w-[280px] max-[1000px]:min-w-[160px] max-[768px]:translate-x-10 max-[428px]:translate-x-5">
-          <div className="flex items-center absolute top-0 left-0 inset-0 min-h-[160px] max-[1000px]:min-h-[100px] bg-[linear-gradient(123.75deg,#055DA5_2.12%,#02243F_100%)] overflow-hidden rounded-br-2xl rounded-bl-2xl flex justify-center items-center shadow-[8px_8px_24px_0px_#00000040]">
+        <div className="relative min-w-[280px] max-[1000px]:min-w-[160px] max-[768px]:translate-x-10 max-[500px]:translate-x-5 max-[500px]:min-w-[120px]">
+          <div className="flex items-center absolute top-0 left-0 inset-0 min-h-[160px] max-[1000px]:min-h-[100px] bg-[linear-gradient(123.75deg,#055DA5_2.12%,#02243F_100%)] overflow-hidden rounded-br-2xl rounded-bl-2xl flex justify-center items-center shadow-[8px_8px_24px_0px_#00000040] max-[500px]:min-h-[72px]">
             <h1>
               <LoadingLink
                 href="/"
                 style={{ backgroundImage: `url(/images/logos/logo.png)` }}
-                className="w-[132px] h-[64px] bg-cover bg-center block max-[1000px]:w-[100px] max-[1000px]:h-12"
+                className="w-[132px] h-[64px] bg-cover bg-center block max-[1000px]:w-[100px] max-[1000px]:h-12 max-[500px]:w-[74px] max-[500px]:h-9"
               >
                 <span className="sr-only">
                   DEF - Digital Economy Forum 2025
@@ -120,7 +120,7 @@ export default function Header() {
         </div>
 
         {/* 오른쪽 네비게이션 바 */}
-        <div className="flex-1 flex items-center justify-between max-[768px]:py-4">
+        <div className="flex-1 flex items-center justify-between max-[768px]:py-4 max-[500px]:py-2">
           {/* 메인 네비게이션 */}
           <nav className="max-[768px]:hidden flex items-center w-full max-w-[800px] mx-auto py-2 max-[1280px]:max-w-[640px] max-[1280px]:ml-10 max-[1280px]:mr-auto max-[1140px]:mx-10 max-[1140px]:max-w-full max-[1000px]:mx-5">
             {/* 행사소개 */}
@@ -266,7 +266,7 @@ export default function Header() {
           <div className="max-[768px]:ml-auto flex items-center gap-4">
             {/* 언어 선택 */}
             <div
-              className={`relative border rounded-[30px] max-[428px]:hidden ${
+              className={`relative border rounded-[30px] max-[428px]:opacity-0 max-[428px]:pointer-events-none ${
                 isLanguageDropdownOpen
                   ? "border-[#055DA5] "
                   : "border-transparent"
@@ -344,7 +344,7 @@ export default function Header() {
               }}
             >
               <SheetTrigger asChild className="max-[768px]:block hidden">
-                <button className="w-[46px] h-[46px] flex items-center justify-center cursor-pointer">
+                <button className="w-[46px] h-[46px] flex items-center justify-center cursor-pointer max-[500px]:w-10 max-[500px]:h-10">
                   <span className="sr-only">메뉴</span>
                   <Image
                     src="/images/icons/menu.png"
@@ -355,7 +355,7 @@ export default function Header() {
                 </button>
               </SheetTrigger>
               <SheetContent
-                className="gap-0 w-full !max-w-full border-none bg-cover bg-center bg-no-repeat bg-[url('/images/heroes/hero-main-768.png')] max-[460px]:bg-[url('/images/heroes/hero-main-360.png')]"
+                className="font-montserrat gap-0 w-full !max-w-full border-none bg-cover bg-center bg-no-repeat bg-[url('/images/heroes/hero-main-768.png')] max-[460px]:bg-[url('/images/heroes/hero-main-360.png')]"
                 showCloseButton={false}
               >
                 <SheetHeader className="p-0">

@@ -6,7 +6,7 @@ import Link from "next/link";
 import SubNavigationButton from "@/components/common/SubNavigationButton";
 
 export default function LocationPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <div className="font-sans">
@@ -17,9 +17,13 @@ export default function LocationPage() {
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/images/past-events_kv.jpg')] before:content-[''] before:absolute before:inset-0 before:bg-black/40 z-[1]"></div>
 
           {/* 콘텐츠 */}
-          <div className="relative z-10 flex flex-col items-center justify-center h-full w-full max-w-[410px] px-5">
+          <div
+            className={`relative z-10 flex flex-col items-center justify-center h-full w-full px-5 ${
+              language === "ko" ? "max-w-[410px]" : "max-w-[515px]"
+            }`}
+          >
             <h2 className="text-4xl font-bold text-white mb-10 text-center">
-              {t.location.title}
+              {language === "ko" ? t.location.title : "Conference"}
             </h2>
 
             {/* 네비게이션 버튼 */}
@@ -51,14 +55,21 @@ export default function LocationPage() {
         {/* 위치 정보 - 우측 컨텐츠가 잘 보이도록 z-index 높게 설정 */}
         <div className="absolute right-[100px] top-0 bg-[canvas] z-20 w-[500px] min-h-[380px] px-10 py-12 rounded-[40px_0px_40px_0px] overflow-hidden shadow-[0px_0px_24px_0px_#00000014] max-[950px]:right-[40px] max-[950px]:w-[430px] max-[950px]:p-8 max-[768px]:relative max-[768px]:right-0 max-[768px]:top-0 max-[768px]:w-full max-[768px]:min-h-auto max-[768px]:p-10 max-[768px]:shadow-none max-[500px]:px-5">
           <h3 className="text-[40px] text-[#055DA5] mb-2 flex flex-col [&>span]:leading-[60px] font-bold max-[360px]:text-[36px] max-[360px]:[&>span]:leading-[54px] z-[2] [&>span]:break-keep">
-            <span>인스파이어</span>
-            <span>엔터테인먼트 리조트</span>
+            <span>{language === "ko" ? "인스파이어" : "INSPIRE"} </span>
+            <span>
+              {language === "ko"
+                ? "엔터테인먼트 리조트"
+                : "Entertainment Resort"}
+            </span>
           </h3>
 
           {/* 주소 */}
-          <p className="text-gray-700 text-lg md:text-xl lg:text-2xl leading-relaxed z-[2] relative">
-            인천광역시 중구 공항문화로 127
-          </p>
+          <p
+            className="text-gray-700 text-lg md:text-xl lg:text-2xl leading-relaxed z-[2] relative"
+            dangerouslySetInnerHTML={{
+              __html: t.location.eventAddress.replace(/\n/g, "<br />"),
+            }}
+          />
 
           {/* DEF 로고 - 우측 하단에 오버레이, 낮은 z-index로 뒤쪽 배치 */}
           <figure className="absolute bottom-0 right-0 z-10 opacity-80 max-[768px]:right-10 max-[500px]:right-5 z-[1]">
