@@ -15,7 +15,7 @@ export default function EventOverviewPage() {
 
         {/* 콘텐츠 */}
         <div
-          className={`relative z-10 flex flex-col items-center justify-center h-full w-full`}
+          className={`relative z-10 flex flex-col items-center justify-center h-full w-full max-w-[1360px] mx-auto`}
         >
           <div
             className={`w-full flex flex-col items-center justify-center ${
@@ -52,7 +52,7 @@ export default function EventOverviewPage() {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="relative pt-8"
+            className="relative pt-6"
           >
             <Image
               src="/images/icons/double_quotes_blue.png"
