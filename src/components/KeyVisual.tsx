@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Image from 'next/image';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useState } from "react";
+import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function KeyVisual() {
   const { t } = useLanguage();
-  const [activeTab, setActiveTab] = useState('overview');
+  const [activeTab, setActiveTab] = useState("overview");
 
   const tabs = [
-    { id: 'overview', label: t.nav.eventOverview },
-    { id: 'past', label: t.nav.pastEvents },
-    { id: 'directions', label: t.nav.directions }
+    { id: "overview", label: t.nav.eventOverview },
+    { id: "past", label: t.nav.pastEvents },
+    { id: "directions", label: t.nav.directions },
   ];
 
   return (
@@ -46,8 +46,8 @@ export default function KeyVisual() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     activeTab === tab.id
-                      ? 'bg-cyan-200 text-blue-700'
-                      : 'text-white hover:text-cyan-200'
+                      ? "bg-cyan-200 text-blue-700"
+                      : "text-white hover:text-cyan-200"
                   }`}
                 >
                   {tab.label}
@@ -61,9 +61,9 @@ export default function KeyVisual() {
         <div className="max-w-4xl mx-auto">
           {/* DEF 2025 로고 */}
           <div className="flex justify-center mb-20 mt-20">
-            <img 
-              src="/images/logos/logo.png" 
-              alt="DEF 2025 Logo" 
+            <Image
+              src="/images/logos/logo.png"
+              alt="DEF 2025 Logo"
               width="124"
               height="60"
               className="w-[124px] h-[60px]"
@@ -72,24 +72,24 @@ export default function KeyVisual() {
 
           {/* 콘텐츠 준비중 메시지 */}
           <div>
-            <h2 
+            <h2
               className="text-white mb-6 text-center"
               style={{
                 fontWeight: 700,
-                fontSize: '24px',
-                lineHeight: '150%',
-                letterSpacing: '0%'
+                fontSize: "24px",
+                lineHeight: "150%",
+                letterSpacing: "0%",
               }}
             >
               콘텐츠 준비중입니다.
             </h2>
-            <div 
+            <div
               className="text-white text-center space-y-2"
               style={{
                 fontWeight: 400,
-                fontSize: '18px',
-                lineHeight: '150%',
-                letterSpacing: '0%'
+                fontSize: "18px",
+                lineHeight: "150%",
+                letterSpacing: "0%",
               }}
             >
               <p>보다 나은 서비스를 제공하기 위해 콘텐츠 준비중에 있습니다.</p>

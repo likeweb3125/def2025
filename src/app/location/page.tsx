@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
-import Link from "next/link";
 import SubNavigationButton from "@/components/common/SubNavigationButton";
 
 export default function LocationPage() {

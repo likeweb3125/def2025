@@ -117,7 +117,6 @@ export default function Home() {
                   text: t.home.registration,
                 },
               ].map((item, index) => {
-                const last = index === 3;
                 const isEven = index % 2 === 0;
                 return (
                   <motion.div
