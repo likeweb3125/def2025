@@ -86,16 +86,16 @@ export default function Header() {
     {
       title: t.nav.registration,
       href: "https://event-us.kr/disitaleconomyforum/event/111541",
-      subList: [
-        {
-          title: t.nav.register,
-          href: "https://event-us.kr/disitaleconomyforum/event/111541",
-        },
-        {
-          title: t.nav.registrationConfirmation,
-          href: "https://event-us.kr/disitaleconomyforum/event/111541",
-        },
-      ],
+      // subList: [
+      //   {
+      //     title: t.nav.register,
+      //     href: "https://event-us.kr/disitaleconomyforum/event/111541",
+      //   },
+      //   {
+      //     title: t.nav.registrationConfirmation,
+      //     href: "https://event-us.kr/disitaleconomyforum/event/111541",
+      //   },
+      // ],
     },
   ];
 
@@ -222,7 +222,7 @@ export default function Header() {
               >
                 {t.nav.registration}
               </LoadingLink>
-              {activeDropdown === "registration" && (
+              {/* {activeDropdown === "registration" && (
                 <div
                   className="absolute top-full left-1/2 -translate-x-1/2 min-w-[200px] pt-[30px] z-50"
                   onMouseEnter={() => handleMouseEnter("registration")}
@@ -259,7 +259,7 @@ export default function Header() {
                     })}
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           </nav>
 
@@ -409,7 +409,7 @@ export default function Header() {
                   </div>
                 </SheetHeader>
 
-                <ul className="px-5 flex-1 pt-12 flex flex-col items-center gap-[60px] overflow-y-auto max-[360px]:gap-y-12">
+                <ul className="px-5 flex-1 pt-8 flex flex-col items-center gap-[40px] overflow-y-auto">
                   {menuList.map((menu, menuIndex) => {
                     return (
                       <li key={menu.title}>
