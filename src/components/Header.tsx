@@ -449,13 +449,10 @@ export default function Header() {
                               className="overflow-hidden flex flex-col items-center justify-center"
                             >
                               {menu.subList.map((sub, subIndex) => {
-                                const last = menuIndex === menuList.length - 1;
                                 return (
                                   <li key={sub.title}>
                                     <LoadingLink
                                       href={sub.href}
-                                      target={last ? "_blank" : "_self"}
-                                      rel={last ? "noopener noreferrer" : ""}
                                       onClick={(e) =>
                                         handleSheetLinkClick(e, false, subIndex)
                                       }
@@ -466,14 +463,6 @@ export default function Header() {
                                       }`}
                                     >
                                       <span>{sub.title}</span>
-                                      {last && (
-                                        <Image
-                                          src="/images/icons/open_in_new.png"
-                                          alt="open in new"
-                                          width={20}
-                                          height={20}
-                                        />
-                                      )}
                                     </LoadingLink>
                                   </li>
                                 );
@@ -484,6 +473,16 @@ export default function Header() {
                           <>
                             <LoadingLink
                               href={menu.href}
+                              target={
+                                menu.href.startsWith("http")
+                                  ? "_blank"
+                                  : "_self"
+                              }
+                              rel={
+                                menu.href.startsWith("http")
+                                  ? "noopener noreferrer"
+                                  : ""
+                              }
                               onClick={(e) =>
                                 handleSheetLinkClick(
                                   e,
