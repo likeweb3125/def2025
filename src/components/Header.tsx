@@ -202,16 +202,16 @@ export default function Header() {
             </LoadingLink>
 
             {/* 참가등록 */}
-            {/* <Link
+            <Link
               href="https://event-us.kr/disitaleconomyforum/event/111541"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 py-4 text-center text-[20px] font-medium text-[#333333] hover:text-[#055DA5] hover:bg-[#F4F7F9] transition-all rounded-[8px]"
             >
               {t.nav.registration}
-            </Link> */}
+            </Link>
 
-            <div className="relative flex-1 text-center">
+            {/* <div className="relative flex-1 text-center">
               <LoadingLink
                 href="https://event-us.kr/disitaleconomyforum/event/111541"
                 target="_blank"
@@ -222,7 +222,7 @@ export default function Header() {
               >
                 {t.nav.registration}
               </LoadingLink>
-              {/* {activeDropdown === "registration" && (
+              {activeDropdown === "registration" && (
                 <div
                   className="absolute top-full left-1/2 -translate-x-1/2 min-w-[200px] pt-[30px] z-50"
                   onMouseEnter={() => handleMouseEnter("registration")}
@@ -259,8 +259,8 @@ export default function Header() {
                     })}
                   </div>
                 </div>
-              )} */}
-            </div>
+              )}
+            </div> */}
           </nav>
 
           <div className="max-[768px]:ml-auto flex items-center gap-4">
