@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ComingSoon from "@/components/common/ComingSoon";
 

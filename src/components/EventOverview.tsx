@@ -1,11 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function EventOverview() {
-  const { t } = useLanguage();
-
   return (
     <section className="relative h-[800px] flex items-center justify-center">
       {/* 배경 이미지 */}

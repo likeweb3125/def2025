@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "standalone",
   webpack: (config, { dev, isServer }) => {
     // Docker 환경에서 파일 변경 감지 개선
     if (dev && !isServer) {
