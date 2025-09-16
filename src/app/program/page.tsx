@@ -7,7 +7,7 @@ export default function ProgramPage() {
   const { t } = useLanguage();
 
   return (
-    <div className="font-sans">
+    <div>
       {/* 프로그램 헤더 섹션 */}
       <section className="px-10 max-[768px]:px-0">
         <div className="relative h-[360px] max-w-[1920px] max-[768px]:pt-[50px] rounded-[40px_0_40px_0] overflow-hidden mx-auto flex-col flex items-center justify-center max-[768px]:rounded-none max-[500px]:h-[227px]">

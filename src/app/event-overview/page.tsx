@@ -8,7 +8,7 @@ export default function EventOverviewPage() {
   const { t, language } = useLanguage();
 
   return (
-    <div className="font-sans">
+    <div>
       {/* 행사개요 섹션 */}
       <section className="relative pt-[100px] px-5 flex items-center justify-center bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_kv.jpg')]">
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#000000_100%)]"></div>
