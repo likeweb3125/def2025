@@ -58,13 +58,6 @@ export default function EventOverviewPage() {
             data-aos-duration="1000"
             className="relative pt-6"
           >
-            <Image
-              src="/images/icons/double_quotes_blue.png"
-              alt=""
-              width={18}
-              height={16}
-              className="absolute top-0 left-1/2 -translate-x-1/2 max-[500px]:left-0 max-[500px]:translate-x-0"
-            />
             <div
               className="flex flex-col items-center justify-center text-white text-[18px] text-center max-[500px]:text-left"
               dangerouslySetInnerHTML={{
