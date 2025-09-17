@@ -18,8 +18,8 @@ export default function EventOverviewPage() {
           className={`relative z-10 flex flex-col items-center justify-center h-full w-full max-w-[1360px] mx-auto`}
         >
           <div
-            className={`${
-              language === "ko" ? "max-w-[410px]" : "max-w-[520px]"
+            className={`w-full ${
+              language === "ko" ? "max-w-[410px]" : "max-w-[475px]"
             }`}
           >
             <h2 className="text-4xl font-bold text-white mb-10 text-center">
@@ -56,7 +56,7 @@ export default function EventOverviewPage() {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="relative pt-6"
+            className="relative pt-6 pb-[160px] max-[500px]:pb-[100px]"
           >
             <div
               className="flex flex-col items-center justify-center text-white text-[18px] text-center max-[500px]:text-left"
@@ -69,7 +69,7 @@ export default function EventOverviewPage() {
       </section>
 
       {/* 추가 영역 - 추후 사용 예정 */}
-      <section className="px-10 min-h-full pt-[160px] pb-[147px] relative min-h-full h-auto  bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_back.jpg')] max-[768px]:bg-[url('/images/event-overview_back-768.jpg')] max-[460px]:bg-[url('/images/event-overview_back-360.jpg')] max-[500px]:p-[100px_20px_120px]">
+      <section className="px-10 min-h-full pt-[160px] pb-[147px] relative min-h-full h-auto bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_back.jpg')] max-[768px]:bg-[url('/images/event-overview_back-768.jpg')] max-[460px]:bg-[url('/images/event-overview_back-360.jpg')] max-[500px]:p-[100px_20px_120px]">
         <div className="absolute inset-0 bg-black/20"></div>
 
         <div data-aos="fade-up" data-aos-duration="1000">

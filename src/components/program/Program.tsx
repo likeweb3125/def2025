@@ -12,11 +12,11 @@ export default function Program() {
       <section className="px-10 max-[768px]:px-0">
         <div className="relative h-[360px] max-w-[1920px] max-[768px]:pt-[50px] rounded-[40px_0_40px_0] overflow-hidden mx-auto flex-col flex items-center justify-center max-[768px]:rounded-none max-[500px]:h-[227px]">
           {/* 배경 이미지 */}
-          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/images/heroes/hero-program.jpg')] before:content-[''] before:absolute before:inset-0 before:bg-black/40 z-[1]"></div>
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/images/hero.jpg')]"></div>
 
           {/* 콘텐츠 */}
           <div className="relative z-10 flex flex-col items-center justify-center h-full">
-            <h2 className="text-4xl font-bold text-white mb-10 text-center">
+            <h2 className="text-4xl font-bold text-white text-center">
               {t.program.title}
             </h2>
 

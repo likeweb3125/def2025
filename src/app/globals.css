@@ -93,3 +93,10 @@ body {
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
 }
+
+@media (max-width: 500px) {
+  #overview-title img {
+    width: 12px;
+    height: 10px;
+  }
+}
