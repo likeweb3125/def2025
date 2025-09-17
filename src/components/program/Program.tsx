@@ -21,11 +21,11 @@ export default function Program() {
             </h2>
 
             {/* 프로그램 설명 텍스트 */}
-            <div className="text-white text-center">
+            {/* <div className="text-white text-center">
               <p className="font-normal text-xl leading-[150%] tracking-[0%]">
                 {t.program.subtitle}
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
