@@ -1,8 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function EventOverview() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative h-[800px] flex items-center justify-center">
       {/* 배경 이미지 */}
@@ -87,7 +90,7 @@ export default function EventOverview() {
               <span className="text-white text-lg font-medium">주제</span>
             </div>
             <div className="text-white text-lg font-medium text-center flex-1">
-              미정
+              {t.eventOverview.table.topicContent}
             </div>
           </li>
 
