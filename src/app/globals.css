@@ -92,6 +92,7 @@ body {
   );
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
+  pointer-events: none;
 }
 
 @media (max-width: 500px) {
