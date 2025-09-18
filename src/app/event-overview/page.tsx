@@ -11,8 +11,6 @@ export default function EventOverviewPage() {
     <div>
       {/* 행사개요 섹션 */}
       <section className="relative pt-[100px] px-5 flex items-center justify-center bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_kv.jpg')]">
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#000000_100%)]"></div>
-
         {/* 콘텐츠 */}
         <div
           className={`relative z-10 flex flex-col items-center justify-center h-full w-full max-w-[1360px] mx-auto`}
@@ -70,8 +68,6 @@ export default function EventOverviewPage() {
 
       {/* 추가 영역 - 추후 사용 예정 */}
       <section className="px-10 min-h-full pt-[160px] pb-[147px] relative min-h-full h-auto bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_back.jpg')] max-[768px]:bg-[url('/images/event-overview_back-768.jpg')] max-[460px]:bg-[url('/images/event-overview_back-360.jpg')] max-[500px]:p-[100px_20px_120px]">
-        <div className="absolute inset-0 bg-black/20"></div>
-
         <div data-aos="fade-up" data-aos-duration="1000">
           <h2 className="text-4xl font-bold text-white mb-10 text-center max-[500px]:text-[24px]">
             {t.eventOverview.title}
