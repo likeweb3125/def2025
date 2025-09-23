@@ -30,10 +30,92 @@ export default function Program() {
         </div>
       </section>
 
-      {/* 프로그램 컨텐츠 준비중 섹션 */}
       <div className="py-16 px-10 max-[500px]:p-[60px_20px]">
-        <div className="max-w-[1360px] mx-auto min-h-[480px] [&>div]:py-[100px] max-[500px]:[&>div]:py-[70px]">
+        {/* <div className="max-w-[1360px] mx-auto min-h-[480px] [&>div]:py-[100px] max-[500px]:[&>div]:py-[70px]">
           <ComingSoon />
+        </div> */}
+        <div className="max-w-[1360px] mx-auto w-full border-t-[3px] border-[#111111]">
+          <table className="w-full">
+            <colgroup>
+              <col width="16%" />
+              <col width="44%" />
+              <col width="45%" />
+            </colgroup>
+            <thead className="sr-only">
+              <tr className="border-collapse ">
+                <th>time</th>
+                <th>title</th>
+                <th>contents</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                {
+                  time: "10:30 ~ 10:50",
+                  title: t.program.table.firstTitle,
+                  contents: t.program.table.firstContents,
+                },
+                {
+                  time: "10:50 ~ 11:00",
+                  title: t.program.table.secondTitle,
+                  contents: t.program.table.secondContents,
+                },
+                {
+                  time: "11:00 ~ 11:20",
+                  title: t.program.table.thirdTitle,
+                  contents: t.program.table.thirdContents,
+                },
+                {
+                  time: "11:20 ~ 11:40",
+                  title: t.program.table.fourthTitle,
+                  contents: t.program.table.fourthContents,
+                },
+                {
+                  time: "11:40 ~ 12:00",
+                  title: t.program.table.fifthTitle,
+                  contents: t.program.table.fifthContents,
+                },
+                {
+                  time: "12:00 ~ 14:00",
+                  title: t.program.table.sixthTitle,
+                  contents: t.program.table.sixthContents,
+                },
+                {
+                  time: "14:00 ~ 15:00",
+                  title: t.program.table.seventhTitle,
+                  contents: t.program.table.seventhContents,
+                },
+                {
+                  time: "15:00 ~ 16:00",
+                  title: t.program.table.eighthTitle,
+                  contents: t.program.table.eighthContents,
+                },
+              ].map((item, index) => {
+                return (
+                  <tr
+                    key={index}
+                    className="border-collapse border-b border-[#D4D7DD] text-[#333]"
+                  >
+                    <td className="align-top py-10 px-5 text-[18px]">
+                      {item.time}
+                    </td>
+                    <td className="align-top">
+                      <div
+                        dangerouslySetInnerHTML={{ __html: item.title }}
+                        className="py-10"
+                      />
+                    </td>
+                    <td className="align-top">
+                      <div
+                        dangerouslySetInnerHTML={{ __html: item.contents }}
+                        className="py-10"
+                      />
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
