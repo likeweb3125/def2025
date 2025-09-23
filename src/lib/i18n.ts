@@ -136,6 +136,35 @@ export const translations = {
       title: "프로그램",
       subtitle: "DEF 2025 프로그램을 소개합니다.",
       comingSoon: "프로그램 정보가 곧 공개됩니다.",
+      table: {
+        firstTitle: "<strong class='text-[20px]'>개회사 및 환영사</strong>",
+        firstContents:
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>개회사</span><p><strong>이형일</strong> 기획재정부 1차관</p></div><div><span class='text-[#055DA5] font-semibold'>환영사</span><p><strong>권남훈</strong> 산업연구원장</p></div></div>",
+        secondTitle: "<strong class='text-[20px]'>단체 사진촬영</strong>",
+        secondContents: "",
+        thirdTitle:
+          "<strong class='text-[20px]'>기조연설 1</strong><p>AI와 미래의 설계</p>",
+        thirdContents:
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span><p><strong>신관호</strong> 고려대학교 교수</p></div><div><span class='text-[#055DA5] font-semibold'>발표자</span><p><strong>Anton Korinek</strong> University of Virginia (온라인발표)</p></div></div>",
+        fourthTitle:
+          "<strong class='text-[20px]'>기조연설 2-1</strong><p>인공지능과 우리 삶(1)</p>",
+        fourthContents:
+          "<div><span class='text-[#055DA5] font-semibold'>발표자</span><p><strong>성낙호</strong> 네이버 클라우드 책임리더</p></div>",
+        fifthTitle:
+          "<strong class='text-[20px]'>기조연설 2-2</strong><p>인공지능과 우리 삶(2)</p>",
+        fifthContents:
+          "<div><span class='text-[#055DA5] font-semibold'>발표자</span><p><strong>유용하</strong> 카카오 AI에이전트 플랫폼 부사장</p></div>",
+        sixthTitle: "<strong class='text-[20px]'>공식오찬</strong>",
+        sixthContents: "<p>네트워킹</p>",
+        seventhTitle:
+          "<strong class='text-[20px]'>패널토의 1</strong><p>AI와 산업의 미래</p>",
+        seventhContents:
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span></div><div><span class='text-[#055DA5] font-semibold'>패널</span><p><strong>Jerry Sheehan</strong> OECD</p></div></div>",
+        eighthTitle:
+          "<strong class='text-[20px]'>패널토의 2</strong><p>AI 스타트업 해외진출 및 협력사례</p>",
+        eighthContents:
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span></div><div><span class='text-[#055DA5] font-semibold'>패널</span></div></div>",
+      },
     },
     speakers: {
       title: "연사",
@@ -312,6 +341,36 @@ export const translations = {
       title: "Program",
       subtitle: "Introducing DEF 2025 program.",
       comingSoon: "Program information will be announced soon.",
+      table: {
+        firstTitle:
+          "<strong class='text-[20px]'>Opening & Welcoming Remarks</strong>",
+        firstContents:
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>Opening Speaker</span><p><strong>Hyoung Il Lee</strong> 1st Vice Minister, Ministry of Economy and Finance</p></div><div><span class='text-[#055DA5] font-semibold'>Welcoming Speaker</span><p><strong>Namhoon Kwon</strong> President, Korea Institute for Industrial Economics and Trade</p></div></div>",
+        secondTitle: "<strong class='text-[20px]'>Group Photo</strong>",
+        secondContents: "",
+        thirdTitle:
+          "<strong class='text-[20px]'>Keynote Speech 1</strong><p>Designing the Future with AI</p>",
+        thirdContents:
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>Moderator</span><p><strong>Kwan Ho Shin</strong> Professor, Korea University</p></div><div><span class='text-[#055DA5] font-semibold'>Keynote Speaker</span><p><strong>Anton Korinek</strong> Professor, University of Virginia (Online Presentation)</p></div></div>",
+        fourthTitle:
+          "<strong class='text-[20px]'>Keynote Speech 2-1</strong><p>AI and Our Daily Lives(1)</p>",
+        fourthContents:
+          "<div><span class='text-[#055DA5] font-semibold'>Keynote Speaker</span><p><strong>Nakho Sung</strong> Director, Naver Cloud</p></div>",
+        fifthTitle:
+          "<strong class='text-[20px]'>Keynote Speech 2-2</strong><p>AI and Our Daily Lives(2)</p>",
+        fifthContents:
+          "<div><span class='text-[#055DA5] font-semibold'>Keynote Speaker</span><p><strong>Yoo Yongha</strong> Vice President, Kakao AI Agent Platform Performance</p></div>",
+        sixthTitle: "<strong class='text-[20px]'>Luncheon</strong>",
+        sixthContents: "<p>Luncheon & Networking</p>",
+        seventhTitle:
+          "<strong class='text-[20px]'>Panel Discussion 1</strong><p>AI and the Future of Industry</p>",
+        seventhContents:
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold'>Panelist</span><p><strong>Jerry Sheehan</strong> OECD</p></div></div>",
+        eighthTitle:
+          "<strong class='text-[20px]'>Panel Discussion 2</strong><p>Global Expansion and Collaboration of AI Startups</p>",
+        eighthContents:
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold'>Panelist</span></div></div>",
+      },
     },
     speakers: {
       title: "Speaker",
