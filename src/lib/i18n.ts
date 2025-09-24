@@ -165,6 +165,61 @@ export const translations = {
         eighthContents:
           "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span></div><div><span class='text-[#055DA5] font-semibold'>패널</span></div></div>",
       },
+      table2: {
+        firstTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>등록 및 환영</strong>",
+        firstContents:
+          "<p class='text-[#666666] mt-2 text-[18px] max-[500px]:text-[16px]'>참가자 등록</p>",
+        firstLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#91D3FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>REGISTRATION</p>",
+        secondTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>개회사 및 환영사</strong>",
+        secondContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>개회사</span><strong class='mx-3 max-[500px]:ml-0'>이형일</strong> 기획재정부 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>환영사</span><strong class='mx-3 max-[500px]:ml-0'>권남훈</strong> 산업연구원장</div></div>",
+        secondLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#91D3FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>OPENING & WELCOMING REMARKS</p>",
+        thirdTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>단체 사진촬영</strong>",
+        thirdContents: "",
+        thirdLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#DDDDDD] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>GROUP PHOTO</p>",
+        fourthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>기조연설 1 : AI와 미래의 설계</strong>",
+        fourthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>신관호</strong> 고려대학교 교수</div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>발표자</span><strong class='mx-3 max-[500px]:ml-0'>Anton Korinek</strong> University of Virginia (온라인발표)</div></div>",
+        fourthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 1</p>",
+        fifthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>기조연설 2-1 : 인공지능과 우리 삶(1)</strong>",
+        fifthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>발표자</span><strong class='mx-3 max-[500px]:ml-0'>성낙호</strong> 네이버 클라우드 책임리더</div></div>",
+        fifthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-1</p>",
+        sixthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>기조연설 2-2 : 인공지능과 우리 삶(2)</strong>",
+        sixthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>발표자</span><strong class='mx-3 max-[500px]:ml-0'>유용하</strong> 카카오 AI에이전트 플랫폼 부사장</div></div>",
+        sixthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-2</p>",
+        seventhTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>공식오찬</strong>",
+        seventhContents:
+          "<p class='text-[#666666] mt-2 text-[18px] max-[500px]:text-[14px]'>네트워킹</p>",
+        seventhLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#DDDDDD] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>LUNCHEON</p>",
+        eighthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>패널토의 1 : AI와 산업의 미래</strong>",
+        eighthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>좌장</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>패널</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> OECD</div></div>",
+        eighthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION 1</p>",
+        ninthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>패널토의 2 : AI 스타트업 해외진출 및 협력사례</strong>",
+        ninthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>좌장</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>패널</span></div></div>",
+        ninthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2'>PANEL DISCUSSION 2</p>",
+      },
     },
     speakers: {
       title: "연사",
@@ -370,6 +425,57 @@ export const translations = {
           "<strong class='text-[20px]'>Panel Discussion 2</strong><p>Global Expansion and Collaboration of AI Startups</p>",
         eighthContents:
           "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold'>Panelist</span></div></div>",
+      },
+      table2: {
+        firstTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Registration</strong>",
+        firstContents:
+          "<p class='text-[#666666] mt-2 text-[18px]'>Participant Registration</p>",
+        firstLabel: "",
+        secondTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Opening & Welcoming Remarks</strong>",
+        secondContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Opening Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Hyoung Il Lee</strong> 1st Vice Minister, Ministry of Economy and Finance 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>Welcoming Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Namhoon Kwon</strong> President, Korea Institute for Industrial Economics and Trade</div></div>",
+        secondLabel: "",
+        thirdTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Group Photo</strong>",
+        thirdContents: "",
+        thirdLabel: "",
+        fourthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Designing the Future with AI</strong>",
+        fourthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Kwan Ho Shin</strong> Professor, Korea University</div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Anton Korinek</strong> Professor, University of Virginia (Online Presentation)</div></div>",
+        fourthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 1</p>",
+        fifthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>AI and Our Daily Lives(1)</strong>",
+        fifthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Nakho Sung</strong> Director, NAVER Cloud</div></div>",
+        fifthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-1</p>",
+        sixthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>AI and Our Daily Lives(2)</strong>",
+        sixthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Yoo Yongha</strong> Vice President, Kakao AI Agent Platform Performance</div></div>",
+        sixthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-2</p>",
+        seventhTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Luncheon</strong>",
+        seventhContents:
+          "<p class='text-[#666666] mt-2 text-[18px]'>Luncheon & Networking</p>",
+        seventhLabel: "",
+        eighthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION 1</p>",
+        eighthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>AI and the Future of Industry</strong>",
+        eighthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>Panelist</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> OECD</div></div>",
+        ninthTitle:
+          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Global Expansion and Collaboration of AI Startups</strong>",
+        ninthContents:
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold'>Panelist</span></div></div>",
+        ninthLabel:
+          "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION 2</p>",
       },
     },
     speakers: {
