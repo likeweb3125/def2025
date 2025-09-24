@@ -1,7 +1,6 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext";
-import ComingSoon from "@/components/common/ComingSoon";
 
 export default function Program() {
   const { t } = useLanguage();
@@ -34,12 +33,12 @@ export default function Program() {
         {/* <div className="max-w-[1360px] mx-auto min-h-[480px] [&>div]:py-[100px] max-[500px]:[&>div]:py-[70px]">
           <ComingSoon />
         </div> */}
-        <div className="max-w-[1360px] mx-auto w-full border-t-[3px] border-[#111111]">
+        <div className="max-w-[1360px] mx-auto w-full border-t border-[#D4D7DD]">
           <table className="w-full">
             <colgroup>
-              <col width="16%" />
-              <col width="44%" />
-              <col width="45%" />
+              <col width="35%" className="max-[1280px]:hidden" />
+              <col width="65%" className="max-[1280px]:hidden" />
+              <col width="100%" className="hidden max-[1280px]:block" />
             </colgroup>
             <thead className="sr-only">
               <tr className="border-collapse ">
@@ -51,44 +50,58 @@ export default function Program() {
             <tbody>
               {[
                 {
-                  time: "10:30 ~ 10:50",
-                  title: t.program.table.firstTitle,
-                  contents: t.program.table.firstContents,
+                  time: "10:00 - 10:30",
+                  title: t.program.table2.firstTitle,
+                  contents: t.program.table2.firstContents,
+                  label: t.program.table2.firstLabel,
                 },
                 {
-                  time: "10:50 ~ 11:00",
-                  title: t.program.table.secondTitle,
-                  contents: t.program.table.secondContents,
+                  time: "10:30 - 10:50",
+                  title: t.program.table2.secondTitle,
+                  contents: t.program.table2.secondContents,
+                  label: t.program.table2.secondLabel,
                 },
                 {
-                  time: "11:00 ~ 11:20",
-                  title: t.program.table.thirdTitle,
-                  contents: t.program.table.thirdContents,
+                  time: "10:50 - 11:00",
+                  title: t.program.table2.thirdTitle,
+                  contents: t.program.table2.thirdContents,
+                  label: t.program.table2.thirdLabel,
                 },
                 {
-                  time: "11:20 ~ 11:40",
-                  title: t.program.table.fourthTitle,
-                  contents: t.program.table.fourthContents,
+                  time: "11:00 - 11:20",
+                  title: t.program.table2.fourthTitle,
+                  contents: t.program.table2.fourthContents,
+                  label: t.program.table2.fourthLabel,
                 },
                 {
-                  time: "11:40 ~ 12:00",
-                  title: t.program.table.fifthTitle,
-                  contents: t.program.table.fifthContents,
+                  time: "11:20 - 11:40",
+                  title: t.program.table2.fifthTitle,
+                  contents: t.program.table2.fifthContents,
+                  label: t.program.table2.fifthLabel,
                 },
                 {
-                  time: "12:00 ~ 14:00",
-                  title: t.program.table.sixthTitle,
-                  contents: t.program.table.sixthContents,
+                  time: "11:40 - 12:00",
+                  title: t.program.table2.sixthTitle,
+                  contents: t.program.table2.sixthContents,
+                  label: t.program.table2.sixthLabel,
                 },
                 {
-                  time: "14:00 ~ 15:00",
-                  title: t.program.table.seventhTitle,
-                  contents: t.program.table.seventhContents,
+                  time: "12:00 - 14:00",
+                  title: t.program.table2.seventhTitle,
+                  contents: t.program.table2.seventhContents,
+                  label: t.program.table2.seventhLabel,
                 },
                 {
-                  time: "15:00 ~ 16:00",
-                  title: t.program.table.eighthTitle,
-                  contents: t.program.table.eighthContents,
+                  time: "14:00 - 15:00",
+                  title: t.program.table2.eighthTitle,
+                  contents: t.program.table2.eighthContents,
+                  label: t.program.table2.eighthLabel,
+                },
+                {
+                  time: "15:00 - 16:00",
+                  title: t.program.table2.ninthTitle,
+                  contents: t.program.table2.ninthContents,
+                  label: t.program.table2.ninthLabel,
                 },
               ].map((item, index) => {
                 return (
@@ -96,19 +109,22 @@ export default function Program() {
                     key={index}
                     className="border-collapse border-b border-[#D4D7DD] text-[#333]"
                   >
-                    <td className="align-top py-10 px-5 text-[18px]">
+                    <td className="align-top py-10 px-5 text-[60px] font-[500] text-[#DDDDDD] font-montserrat max-[1280px]:hidden">
                       {item.time}
                     </td>
-                    <td className="align-top">
-                      <div
-                        dangerouslySetInnerHTML={{ __html: item.title }}
-                        className="py-10"
-                      />
-                    </td>
-                    <td className="align-top">
+                    <td className="align-top py-[60px] max-[500px]:py-6">
+                      <div className="pb-5 text-[24px] font-[500] text-[#999999] font-montserrat max-[1280px]:block hidden max-[500px]:text-[18px]">
+                        {item.time}
+                      </div>
+                      {item.label && (
+                        <div
+                          dangerouslySetInnerHTML={{ __html: item.label }}
+                          className="mb-2 inline-block"
+                        />
+                      )}
+                      <div dangerouslySetInnerHTML={{ __html: item.title }} />
                       <div
                         dangerouslySetInnerHTML={{ __html: item.contents }}
-                        className="py-10"
                       />
                     </td>
                   </tr>
