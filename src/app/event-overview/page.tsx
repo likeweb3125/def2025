@@ -10,7 +10,7 @@ export default function EventOverviewPage() {
   return (
     <div>
       {/* 행사개요 섹션 */}
-      <section className="relative pt-[100px] px-5 flex items-center justify-center bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_kv.jpg')]">
+      <section className="relative pt-[100px] pb-[110px] max-[768px]:pt-[50px] max-[768px]:pb-[60px] px-5 flex items-center justify-center bg-no-repeat bg-cover bg-center bg-[url('/images/event-overview_kv.jpg')]">
         {/* 콘텐츠 */}
         <div
           className={`relative z-10 flex flex-col items-center justify-center h-full w-full max-w-[1360px] mx-auto`}
@@ -26,7 +26,7 @@ export default function EventOverviewPage() {
 
             {/* 네비게이션 버튼 */}
             <SubNavigationButton
-              className={`mb-20 max-[500px]:mb-12 ${
+              className={`mb-0 ${
                 language === "ko"
                   ? "max-[410px]:[&>a]:!px-[15px]"
                   : "max-[520px]:[&>a]:!px-[15px]"
@@ -54,7 +54,7 @@ export default function EventOverviewPage() {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="relative pt-6 pb-[160px] max-[500px]:pb-[100px]"
+            className="relative pt-[80px] pb-[160px] max-[768px]:pt-[60px] max-[500px]:pt-[48px] max-[500px]:pb-[100px]"
           >
             <div
               className="flex flex-col items-center justify-center text-white text-[18px] text-center max-[500px]:text-left"

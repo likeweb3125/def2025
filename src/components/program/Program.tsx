@@ -9,7 +9,7 @@ export default function Program() {
     <div>
       {/* 프로그램 헤더 섹션 */}
       <section className="px-10 max-[768px]:px-0">
-        <div className="relative h-[360px] max-w-[1920px] max-[768px]:pt-[50px] rounded-[40px_0_40px_0] overflow-hidden mx-auto flex-col flex items-center justify-center max-[768px]:rounded-none max-[500px]:h-[227px]">
+        <div className="relative max-w-[1920px] pt-[100px] pb-[110px] max-[768px]:pt-[50px] max-[768px]:pb-[60px] rounded-[40px_0_40px_0] overflow-hidden mx-auto flex-col flex items-center justify-center max-[768px]:rounded-none">
           {/* 배경 이미지 */}
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/images/hero.jpg')]"></div>
 
