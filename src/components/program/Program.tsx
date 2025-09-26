@@ -109,11 +109,11 @@ export default function Program() {
                     key={index}
                     className="border-collapse border-b border-[#D4D7DD] text-[#333]"
                   >
-                    <td className="align-top py-10 px-5 text-[20px] font-[500] text-[#DDDDDD] font-montserrat max-[1280px]:hidden">
+                    <td className="align-top py-10 px-5 text-[20px] font-[500] !text-black font-montserrat max-[1280px]:hidden">
                       {item.time}
                     </td>
                     <td className="align-top py-[60px] max-[500px]:py-6">
-                      <div className="pb-5 text-[24px] font-[500] text-[#999999] font-montserrat max-[1280px]:block hidden max-[500px]:text-[16px] max-[500px]:pb-5">
+                      <div className="pb-5 text-[24px] font-[500] !text-black font-montserrat max-[1280px]:block hidden max-[500px]:text-[16px] max-[500px]:pb-5">
                         {item.time}
                       </div>
                       {item.label && (
