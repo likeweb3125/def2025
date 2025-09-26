@@ -36,8 +36,8 @@ export default function Program() {
         <div className="max-w-[1360px] mx-auto w-full border-t border-[#D4D7DD]">
           <table className="w-full">
             <colgroup>
-              <col width="35%" className="max-[1280px]:hidden" />
-              <col width="65%" className="max-[1280px]:hidden" />
+              <col width="25%" className="max-[1280px]:hidden" />
+              <col width="75%" className="max-[1280px]:hidden" />
               <col width="100%" className="hidden max-[1280px]:block" />
             </colgroup>
             <thead className="sr-only">
@@ -109,11 +109,11 @@ export default function Program() {
                     key={index}
                     className="border-collapse border-b border-[#D4D7DD] text-[#333]"
                   >
-                    <td className="align-top py-10 px-5 text-[60px] font-[500] text-[#DDDDDD] font-montserrat max-[1280px]:hidden">
+                    <td className="align-top py-10 px-5 text-[20px] font-[500] text-[#DDDDDD] font-montserrat max-[1280px]:hidden">
                       {item.time}
                     </td>
                     <td className="align-top py-[60px] max-[500px]:py-6">
-                      <div className="pb-5 text-[24px] font-[500] text-[#999999] font-montserrat max-[1280px]:block hidden max-[500px]:text-[18px]">
+                      <div className="pb-5 text-[24px] font-[500] text-[#999999] font-montserrat max-[1280px]:block hidden max-[500px]:text-[16px] max-[500px]:pb-5">
                         {item.time}
                       </div>
                       {item.label && (
