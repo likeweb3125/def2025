@@ -114,7 +114,8 @@ export const translations = {
       def2022ForumDesc: `<p>DDEF2022은 디지털 대전환의 변화를 살펴보고, 디지털 경제 사회의 지속가능성과 경쟁력 확보를 위한 정책과 제도를 논의하였습니다.<br/><br/>포브스 기술분야 가장 영향력 있는 여성50인에 선정된 I.N. Capital 창립 파트너 Jennifer Zhu Scott과 ‘‘The Five Forces That Change Everything: How Technology Is Shaping Our Future(파이브 포스: 인류의 미래를 바꿀 다섯 가지 핵심 기술)’의 저자이자 세계적인 스타트업 액셀러레이터 Founders Space의 창업자인 Steven S.Hoffman의 기조연설을 포함하여 Uber, 우아한형제들 등 국내외 산업계 전문가 및 영국, 에스토니아 등 다양한 해외 디지털 경제 연사들을 모시고, ‘규제혁신, 디지털 플랫폼 정부, 디지털 격차 해소, 스타트업 투자’를 주제로 심도있는 담론을 나누었습니다.</p>`,
       def2023ForumTitle: "성장잠재력 확충을 위한 진정한 혁신",
       def2023ForumDate: "2023. 09. 06. 온·오프라인 포럼",
-      def2023ForumDesc: ``,
+      def2023ForumDesc: `<p>DEF2023의 주제는 '성장 잠재력 확충을 위한 진정한 혁신'입니다. 디지털 경제 기반의 국가 전 략 산업을 살피고, 성공적인 디지털 경제 사회 구현을 위한 정책과 사회 제도를 논의하였습니 다. 이를 통해 디지털 경제가 사회 전반에 미치는 영향을 분석하고 '초일류 국가'로 나아가는 데 필요한 과제와 해법을 모색하였습니다.<br/>
+      기조연설자로는 미래학자 리차드 용크(Richard Yonck)와 AI 스타트업 업스테이지의 이환석 CTO가 참여했으며, 이후 기술 및 정책 분야 전문가들의 주제 세션이 이어졌습니다. 기조연설에 서는 혁신성장을 위한 최신 기술 트렌드와 이 기술이 전 세계 디지털 경제에 미칠 영향, 우리가 준비해야 할 미래에 대한 심도 있는 발표가 있었습니다. 이어진 세션에서는 기술과 정책 트랙을 중심으로, Al•디지털 헬스케어•첨단기술 등 기술 발전 방향과 초일류국가 도약 전략, 스타트업 생태계 활성화 방안 등에 대한 토론을 진행하였습니다.</p>`,
       def2024ForumTitle: "AI와 디지털 경제의 진화",
       def2024ForumDate: "2024. 11. 06. 온·오프라인 포럼",
       def2024ForumDesc: `<p>AI 기술의 발전과 디지털 전환에 대해 깊이 있게 전망해 보고, 이 기술이 창출하는 새로운 기회와 우리가 직면하게 될 도전 과제를 논의하였습니다.<br/><br/>해외의 AI 분야 유명 전문가 2인, 구글 클라우드 APJ AI Director인 Craig Stires와 싱가포르 국립대학교 교수인 Ben Leong의 기조연설과 함께 산학연, 그리고 정책담당자 등 국내 전문가 16인의 패널 토의가 이어질 것입니다. 기조연설에서는 두 가지 이슈, "AI의 기술적 진화와 미래", "AI 부상에 따른 사회경제적 영향과 해결해야 할 과제"에 대한 발표가 있었습니다. 그리고 패널 토의에서는 기술과 미래, 산업정책, 혁신과 규제, 일자리를 논의 이슈로 설정하고, 우리의 현실과 잠재력을 고려, ‘디지털 경제 선도 국가’로 나아가기 위한 과제와 정책 방안을 모색하였습니다.</p>`,
@@ -145,78 +146,78 @@ export const translations = {
         thirdTitle:
           "<strong class='text-[20px]'>기조연설 1</strong><p>AI와 미래의 설계</p>",
         thirdContents:
-          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span><p><strong>신관호</strong> 고려대학교 교수</p></div><div><span class='text-[#055DA5] font-semibold'>발표자</span><p><strong>Anton Korinek</strong> University of Virginia (온라인발표)</p></div></div>",
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span><p><strong>신관호</strong> 고려대학교 교수</p></div><div><span class='text-[#055DA5] font-semibold'>발표</span><p><strong>Anton Korinek</strong> Professor, University of Virginia (온라인발표)</p></div></div>",
         fourthTitle:
           "<strong class='text-[20px]'>기조연설 2-1</strong><p>인공지능과 우리 삶(1)</p>",
         fourthContents:
-          "<div><span class='text-[#055DA5] font-semibold'>발표자</span><p><strong>성낙호</strong> 네이버 클라우드 책임리더</p></div>",
+          "<div><span class='text-[#055DA5] font-semibold'>발표</span><p><strong>성낙호</strong> 네이버 클라우드 전무</p></div>",
         fifthTitle:
           "<strong class='text-[20px]'>기조연설 2-2</strong><p>인공지능과 우리 삶(2)</p>",
         fifthContents:
-          "<div><span class='text-[#055DA5] font-semibold'>발표자</span><p><strong>유용하</strong> 카카오 AI에이전트 플랫폼 부사장</p></div>",
+          "<div><span class='text-[#055DA5] font-semibold'>발표</span><p><strong>유용하</strong> 카카오 AI에이전트 플랫폼 부사장</p></div>",
         sixthTitle: "<strong class='text-[20px]'>공식오찬</strong>",
         sixthContents: "<p>네트워킹</p>",
         seventhTitle:
           "<strong class='text-[20px]'>패널토의 1</strong><p>AI와 산업의 미래</p>",
         seventhContents:
-          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span></div><div><span class='text-[#055DA5] font-semibold'>패널</span><p><strong>Jerry Sheehan</strong> OECD</p></div></div>",
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span><p><strong>조재한</strong> 산업연구원 산업정채기획실장</p></div><div><span class='text-[#055DA5] font-semibold'>발제</span><p><strong>Jerry Sheehan</strong> Director of Science, Technology and Innovation, OECD</p></div><div><span class='text-[#055DA5] font-semibold'>패널</span><p><strong></strong></p></div></div>",
         eighthTitle:
           "<strong class='text-[20px]'>패널토의 2</strong><p>AI 스타트업 해외진출 및 협력사례</p>",
         eighthContents:
-          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span></div><div><span class='text-[#055DA5] font-semibold'>패널</span></div></div>",
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span></div><div><span class='text-[#055DA5] font-semibold'>발제</span></div><div><span class='text-[#055DA5] font-semibold'>패널</span></div></div>",
       },
       table2: {
         firstTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>등록 및 환영</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>등록 및 환영</strong>",
         firstContents:
           "<p class='text-[#666666] mt-2 text-[18px] max-[500px]:text-[16px]'>참가자 등록</p>",
         firstLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#91D3FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>REGISTRATION</p>",
         secondTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>개회사 및 환영사</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>개회사 및 환영사</strong>",
         secondContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>개회사</span><strong class='mx-3 max-[500px]:ml-0'>이형일</strong> 기획재정부 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>환영사</span><strong class='mx-3 max-[500px]:ml-0'>권남훈</strong> 산업연구원장</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>개회사</span><strong class='mx-3 max-[500px]:ml-0'>이형일</strong> 기획재정부 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>환영사</span><strong class='mx-3 max-[500px]:ml-0'>권남훈</strong> 산업연구원장</div></div>",
         secondLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#91D3FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>OPENING & WELCOMING REMARKS</p>",
         thirdTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>단체 사진촬영</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>단체 사진촬영</strong>",
         thirdContents: "",
         thirdLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#DDDDDD] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>GROUP PHOTO</p>",
         fourthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>기조연설 1 : AI와 미래의 설계</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>기조연설 1 : AI와 미래의 설계</strong>",
         fourthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>신관호</strong> 고려대학교 교수</div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>발표자</span><strong class='mx-3 max-[500px]:ml-0'>Anton Korinek</strong> University of Virginia (온라인발표)</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>신관호</strong> 고려대학교 교수</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발표</span><strong class='mx-3 max-[500px]:ml-0'>Anton Korinek</strong> Professor, University of Virginia (온라인발표)</div></div>",
         fourthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 1</p>",
         fifthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>기조연설 2-1 : 인공지능과 우리 삶(1)</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>기조연설 2-1 : 인공지능과 우리 삶(1)</strong>",
         fifthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>발표자</span><strong class='mx-3 max-[500px]:ml-0'>성낙호</strong> 네이버 클라우드 책임리더</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발표</span><strong class='mx-3 max-[500px]:ml-0'>성낙호</strong> 네이버 클라우드 전무</div></div>",
         fifthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-1</p>",
         sixthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>기조연설 2-2 : 인공지능과 우리 삶(2)</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>기조연설 2-2 : 인공지능과 우리 삶(2)</strong>",
         sixthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>발표자</span><strong class='mx-3 max-[500px]:ml-0'>유용하</strong> 카카오 AI에이전트 플랫폼 부사장</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발표</span><strong class='mx-3 max-[500px]:ml-0'>유용하</strong> 카카오 AI에이전트 플랫폼 부사장</div></div>",
         sixthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-2</p>",
         seventhTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>공식오찬</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>공식오찬</strong>",
         seventhContents:
           "<p class='text-[#666666] mt-2 text-[18px] max-[500px]:text-[14px]'>네트워킹</p>",
         seventhLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#DDDDDD] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>LUNCHEON</p>",
         eighthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>패널토의 1 : AI와 산업의 미래</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>패널토의 1 : AI와 산업의 미래</strong>",
         eighthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>좌장</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>패널</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> OECD</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>조재한</strong> 산업연구원 산업정채기획실장</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발제</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> Director of Science, Technology and Innovation, OECD</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span></div></div>",
         eighthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION 1</p>",
         ninthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>패널토의 2 : AI 스타트업 해외진출 및 협력사례</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>패널토의 2 : AI 스타트업 해외진출 및 협력사례</strong>",
         ninthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>좌장</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>패널</span></div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발제</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span></div></div>",
         ninthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2'>PANEL DISCUSSION 2</p>",
       },
@@ -247,7 +248,7 @@ export const translations = {
       office: "Office.",
       secretariat: "DEF2025 사무국",
       tel: "Tel.",
-      phone: "010-5829-1101",
+      phone: "+82-10-5829-1101",
       mail: "Mail.",
       email: "info.def2025@gmail.com",
       copyright: "COPYRIGHT © DEF2025, INC. ALL RIGHTS RESERVED.",
@@ -372,7 +373,10 @@ export const translations = {
       def2022ForumDesc: `<p>DEF2022 focused the discussions on the changes by digital transformation and discussed policies and systems for the sustainable and competitive digital economy.<br/><br/>DEF2022 featured Jeniffer Zhu Scott, Forbes' Top 50 Women in Tech(2018) and Founding Partner of I.N. Capital, and Steven S. Hoffman, Founder of Founders Space and Author of "The Five Forces That Change Everything: How Technology Is Shaping Our Future," as keynote speakers. Digital Economy Representatives from around the world engaged in panel discussions on topics of Regulatory Innovation, Digital Platform Government, Digital Inclusion, and Startup Investment.</p>`,
       def2023ForumTitle: "Genuine Innovations for Boosting Growth Potential",
       def2023ForumDate: "September 6, 2023 Online & Offline Forum",
-      def2023ForumDesc: ``,
+      def2023ForumDesc: `<p>The theme of the 2023 iteration of DEF was Genuine Innovation for Growth. DEF 2023 played host to insightful discussions on the role played by the digital economy in national strategic industries and on the kinds of policies needed to transform social systems and successfully realize a digital economic society. Participants debated the overall social impact of the digital economy, explored key challenges, and identified some solutions to those challenges that would help make Korea a digital leader.<br/>
+      The event's two keynotes were delivered by Richard Yonck, a futurist author, and Hwalsuk Lee, the CTO of the artificial intelligence (AD) startup Upstage. Panel discussions staffed by technology and policy experts followed the keynote remarks.<br/>
+      The two speeches presented unique perspectives on the latest technological trends, innovative growth, the impact of these technologies on the global digital economy, and the future we must prepare for.<br/>
+      Subsequent sessions on technology and policy featured discussions on the development of AI, digital healthcare, and other advanced technologies. Experts also explored policy strategies for vitalizing the startup ecosystem in Korea and elevating the country to a top-tier global startup hub.</p>`,
       def2024ForumTitle: "AI and the Evolution of the Digital Economy",
       def2024ForumDate: "November 6, 2024  Online & Offline Forum",
       def2024ForumDesc: `<p>The event featured in-depth discussions on the future of AI development and the digital transition, and on the various challenges and opportunities that accompany these two major phenomena.<br/><br/>The event’s two keynotes were delivered by Craig Stires, Regional Director of Artificial Intelligence for Google Cloud APJ, and Ben Leong, an Associate Professor of Computer Science at the National University of Singapore, both major figures in the field of AI. The speakers gave remarks on the technological evolution of AI as well as its socioeconomic implications. <br/>DEF 2024 also featured lively panel discussions staffed by 16 experts from across industrial, academic, and policy circles. Dialogues focused on crucial topics such as technology and the future, industrial policies, innovation, regulation, and employment. <br/>Forum participants also explored policy strategies designed to help South Korea become a leading digital economy by leveraging its potential and addressing current realities.</p>
@@ -428,52 +432,52 @@ export const translations = {
       },
       table2: {
         firstTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Registration</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Registration</strong>",
         firstContents:
           "<p class='text-[#666666] mt-2 text-[18px]'>Participant Registration</p>",
         firstLabel: "",
         secondTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Opening & Welcoming Remarks</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Opening & Welcoming Remarks</strong>",
         secondContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Opening Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Hyoung Il Lee</strong> 1st Vice Minister, Ministry of Economy and Finance 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>Welcoming Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Namhoon Kwon</strong> President, Korea Institute for Industrial Economics and Trade</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Opening Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyoung-Il</strong> 1st Vice Minister, Ministry of Economy and Finance 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Welcoming Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Kwon Nam-Hoon</strong> President, Korea Institute for Industrial Economics and Trade</div></div>",
         secondLabel: "",
         thirdTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Group Photo</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Group Photo</strong>",
         thirdContents: "",
         thirdLabel: "",
         fourthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Designing the Future with AI</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Designing the Future with AI</strong>",
         fourthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Kwan Ho Shin</strong> Professor, Korea University</div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Anton Korinek</strong> Professor, University of Virginia (Online Presentation)</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Shin Kwan-Ho</strong> Professor, Korea University</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Anton Korinek</strong> Professor, University of Virginia (Online Presentation)</div></div>",
         fourthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 1</p>",
         fifthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>AI and Our Daily Lives(1)</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>AI and Our Daily Lives(1)</strong>",
         fifthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Nakho Sung</strong> Director, NAVER Cloud</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Sung Nak-Ho</strong> EVP, NAVER Cloud</div></div>",
         fifthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-1</p>",
         sixthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>AI and Our Daily Lives(2)</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>AI and Our Daily Lives(2)</strong>",
         sixthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Yoo Yongha</strong> Vice President, Kakao AI Agent Platform Performance</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Yoo Yong-Ha</strong> Vice President, Kakao AI Agent Platform Performance</div></div>",
         sixthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-2</p>",
         seventhTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Luncheon</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Luncheon</strong>",
         seventhContents:
           "<p class='text-[#666666] mt-2 text-[18px]'>Luncheon & Networking</p>",
         seventhLabel: "",
         eighthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION 1</p>",
         eighthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>AI and the Future of Industry</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>AI and the Future of Industry</strong>",
         eighthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:text-[16px] max-[500px]:block'>Panelist</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> OECD</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Cho Jae-Han</strong> Director of Industrial Policy Planning Division, KIET</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Presentation</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> Director of Science, Technology and Innovation, OECD</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Presentation</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span></div></div>",
         ninthTitle:
-          "<strong class='text-[36px] font-bold text-[#333333] max-[500px]:text-[20px]'>Global Expansion and Collaboration of AI Startups</strong>",
+          "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Global Expansion and Collaboration of AI Startups</strong>",
         ninthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold'>Panelist</span></div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Presentation</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span></div></div>",
         ninthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION 2</p>",
       },
@@ -495,7 +499,7 @@ export const translations = {
       office: "Office.",
       secretariat: "DEF2025 Secretariat",
       tel: "Tel.",
-      phone: "010-5829-1101",
+      phone: "+82-10-5829-1101",
       mail: "Mail.",
       email: "info.def2025@gmail.com",
       copyright: "COPYRIGHT © DEF2025, INC. ALL RIGHTS RESERVED.",
