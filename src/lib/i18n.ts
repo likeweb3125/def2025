@@ -176,7 +176,7 @@ export const translations = {
         secondTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>개회사 및 환영사</strong>",
         secondContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>개회사</span><strong class='mx-3 max-[500px]:ml-0'>이형일</strong> 기획재정부 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>환영사</span><strong class='mx-3 max-[500px]:ml-0'>권남훈</strong> 산업연구원장</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>개회사</span><strong class='mx-3 max-[500px]:ml-0'>이형일</strong> 기획재정부 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>환영사</span><strong class='mx-3 max-[500px]:ml-0'></strong></div></div>",
         secondLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#91D3FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>OPENING & WELCOMING REMARKS</p>",
         thirdTitle:
@@ -199,7 +199,7 @@ export const translations = {
         sixthTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>기조연설 2-2 : 인공지능과 우리 삶(2)</strong>",
         sixthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발표</span><strong class='mx-3 max-[500px]:ml-0'>유용하</strong> 카카오 AI에이전트 플랫폼 부사장</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발표</span><strong class='mx-3 max-[500px]:ml-0'>유용하</strong> (주)카카오,AI에이전트플랫폼 총괄리더</div></div>",
         sixthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-2</p>",
         seventhTitle:
@@ -211,7 +211,7 @@ export const translations = {
         eighthTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>패널토의 1 : AI와 산업의 미래</strong>",
         eighthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>조재한</strong> 산업연구원 산업정채기획실장</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발제</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> Director of Science, Technology and Innovation, OECD</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span></div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>송경호</strong> 인공지능안전연구소,선임연구원</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발제</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> Director of Science, Technology and Innovation, OECD</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span><strong class='mx-3 max-[500px]:ml-0'>이현진</strong> 대외경제정책연구원,부연구위원</div></div>",
         eighthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION 1</p>",
         ninthTitle:
@@ -439,7 +439,7 @@ export const translations = {
         secondTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Opening & Welcoming Remarks</strong>",
         secondContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Opening Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyoung-Il</strong> 1st Vice Minister, Ministry of Economy and Finance 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Welcoming Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Kwon Nam-Hoon</strong> President, Korea Institute for Industrial Economics and Trade</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Opening Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyoung-Il</strong> 1st Vice Minister, Ministry of Economy and Finance 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Welcoming Speaker</span><strong class='mx-3 max-[500px]:ml-0'></strong> </div></div>",
         secondLabel: "",
         thirdTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Group Photo</strong>",
@@ -460,7 +460,7 @@ export const translations = {
         sixthTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>AI and Our Daily Lives(2)</strong>",
         sixthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Yoo Yong-Ha</strong> Vice President, Kakao AI Agent Platform Performance</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Keynote Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Yoo Yong-Ha</strong> Performance Leader, Kakao Corp.</div></div>",
         sixthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-2</p>",
         seventhTitle:
@@ -473,7 +473,7 @@ export const translations = {
         eighthTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>AI and the Future of Industry</strong>",
         eighthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Cho Jae-Han</strong> Director of Industrial Policy Planning Division, KIET</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Presentation</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> Director of Science, Technology and Innovation, OECD</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Presentation</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span></div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Cho Jae-Han</strong> Director of Industrial Policy Planning Division, KIET</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Presentation</span><strong class='mx-3 max-[500px]:ml-0'>Song Kyung-Ho</strong> Senior Researcher, Korea AI Safety Institute</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyun-Jin</strong> Associate Research Fellow, Korea Institute for International Economic Policy</div></div>",
         ninthTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Global Expansion and Collaboration of AI Startups</strong>",
         ninthContents:
