@@ -439,7 +439,7 @@ export const translations = {
         secondTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Opening & Welcoming Remarks</strong>",
         secondContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Opening Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyoung-Il</strong> 1st Vice Minister, Ministry of Economy and Finance 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Welcoming Speaker</span><strong class='mx-3 max-[500px]:ml-0'></strong> </div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Opening Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyoung-Il</strong> 1st Vice Minister, Ministry of Economy and Finance</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Welcoming Speaker</span><strong class='mx-3 max-[500px]:ml-0'></strong> </div></div>",
         secondLabel: "",
         thirdTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Group Photo</strong>",
@@ -473,7 +473,7 @@ export const translations = {
         eighthTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>AI and the Future of Industry</strong>",
         eighthContents:
-          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Cho Jae-Han</strong> Director of Industrial Policy Planning Division, KIET</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Presentation</span><strong class='mx-3 max-[500px]:ml-0'>Song Kyung-Ho</strong> Senior Researcher, Korea AI Safety Institute</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyun-Jin</strong> Associate Research Fellow, Korea Institute for International Economic Policy</div></div>",
+          "<div class='mt-6 bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Song Kyung-Ho</strong> Senior Researcher, Korea AI Safety Institute KIET</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Presentation</span><strong class='mx-3 max-[500px]:ml-0'>Jerry Sheehan</strong> Director of Science, Technology and Innovation, OECD</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyun-Jin</strong> Associate Research Fellow, Korea Institute for International Economic Policy</div></div>",
         ninthTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Global Expansion and Collaboration of AI Startups</strong>",
         ninthContents:
