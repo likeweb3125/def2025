@@ -3,7 +3,16 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import Image from "next/image";
 
-const SpeakerCard = ({ item }: { item: any }) => {
+type SpeakerCardProps = {
+  item: {
+    name: string;
+    position: string;
+    session: string;
+    sessionDesc: string;
+    image: string | null;
+  };
+};
+const SpeakerCard = ({ item }: SpeakerCardProps) => {
   return (
     <div className="speaker-card p-6 aspect-[325/400] overflow-hidden group cursor-pointer transition-all duration-300">
       {/* 배경 로고 - 우측 하단 */}
