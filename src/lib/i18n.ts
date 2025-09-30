@@ -226,20 +226,46 @@ export const translations = {
       title: "연사",
       subtitle: "DEF 2025 연사들을 소개합니다.",
       comingSoon: "연사 정보\n준비중",
-      haJeongWoo: "하정우",
-      positionHaJeongWoo: "NAVER Cloud AI Innovation 센터장",
-      session3: "SESSION 3",
-      sessionDescHaJeongWoo: `AI 위험으로 인한 규제와\n시장수요에 기반한 혁신의 조화`,
-      yunKyounga: "윤경아",
-      positionYunKyounga: "KT AI Tech Lab장",
-      session1: "SESSION 1",
-      sessionDescYunKyounga: `새로운 비즈니스 모델의 등장과\n 한국산업의 혁신역량`,
-      leeKyoungil: "이경일",
-      positionLeeKyoungil: "솔트룩스 대표",
-      sessionDescLeeKyoungil: `AI 위험으로 인한 규제와\n시장수요에 기반한 혁신의 조화`,
-      choiJaeSik: "최재식",
-      positionChoiJaeSik: "솔트룩스 대표",
-      sessionDescChoiJaeSik: `AI 위험으로 인한 규제와\n시장수요에 기반한 혁신의 조화`,
+      moderators: {
+        antonKorinek: {
+          name: "Anton Korinek",
+          position: `University of Virginia \nProfessor`,
+          session: "기조연설 1",
+          sessionDesc: `발표\n(온라인 발표)`,
+        },
+        sungNakHo: {
+          name: "성낙호",
+          position: `네이버 클라우드 \n전무`,
+          session: "기조연설 2-1",
+          sessionDesc: "발표",
+        },
+        yooYongHa: {
+          name: "유용하",
+          position: `(주)카카오 \nAI에이전트플랫폼 총괄리더`,
+          session: "기조연설 2-2",
+          sessionDesc: "발표",
+        },
+      },
+      panelists1: {
+        songKyungHo: {
+          name: "송경호",
+          position: `인공지능안전연구소 \n선임연구원`,
+          session: "패널토의 세션1",
+          sessionDesc: "좌장",
+        },
+        jerrySheehan: {
+          name: "Jerry Sheehan",
+          position: `OECD \nDirector of Science, Technology and Innovation`,
+          session: "패널토의 세션1",
+          sessionDesc: "발제",
+        },
+        leeHyunJin: {
+          name: "이현진",
+          position: `대외경제정책연구원 \n부연구위원`,
+          session: "패널토의 세션1",
+          sessionDesc: "패널",
+        },
+      },
     },
     footer: {
       ministry: "기획재정부",
@@ -491,6 +517,52 @@ export const translations = {
       session3: "SESSION 3",
       sessionDesc:
         "Balancing AI Risk Regulations and\nMarket-Driven Innovation",
+      moderators: {
+        kwanHoShin: {
+          name: "Kwan Ho-Shin",
+          position: `Korea University \nProfessor`,
+          session: "Keynote Speech 1",
+          sessionDesc: "Moderator",
+        },
+        antonKorinek: {
+          name: "Anton Korinek",
+          position: `University of Virginia \nProfessor`,
+          session: "Keynote Speech 1",
+          sessionDesc: `Speaker\n(Online Presentation)`,
+        },
+        sungNakHo: {
+          name: "Sung Nak-Ho",
+          position: `NAVER Cloud \nEVP`,
+          session: "Keynote Speech 2-1",
+          sessionDesc: `Speaker`,
+        },
+        yooYongHa: {
+          name: "Yoo Yong-Ha",
+          position: `Kakao Corp. \nPerformance Leader`,
+          session: "Keynote Speech 2-2",
+          sessionDesc: `Speaker`,
+        },
+      },
+      panelists1: {
+        songKyungHo: {
+          name: "Song Kyung-Ho",
+          position: `Korea AI Safety Institute KIET \nSenior Researcher`,
+          session: "Panel Discussion Session 1",
+          sessionDesc: `Moderator`,
+        },
+        jerrySheehan: {
+          name: "Jerry Sheehan",
+          position: `OECD \nDirector of Science, Technology and Innovation`,
+          session: "Panel Discussion Session 1",
+          sessionDesc: `Presentation`,
+        },
+        leeHyunJin: {
+          name: "Lee Hyun-Jin",
+          position: `Korea Institute for International Economic Policy \nAssociate Research Fellow`,
+          session: "Panel Discussion Session 1",
+          sessionDesc: `Panelist`,
+        },
+      },
     },
     footer: {
       ministry: "Ministry of Economy and Finance",
