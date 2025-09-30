@@ -229,19 +229,19 @@ export const translations = {
       moderators: {
         antonKorinek: {
           name: "Anton Korinek",
-          position: `University of Virginia \nProfessor`,
+          position: `University of Virginia Professor`,
           session: "기조연설 1",
-          sessionDesc: `발표\n(온라인 발표)`,
+          sessionDesc: `발표 (온라인 발표)`,
         },
         sungNakHo: {
           name: "성낙호",
-          position: `네이버 클라우드 \n전무`,
+          position: `네이버 클라우드 전무`,
           session: "기조연설 2-1",
           sessionDesc: "발표",
         },
         yooYongHa: {
           name: "유용하",
-          position: `(주)카카오 \nAI에이전트플랫폼 총괄리더`,
+          position: `(주)카카오 AI에이전트플랫폼 총괄리더`,
           session: "기조연설 2-2",
           sessionDesc: "발표",
         },
@@ -249,13 +249,13 @@ export const translations = {
       panelists1: {
         songKyungHo: {
           name: "송경호",
-          position: `인공지능안전연구소 \n선임연구원`,
+          position: `인공지능안전연구소 선임연구원`,
           session: "패널토의 세션1",
           sessionDesc: "좌장",
         },
         jerrySheehan: {
           name: "Jerry Sheehan",
-          position: `OECD \nDirector of Science, Technology and Innovation`,
+          position: `OECD Director of Science,\n Technology and Innovation`,
           session: "패널토의 세션1",
           sessionDesc: "발제",
         },
@@ -520,25 +520,25 @@ export const translations = {
       moderators: {
         kwanHoShin: {
           name: "Kwan Ho-Shin",
-          position: `Korea University \nProfessor`,
+          position: `Korea University Professor`,
           session: "Keynote Speech 1",
           sessionDesc: "Moderator",
         },
         antonKorinek: {
           name: "Anton Korinek",
-          position: `University of Virginia \nProfessor`,
+          position: `University of Virginia Professor`,
           session: "Keynote Speech 1",
           sessionDesc: `Speaker\n(Online Presentation)`,
         },
         sungNakHo: {
           name: "Sung Nak-Ho",
-          position: `NAVER Cloud \nEVP`,
+          position: `NAVER Cloud EVP`,
           session: "Keynote Speech 2-1",
           sessionDesc: `Speaker`,
         },
         yooYongHa: {
           name: "Yoo Yong-Ha",
-          position: `Kakao Corp. \nPerformance Leader`,
+          position: `Kakao Corp. Performance Leader`,
           session: "Keynote Speech 2-2",
           sessionDesc: `Speaker`,
         },
@@ -552,7 +552,7 @@ export const translations = {
         },
         jerrySheehan: {
           name: "Jerry Sheehan",
-          position: `OECD \nDirector of Science, Technology and Innovation`,
+          position: `OECD Director of Science,\n Technology and Innovation`,
           session: "Panel Discussion Session 1",
           sessionDesc: `Presentation`,
         },
