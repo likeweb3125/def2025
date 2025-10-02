@@ -75,21 +75,11 @@ export default function Program() {
             <h2 className="text-4xl font-bold text-white text-center">
               {t.program.title}
             </h2>
-
-            {/* 프로그램 설명 텍스트 */}
-            {/* <div className="text-white text-center">
-              <p className="font-normal text-xl leading-[150%] tracking-[0%]">
-                {t.program.subtitle}
-              </p>
-            </div> */}
           </div>
         </div>
       </section>
 
       <div className="py-16 px-10 max-[500px]:p-[60px_20px]">
-        {/* <div className="max-w-[1360px] mx-auto min-h-[480px] [&>div]:py-[100px] max-[500px]:[&>div]:py-[70px]">
-          <ComingSoon />
-        </div> */}
         <div className="max-w-[1000px] mx-auto w-full border-t border-[#D4D7DD]">
           <table className="w-full max-[768px]:hidden">
             <colgroup>
@@ -155,6 +145,7 @@ export default function Program() {
             </tbody>
           </table>
 
+          {/* 768px 이하  */}
           <table className="w-full max-[768px]:block hidden">
             <tbody>
               {tableData.map((item, index) => {
