@@ -8,7 +8,7 @@ export default function SpeakersPage() {
 
   const moderators = [
     {
-      name: language === "ko" ? "준비중..." : "Kwan Ho-Shin",
+      name: language === "ko" ? "준비중..." : "In progress...",
       position: "",
       session: language === "ko" ? "기조연설 1" : "Keynote Speech 1",
       sessionDesc: language === "ko" ? "좌장" : "Moderator",
@@ -75,7 +75,7 @@ export default function SpeakersPage() {
       position: "",
       session:
         language === "ko" ? "패널토의 세션2" : "Panel Discussion Session 2",
-      sessionDesc: language === "ko" ? "발제" : "Presentation",
+      sessionDesc: language === "ko" ? "발제" : "Speaker",
       image: null,
     },
     {
