@@ -160,7 +160,7 @@ export const translations = {
         seventhTitle:
           "<strong class='text-[20px]'>패널토의 1</strong><p>AI와 산업의 미래</p>",
         seventhContents:
-          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span><p><strong>조재한</strong> 산업연구원 산업정채기획실장</p></div><div><span class='text-[#055DA5] font-semibold'>발제</span><p><strong>Jerrard Sheehan</strong> Director of Science, Technology and Innovation, OECD</p></div><div><span class='text-[#055DA5] font-semibold'>패널</span><p><strong></strong></p></div></div>",
+          "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>좌장</span><p><strong>조재한</strong> 산업연구원 산업정채기획실장</p></div><div><span class='text-[#055DA5] font-semibold'>발제</span><p><strong>Jerrard Sheehan</strong><br/> OECD Director, Science,Technology and Innovation directorate</p></div><div><span class='text-[#055DA5] font-semibold'>패널</span><p><strong></strong></p></div></div>",
         eighthTitle:
           "<strong class='text-[20px]'>패널토의 2</strong><p>AI 스타트업 해외진출 및 협력사례</p>",
         eighthContents:
@@ -211,7 +211,7 @@ export const translations = {
         eighthTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>패널토의 1 : AI와 산업의 미래</strong>",
         eighthContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>송경호</strong> 인공지능안전연구소 선임연구원</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발제</span><strong class='mx-3 max-[500px]:ml-0'>Jerrard Sheehan</strong> Director of Science, Technology and Innovation, OECD</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span><strong class='mx-3 max-[500px]:ml-0'>이현진</strong> 대외경제정책연구원 부연구위원</div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>송경호</strong> 인공지능안전연구소 선임연구원</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발제</span><strong class='mx-3 max-[500px]:ml-0'>Jerrard Sheehan</strong><br/> OECD Director of Science, Technology and Innovation directorate</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span><strong class='mx-3 max-[500px]:ml-0'>이현진</strong> 대외경제정책연구원 부연구위원</div></div>",
         eighthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION SESSION 1</p>",
         ninthTitle:
@@ -229,7 +229,7 @@ export const translations = {
       moderators: {
         antonKorinek: {
           name: "Anton Korinek",
-          position: `버지니아 대학교 교수`,
+          position: `버지니아 대학교\n 교수`,
           session: "기조연설 1",
           sessionDesc: `발표 (온라인 발표)`,
         },
@@ -448,11 +448,11 @@ export const translations = {
         sixthTitle: "<strong class='text-[20px]'>Luncheon</strong>",
         sixthContents: "<p>Luncheon & Networking</p>",
         seventhTitle:
-          "<strong class='text-[20px]'>Panel Discussion 1</strong><p>AI and the Future of Industry</p>",
+          "<strong class='text-[20px]'>PANEL DISCUSSION SESSION 1</strong><p>AI and the Future of Industry</p>",
         seventhContents:
           "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold'>Panelist</span><p><strong>Jerrard Sheehan</strong> OECD</p></div></div>",
         eighthTitle:
-          "<strong class='text-[20px]'>Panel Discussion 2</strong><p>Global Expansion and Collaboration of AI Startups</p>",
+          "<strong class='text-[20px]'>PANEL DISCUSSION SESSION 2</strong><p>Global Expansion and Collaboration of AI Startups</p>",
         eighthContents:
           "<div class='space-y-5'><div><span class='text-[#055DA5] font-semibold'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold'>Panelist</span></div></div>",
       },
@@ -497,11 +497,11 @@ export const translations = {
         eighthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION SESSION 1</p>",
         eighthTitle:
-          "<p class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Panel Discussion 1 :<br/>AI and the Future of Industry</p>",
+          "<p class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>PANEL DISCUSSION SESSION 1 :<br/>AI and the Future of Industry</p>",
         eighthContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Song Kyung-Ho</strong> Senior Researcher, Korea AI Safety Institute</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Jerrard Sheehan</strong> Director, Science,Technology and Innovation directorate, OECD</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyun-Jin</strong> Associate Research Fellow, Korea Institute for International Economic Policy</div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><strong class='mx-3 max-[500px]:ml-0'>Song Kyung-Ho</strong> Senior Researcher, Korea AI Safety Institute</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Speaker</span><strong class='mx-3 max-[500px]:ml-0'>Jerrard Sheehan</strong><br/> Director, Science,Technology and Innovation directorate, OECD</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span><strong class='mx-3 max-[500px]:ml-0'>Lee Hyun-Jin</strong> Associate Research Fellow, Korea Institute for International Economic Policy</div></div>",
         ninthTitle:
-          "<p class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Panel Discussion 2 :<br/>Global Expansion and Collaboration of AI Startups</p>",
+          "<p class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>PANEL DISCUSSION SESSION 2 :<br/>Global Expansion and Collaboration of AI Startups</p>",
         ninthContents:
           "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Presentation</span></div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span></div></div>",
         ninthLabel:
