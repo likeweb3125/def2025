@@ -81,6 +81,7 @@ export default function Program() {
 
       <div className="py-16 px-10 max-[500px]:p-[60px_20px]">
         <div className="max-w-[1000px] mx-auto w-full border-t border-[#D4D7DD]">
+          {/* 768px 이상 테이블 */}
           <table className="w-full max-[768px]:hidden">
             <colgroup>
               <col width="20%" />
