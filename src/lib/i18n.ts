@@ -211,7 +211,7 @@ export const translations = {
         eighthTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>패널토의 세션 1 : AI와 산업의 미래</strong>",
         eighthContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>송경호</strong> 인공지능안전연구소 선임연구원</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발제</span><strong class='mx-3 max-[500px]:ml-0'>Jerrard Sheehan</strong><br/> OECD Director of Science, Technology and Innovation directorate</div><div class='!mb-0'><span class='text-[#055DA5] whitespace-nowrap font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span><strong class='mx-3 max-[500px]:ml-0'>이현진</strong>대외경제정책연구원 부연구위원</div><div> <span class='text-[#055DA5] whitespace-nowrap font-semibold max-[500px]:block max-[500px]:text-[14px] opacity-0 max-[500px]:hidden'>패널</span><strong class='mx-3 max-[500px]:ml-0'>김용기</strong>과학기술정책연구원 부연구위원 </div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>송경호</strong> 인공지능안전연구소 선임연구원</div><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] whitespace-nowrap'>발제</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Jerrard Sheehan</strong>OECD Director of Science, Technology and Innovation directorate</div></div><div class='!mb-0'><span class='text-[#055DA5] whitespace-nowrap font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span><strong class='mx-3 max-[500px]:ml-0'>이현진</strong>대외경제정책연구원 부연구위원</div><div> <span class='text-[#055DA5] whitespace-nowrap font-semibold max-[500px]:block max-[500px]:text-[14px] opacity-0 max-[500px]:hidden'>패널</span><strong class='mx-3 max-[500px]:ml-0'>김용기</strong>과학기술정책연구원 부연구위원 </div></div>",
         eighthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION SESSION 1</p>",
         ninthTitle:
@@ -273,7 +273,7 @@ export const translations = {
         },
         kimyonggi: {
           name: "김용기",
-          position: `과학기술정책연구원`,
+          position: `과학기술정책연구원 \n부연구위원`,
           session: "패널토의 세션1",
           sessionDesc: "패널",
         },
