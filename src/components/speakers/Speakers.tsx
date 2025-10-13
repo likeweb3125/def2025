@@ -8,11 +8,11 @@ export default function SpeakersPage() {
 
   const moderators = [
     {
-      name: language === "ko" ? "준비중..." : "In progress...",
-      position: "",
-      session: language === "ko" ? "기조연설 1" : "Keynote Speech 1",
-      sessionDesc: language === "ko" ? "좌장" : "Moderator",
-      image: null,
+      name: t.speakers.moderators.kwanHoShin.name,
+      position: t.speakers.moderators.kwanHoShin.position,
+      session: t.speakers.moderators.kwanHoShin.session,
+      sessionDesc: t.speakers.moderators.kwanHoShin.sessionDesc,
+      image: "/images/profile-shinkwanho.png",
     },
     {
       name: t.speakers.moderators.antonKorinek.name,
@@ -59,32 +59,43 @@ export default function SpeakersPage() {
       sessionDesc: t.speakers.panelists1.leeHyunJin.sessionDesc,
       image: "/images/profile-leehyunjin.png",
     },
+    {
+      name: t.speakers.panelists1.kimyonggi.name,
+      position: t.speakers.panelists1.kimyonggi.position,
+      session: t.speakers.panelists1.kimyonggi.session,
+      sessionDesc: t.speakers.panelists1.kimyonggi.sessionDesc,
+      image: "/images/profile-kimyonggi.png",
+    },
   ];
 
   const panelists2 = [
     {
-      name: language === "ko" ? "준비중..." : "In progress...",
-      position: "",
-      session:
-        language === "ko" ? "패널토의 세션2" : "Panel Discussion Session 2",
-      sessionDesc: language === "ko" ? "좌장" : "Moderator",
-      image: null,
+      name: t.speakers.panelists2.goojinkyung.name,
+      position: t.speakers.panelists2.goojinkyung.position,
+      session: t.speakers.panelists2.goojinkyung.session,
+      sessionDesc: t.speakers.panelists2.goojinkyung.sessionDesc,
+      image: "/images/profile-goojinkyung.png",
     },
     {
-      name: language === "ko" ? "준비중..." : "In progress...",
-      position: "",
-      session:
-        language === "ko" ? "패널토의 세션2" : "Panel Discussion Session 2",
-      sessionDesc: language === "ko" ? "발제" : "Speaker",
-      image: null,
+      name: t.speakers.panelists2.shinseungyong.name,
+      position: t.speakers.panelists2.shinseungyong.position,
+      session: t.speakers.panelists2.shinseungyong.session,
+      sessionDesc: t.speakers.panelists2.shinseungyong.sessionDesc,
+      image: "/images/profile-shinseungyong.png",
     },
     {
-      name: language === "ko" ? "준비중..." : "In progress...",
-      position: "",
-      session:
-        language === "ko" ? "패널토의 세션2" : "Panel Discussion Session 2",
-      sessionDesc: language === "ko" ? "패널" : "Panelist",
-      image: null,
+      name: t.speakers.panelists2.leewooyoung.name,
+      position: t.speakers.panelists2.leewooyoung.position,
+      session: t.speakers.panelists2.leewooyoung.session,
+      sessionDesc: t.speakers.panelists2.leewooyoung.sessionDesc,
+      image: "/images/profile-leewooyoung.png",
+    },
+    {
+      name: t.speakers.panelists2.yoonyeokyung.name,
+      position: t.speakers.panelists2.yoonyeokyung.position,
+      session: t.speakers.panelists2.yoonyeokyung.session,
+      sessionDesc: t.speakers.panelists2.yoonyeokyung.sessionDesc,
+      image: "/images/profile-yoonyeokyung.png",
     },
   ];
 

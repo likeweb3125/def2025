@@ -372,6 +372,7 @@ export default function Home() {
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent
+          // onInteractOutside={(e) => e.preventDefault()}
           showCloseButton={false}
           className="p-0 gap-0 !max-w-[544px] w-full border-0 cursor-default flex flex-col max-[600px]:!max-w-[90%]"
         >
