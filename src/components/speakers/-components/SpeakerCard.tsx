@@ -78,14 +78,14 @@ export function SpeakerCard({ item }: SpeakerCardProps) {
         />
       </div>
 
-      <div className="absolute bottom-[1px] right-[1px] overflow-hidden w-[50%] aspect-square z-[20] min-[768px]:group-hover:rounded-[0px_0px_20px_0px] transition-all duration-300">
+      <div className="absolute bottom-[1px] right-[1px] overflow-hidden z-[20] min-[768px]:group-hover:rounded-[0px_0px_20px_0px] transition-all duration-300">
         {item.image && (
           <Image
             src={item.image}
             alt={item.name}
-            className="object-cover rounded-tl-3xl w-full h-full"
-            width={160}
-            height={213}
+            className="object-cover rounded-tl-3xl w-full h-full max-w-[220px]"
+            width={220}
+            height={180}
             unoptimized={true}
           />
         )}
