@@ -53,6 +53,13 @@ export default function SpeakersPage() {
       image: "/images/profile-jerry-sheehan.png",
     },
     {
+      name: t.speakers.panelists1.mingxinZheng.name,
+      position: t.speakers.panelists1.mingxinZheng.position,
+      session: t.speakers.panelists1.mingxinZheng.session,
+      sessionDesc: t.speakers.panelists1.mingxinZheng.sessionDesc,
+      image: "/images/profile-mingxin-zheng.png",
+    },
+    {
       name: t.speakers.panelists1.leeHyunJin.name,
       position: t.speakers.panelists1.leeHyunJin.position,
       session: t.speakers.panelists1.leeHyunJin.session,

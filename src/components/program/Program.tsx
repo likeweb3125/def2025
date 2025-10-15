@@ -13,19 +13,19 @@ export default function Program() {
       label: t.program.table2.firstLabel,
     },
     {
-      time: "10:30 - 10:50",
+      time: "10:30 - 10:45",
       title: t.program.table2.secondTitle,
       contents: t.program.table2.secondContents,
       label: t.program.table2.secondLabel,
     },
     {
-      time: "10:50 - 11:00",
+      time: "10:45 - 10:50",
       title: t.program.table2.thirdTitle,
       contents: t.program.table2.thirdContents,
       label: t.program.table2.thirdLabel,
     },
     {
-      time: "11:00 - 11:20",
+      time: "10:50 - 11:20",
       title: t.program.table2.fourthTitle,
       contents: t.program.table2.fourthContents,
       label: t.program.table2.fourthLabel,
