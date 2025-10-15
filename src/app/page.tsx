@@ -52,13 +52,13 @@ export default function Home() {
           {/* 배경 이미지 */}
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/images/heroes/hero-main.jpg')] max-[768px]:bg-[url('/images/heroes/hero-main-768.png')] max-[460px]:bg-[url('/images/heroes/hero-main-360.png')]"></div>
 
-          <Image
+          {/* <Image
             src={"/images/icons/apec.png"}
             alt=""
             className="absolute top-[60px] right-[60px] max-[1280px]:right-10 max-[768px]:relative max-[768px]:top-0 max-[768px]:right-0 max-[768px]:w-[75px] max-[768px]:h-auto max-[460px]:w-[37px]"
             width={95}
             height={101}
-          />
+          /> */}
 
           {/* 컨텐츠 영역 */}
           <div className="w-full max-w-[1360px] m-[120px_auto_40px] py-10 px-10  max-[768px]:mt-0 max-[500px]:px-5 ">
