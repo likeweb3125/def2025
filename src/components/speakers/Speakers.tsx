@@ -104,6 +104,13 @@ export default function SpeakersPage() {
       sessionDesc: t.speakers.panelists2.yoonyeokyung.sessionDesc,
       image: "/images/profile-yoonyeokyung.png",
     },
+    {
+      name: t.speakers.panelists2.jeongbyeongyoon.name,
+      position: t.speakers.panelists2.jeongbyeongyoon.position,
+      session: t.speakers.panelists2.jeongbyeongyoon.session,
+      sessionDesc: t.speakers.panelists2.jeongbyeongyoon.sessionDesc,
+      image: "/images/profile-jeongbyeongyoon.png",
+    },
   ];
 
   return (
