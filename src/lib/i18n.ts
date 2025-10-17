@@ -47,7 +47,7 @@ export const translations = {
       title: "행사개요",
       subtitle: "DEF 2025 행사 개요를 소개합니다.",
       aboutTitle: "DEF 2025",
-      aboutDesc: `<div><div id="overview-title" class='flex items-start justify-center gap-2 mb-10 font-bold text-[28px] font-bold text-[#4AC8F4] max-[500px]:text-[18px]'><img src="/images/icons/double_quotes_blue.png" alt="" width=18 height=16 />제8회 디지털 이코노미 포럼(DEF2025)이 10월 20일에 개최됩니다.<img src="/images/icons/double_quotes_blue.png" alt="" width=18 height=16 style="transform:rotate(180deg);"/></div><br/><div class="max-w-[1200px] mx-auto">반갑습니다!<br/>기획재정부가 주최하고 산업연구원(KIET)이 주관하는<br/>‘제8회 디지털 이코노미 포럼(DEF2025)’이 오는 10월 20일, 인천 인스파이어리조트에서 개최됩니다.<br/><br/>2018년 시작된 글로벌 포럼인 DEF는 오피니언 리더들이 지식과 경험을 공유하고 디지털 경제에 대한 인식을 확대하는 플랫폼 역할을 해왔습니다.<br/>이는 DEF를 디지털 경제의 미래를 전망하는 주요 행사로 자리매김하게 했습니다.<br/><br/>최근 AI 기술의 급격한 진전은 이미 우리 삶을 다양한 방식으로 변화시키고 있습니다. <br/>AI가 우리가 일하고 살아가는 방식을 바꾸면서, 글로벌 경제를 지탱하는 산업 구조를 근본적으로 변화시키고 있습니다. <br/>이러한 기술의 발전은 새로운 기회를 창출하는 동시에 앞으로 우리가 직면하게 될 도전 과제들을 제시하고 있습니다.<br/><br/>2025년 DEF는 APEC 재무•구조개혁장관회의 부대행사로 열리며, <span class="text-[20px] font-[700] text-[#4AC8F4]">‘인공지능 시대, 디지털 경제의 미래와 글로벌 협력’</span>라는 주제로 진행됩니다. <br/>이번 포럼은 AI 기술이 가져올 경제 및 사회적 변화와 디지털 전환의 진화에 대해 깊이 있는 탐구를 제공할 것입니다.<br/>이를 위해 해외 저명 인사들의 기조연설과 국내외 전문가들이 참여하는 패널 토론이 이어질 예정입니다. <br/>특히, 네이버·카카오 등 국내 AI 선도기업들의 AI 서비스 피칭을 통해 우리 삶에 적용된 AI 기술과 글로벌 협력 전략에 대한 인사이트를 공유할 것입니다.<br/><br/>이번 포럼이 여러분들에게 AI와 디지털 경제가 특히 우리 산업 전반에 미치는 영향에 대해<br/>폭넓은 이해와 그 본질을 파악할 수 있는 의미 있는 시간이 될 수 있기를 바랍니다.<br/><br/><p class="text-[20px] max-[500px]:text-right"><span class="font-bold">권남훈</span> 산업연구원 원장</p></div></div>`,
+      aboutDesc: `<div><div id="overview-title" class='flex items-start justify-center gap-2 mb-10 font-bold text-[28px] font-bold text-[#4AC8F4] max-[500px]:text-[18px]'><img src="/images/icons/double_quotes_blue.png" alt="" width=18 height=16 />제8회 디지털 이코노미 포럼(DEF2025)이 10월 20일에 개최됩니다.<img src="/images/icons/double_quotes_blue.png" alt="" width=18 height=16 style="transform:rotate(180deg);"/></div><br/><div class="max-w-[1200px] mx-auto">반갑습니다!<br/>기획재정부가 주최하고 산업연구원(KIET)이 주관하는<br/>‘제8회 디지털 이코노미 포럼(DEF2025)’이 오는 10월 20일, 인천 인스파이어리조트에서 개최됩니다.<br/><br/>2018년 시작된 글로벌 포럼인 DEF는 오피니언 리더들이 지식과 경험을 공유하고 디지털 경제에 대한 인식을 확대하는 플랫폼 역할을 해왔습니다.<br/>이는 DEF를 디지털 경제의 미래를 전망하는 주요 행사로 자리매김하게 했습니다.<br/><br/>최근 AI 기술의 급격한 진전은 이미 우리 삶을 다양한 방식으로 변화시키고 있습니다. <br/>AI가 우리가 일하고 살아가는 방식을 바꾸면서, 글로벌 경제를 지탱하는 산업 구조를 근본적으로 변화시키고 있습니다. <br/>이러한 기술의 발전은 새로운 기회를 창출하는 동시에 앞으로 우리가 직면하게 될 도전 과제들을 제시하고 있습니다.<br/><br/>2025년 DEF는 APEC 재무•구조개혁장관회의 부대행사로 열리며, <span class="text-[20px] font-[700] text-[#4AC8F4]">‘인공지능 시대, 디지털 경제의 미래와 글로벌 협력’</span>라는 주제로 진행됩니다. <br/>이번 포럼은 AI 기술이 가져올 경제 및 사회적 변화와 디지털 전환의 진화에 대해 깊이 있는 탐구를 제공할 것입니다.<br/>이를 위해 해외 저명 인사들의 기조연설과 국내외 전문가들이 참여하는 패널 토론이 이어질 예정입니다. <br/>특히, 네이버&middot;카카오 등 국내 AI 선도기업들의 AI 서비스 피칭을 통해 우리 삶에 적용된 AI 기술과 글로벌 협력 전략에 대한 인사이트를 공유할 것입니다.<br/><br/>이번 포럼이 여러분들에게 AI와 디지털 경제가 특히 우리 산업 전반에 미치는 영향에 대해<br/>폭넓은 이해와 그 본질을 파악할 수 있는 의미 있는 시간이 될 수 있기를 바랍니다.<br/><br/><p class="text-[20px] max-[500px]:text-right"><span class="font-bold">권남훈</span> 산업연구원 원장</p></div></div>`,
       visionTitle: "비전",
       visionDesc:
         "디지털 경제의 지속가능한 발전을 위한 정책과 전략을 모색합니다.",
@@ -101,23 +101,23 @@ export const translations = {
       def2018ForumDesc: `<p>DEF의 첫 발을 내딛은 DEF2018은,<br/><br/>정부와 민간이 협력하여, 혁신성장을 위한 디지털경제의 원동력을 조망하는 자리로 특히 혁신의 원동력인 플랫폼경제와 창업가정신을 집중적으로 조명하였습니다.<br/><br/>DEF 2018은 ‘플랫폼레볼루션’의 저자 제프리 파커와 대한민국 대표 플랫폼 ‘네이버’의 한성숙 대표, 그리고 프랑스 IT혁신 학교 ‘에꼴42’의 소피 비제르 디렉터의 기조연설을 시작으로 플랫폼 비즈니스 전망과 혁신 성장 사례를 공유하는 세션으로 구성되었습니다.</p>`,
       def2019ForumTitle: "디지털 경제 시대의 유니콘 스타트업과 혁신 성장",
       def2019ForumDate: "2019. 11. 21-22. 서울 용산 드래곤시티호텔",
-      def2019ForumDesc: `<p>유니콘 스타트업 육성전략과 혁신 생태계에 대해 논의한 DEF2019는,<br/><br/>실리콘밸리 글로벌 벤처캐피털인 ‘500 Startups’ CEO 크리스틴 차이와 유럽 혁신생태계 전문가 빈디 카리아의 기조연설을 시작으로 국내·외 유니콘 스타트업 대표들의 발표와 토론으로 구성되었습니다.<br/><br/>특히, 특별세션으로 구성된 ‘한-아세안 특별세션’은, 넥스티콘, 고젝, 부카라팍 등 아세안 대표 유니콘 스타트업 대표들과 인사이트를 공유한 자리였습니다.</p>`,
+      def2019ForumDesc: `<p>유니콘 스타트업 육성전략과 혁신 생태계에 대해 논의한 DEF2019는,<br/><br/>실리콘밸리 글로벌 벤처캐피털인 ‘500 Startups’ CEO 크리스틴 차이와 유럽 혁신생태계 전문가 빈디 카리아의 기조연설을 시작으로 국내&middot;외 유니콘 스타트업 대표들의 발표와 토론으로 구성되었습니다.<br/><br/>특히, 특별세션으로 구성된 ‘한-아세안 특별세션’은, 넥스티콘, 고젝, 부카라팍 등 아세안 대표 유니콘 스타트업 대표들과 인사이트를 공유한 자리였습니다.</p>`,
       def2020ForumTitle:
         "포스트 코로나 시대의 디지털 경제 : 진정한 혁신을 이끌 디지털 전환으로",
-      def2020ForumDate: "2020. 9. 11. 온·오프라인 포럼",
+      def2020ForumDate: "2020. 9. 11. 온&middot;오프라인 포럼",
       def2020ForumDesc: `<p>유례없는 코로나 19 펜데믹 상황에서, 삶의 형태와 기술 그리고 융합을 중심으로 다양한 시도와 실험을 통해 혁신을 가속화하는 디지털 경제를 집중적으로 논의했습니다.<br/><br/>DEF2020은 글로벌 디지털 경제의 씽크탱크인 싱귤래리티 대학교 (Singularity University)의 창립자인 Peter Diamandis를 비롯해 The Miilk, Aaltoes, ITU, WHO 등 국내외 다양한 혁신 주체들과 Policy & Digital Transformation, Entertainment & New media, Work & Job, Healthcare 등 크게 네 개의 분야를 중심으로 변화와 전망을 살펴 ‘디지털 경제의 미래’에 대한 깊이 있는 담론을 나누는 자리로 구성되었습니다.</p>`,
       def2021ForumTitle: "코로나 시대를 넘어, 다가올 거대한 변화들",
       def2021ForumDate: "2021. 8. 5. 온라인 포럼",
       def2021ForumDesc: `<p>DEF2021는 코로나 대유행으로부터 시작된 디지털 전환으로 인한 기술적, 사회적 변화를 흐름을 확인하고, 미래 세대를 위한 정책과 제도를 논의하였습니다.<br/><br/>DEF2021은 글로벌 디지털 경제 및 분석의 권위자인 Sinan Aral MIT디지털경제연구소장과 데이터 과학자이자 뉴욕타임즈 베스트셀러 ‘Weapons of Math Destruction(대량살상 수학무기)’의 저자 Cathy Helen O’Neil을 비롯해 Adobe, TikTok, 우아한형제들, 비바리퍼블리카 등 국내외 다양한 연사들을 모시고, ‘Metaverse, Digital HealthCare, Data Governance and Policy, Future Talents’를 중심으로 심도 있는 담론을 나눈 자리였습니다.</p>`,
-      def2022ForumTitle: "역동적·혁신적 디지털 경제 실현 방안",
-      def2022ForumDate: "2022. 9. 22. 온·오프라인 포럼",
+      def2022ForumTitle: "역동적&middot;혁신적 디지털 경제 실현 방안",
+      def2022ForumDate: "2022. 9. 22. 온&middot;오프라인 포럼",
       def2022ForumDesc: `<p>DDEF2022은 디지털 대전환의 변화를 살펴보고, 디지털 경제 사회의 지속가능성과 경쟁력 확보를 위한 정책과 제도를 논의하였습니다.<br/><br/>포브스 기술분야 가장 영향력 있는 여성50인에 선정된 I.N. Capital 창립 파트너 Jennifer Zhu Scott과 ‘‘The Five Forces That Change Everything: How Technology Is Shaping Our Future(파이브 포스: 인류의 미래를 바꿀 다섯 가지 핵심 기술)’의 저자이자 세계적인 스타트업 액셀러레이터 Founders Space의 창업자인 Steven S.Hoffman의 기조연설을 포함하여 Uber, 우아한형제들 등 국내외 산업계 전문가 및 영국, 에스토니아 등 다양한 해외 디지털 경제 연사들을 모시고, ‘규제혁신, 디지털 플랫폼 정부, 디지털 격차 해소, 스타트업 투자’를 주제로 심도있는 담론을 나누었습니다.</p>`,
       def2023ForumTitle: "성장잠재력 확충을 위한 진정한 혁신",
-      def2023ForumDate: "2023. 09. 06. 온·오프라인 포럼",
+      def2023ForumDate: "2023. 09. 06. 온&middot;오프라인 포럼",
       def2023ForumDesc: `<p>DEF2023의 주제는 '성장 잠재력 확충을 위한 진정한 혁신'입니다. 디지털 경제 기반의 국가 전 략 산업을 살피고, 성공적인 디지털 경제 사회 구현을 위한 정책과 사회 제도를 논의하였습니 다. 이를 통해 디지털 경제가 사회 전반에 미치는 영향을 분석하고 '초일류 국가'로 나아가는 데 필요한 과제와 해법을 모색하였습니다.<br/>
       기조연설자로는 미래학자 리차드 용크(Richard Yonck)와 AI 스타트업 업스테이지의 이환석 CTO가 참여했으며, 이후 기술 및 정책 분야 전문가들의 주제 세션이 이어졌습니다. 기조연설에 서는 혁신성장을 위한 최신 기술 트렌드와 이 기술이 전 세계 디지털 경제에 미칠 영향, 우리가 준비해야 할 미래에 대한 심도 있는 발표가 있었습니다. 이어진 세션에서는 기술과 정책 트랙을 중심으로, Al•디지털 헬스케어•첨단기술 등 기술 발전 방향과 초일류국가 도약 전략, 스타트업 생태계 활성화 방안 등에 대한 토론을 진행하였습니다.</p>`,
       def2024ForumTitle: "AI와 디지털 경제의 진화",
-      def2024ForumDate: "2024. 11. 06. 온·오프라인 포럼",
+      def2024ForumDate: "2024. 11. 06. 온&middot;오프라인 포럼",
       def2024ForumDesc: `<p>AI 기술의 발전과 디지털 전환에 대해 깊이 있게 전망해 보고, 이 기술이 창출하는 새로운 기회와 우리가 직면하게 될 도전 과제를 논의하였습니다.<br/><br/>해외의 AI 분야 유명 전문가 2인, 구글 클라우드 APJ AI Director인 Craig Stires와 싱가포르 국립대학교 교수인 Ben Leong의 기조연설과 함께 산학연, 그리고 정책담당자 등 국내 전문가 16인의 패널 토의가 이어질 것입니다. 기조연설에서는 두 가지 이슈, "AI의 기술적 진화와 미래", "AI 부상에 따른 사회경제적 영향과 해결해야 할 과제"에 대한 발표가 있었습니다. 그리고 패널 토의에서는 기술과 미래, 산업정책, 혁신과 규제, 일자리를 논의 이슈로 설정하고, 우리의 현실과 잠재력을 고려, ‘디지털 경제 선도 국가’로 나아가기 위한 과제와 정책 방안을 모색하였습니다.</p>`,
     },
     location: {
@@ -553,7 +553,7 @@ export const translations = {
         ninthTitle:
           "<p class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Panel Discussion Session 2 :<br/>Global Expansion and Collaboration of AI Startups</p>",
         ninthContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Goo Jin-Kyung</strong>Director, Office of New Growth Engines Research, Korea Institute for Industrial Economics and Trade</div></div><div class='flex max-[500px]:flex-col'> <span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Speaker</span><div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Shin Seung-Yong</strong>CKO · Chairman of global R&D committee, NSDevil CO.,LTD.</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Lee Woo-Yung</strong>President &middot; CSO, XIILAB</div></div></div><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span><div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Yoon Yeo-Kyung</strong>Director, Korea Institute of Startup & Entrepreneurship Development</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Jung Byung-Yoon</strong>Managing Director, IBK투자증권 디지털혁신본부</div></div></div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Goo Jin-Kyung</strong>Director, Office of New Growth Engines Research, Korea Institute for Industrial Economics and Trade</div></div><div class='flex max-[500px]:flex-col'> <span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Speaker</span><div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Shin Seung-Yong</strong>CKO &middot; Chairman of global R&D committee, NSDevil CO.,LTD.</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Lee Woo-Yung</strong>President &middot; CSO, XIILAB</div></div></div><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span><div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Yoon Yeo-Kyung</strong>Director, Korea Institute of Startup & Entrepreneurship Development</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Jung Byung-Yoon</strong>Managing Director, IBK Securities &middot; Digital Innovation Division</div></div></div></div>",
         ninthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION SESSION 2</p>",
       },
@@ -634,13 +634,13 @@ export const translations = {
         },
         shinseungyong: {
           name: "Shin Seung-Yong",
-          position: `NSDevil CO.,LTD.\n CKO · Chiarman of global\n R&D committee`,
+          position: `NSDevil CO.,LTD.\n CKO &middot; Chiarman of global\n R&D committee`,
           session: "Panel Discussion Session 2",
           sessionDesc: "Speaker",
         },
         leewooyoung: {
           name: "Lee Woo-Yung ",
-          position: `XIILAB\n President · CSO`,
+          position: `XIILAB\n President &middot; CSO`,
           session: "Panel Discussion Session 2",
           sessionDesc: "Speaker",
         },
