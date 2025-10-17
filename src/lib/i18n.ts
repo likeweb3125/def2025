@@ -176,7 +176,7 @@ export const translations = {
         secondTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>개회사 및 환영사</strong>",
         secondContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>개회사</span><strong class='mx-3 max-[500px]:ml-0'>이형일</strong> 기획재정부 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>환영사</span><strong class='mx-3 max-[500px]:ml-0'></strong></div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>개회사</span><strong class='mx-3 max-[500px]:ml-0'>이형일</strong> 기획재정부 1차관</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>환영사</span><strong class='mx-3 max-[500px]:ml-0'>김천곤</strong>산업연구원 부원장</div></div>",
         secondLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#91D3FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>OPENING & WELCOMING REMARKS</p>",
         thirdTitle:
@@ -185,7 +185,7 @@ export const translations = {
         thirdLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#DDDDDD] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>GROUP PHOTO</p>",
         fourthTitle:
-          "<div><strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>기조연설 1 : AI와 미래의 설계</strong><p class='mt-2 text-[18px] text-[#666666]'>Scenario Planning for an A(G)I Future</p></div>",
+          "<div><strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>기조연설 1 : AI와 미래의 설계</strong><p class='mt-2 text-[18px] text-[#666666]'></p></div>",
         fourthContents:
           "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>신관호</strong> 고려대학교 교수</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발표</span><strong class='mx-3 max-[500px]:ml-0'>Anton Korinek</strong> 버지니아 대학교 교수 (온라인발표)</div></div>",
         fourthLabel:
@@ -197,7 +197,7 @@ export const translations = {
         fifthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#F5C7FF] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>KEYNOTE SPEECH 2-1</p>",
         sixthTitle:
-          "<div><strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>기조연설 2-2 : 인공지능과 우리 삶(2)</strong><p class='mt-2 text-[18px] text-[#666666]'>가능성을 일상으로 바꾸는 AI 플랫폼</p></div>",
+          "<div><strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>기조연설 2-2 : 인공지능과 우리 삶(2)</strong><p class='mt-2 text-[18px] text-[#666666]'></p></div>",
         sixthContents:
           "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발표</span><strong class='mx-3 max-[500px]:ml-0'>유용하</strong> (주)카카오 AI 에이전트 플랫폼 총괄리더</div></div>",
         sixthLabel:
@@ -209,15 +209,15 @@ export const translations = {
         seventhLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#DDDDDD] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>LUNCHEON</p>",
         eighthTitle:
-          "<div><strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>패널토의 세션 1 : AI와 산업의 미래</strong><p class='mt-2 text-[18px] text-[#666666]'>AI가 산업 구조 전환에 미치는 영향 및 글로벌 동향</p></div>",
+          "<div><strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>패널토의 세션 1 : AI와 산업의 미래</strong><p class='mt-2 text-[18px] text-[#666666]'></p></div>",
         eighthContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>송경호</strong> 인공지능안전연구소 선임연구원</div><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] whitespace-nowrap'>발제</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Jerrard Sheehan</strong>OECD Director of Science, Technology and Innovation directorate</div></div><div class='!mb-0'><span class='text-[#055DA5] whitespace-nowrap font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span><strong class='mx-3 max-[500px]:ml-0'>이현진</strong>대외경제정책연구원 부연구위원</div><div> <span class='text-[#055DA5] whitespace-nowrap font-semibold max-[500px]:block max-[500px]:text-[14px] opacity-0 max-[500px]:hidden'>패널</span><strong class='mx-3 max-[500px]:ml-0'>김용기</strong>과학기술정책연구원 부연구위원 </div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>송경호</strong> 인공지능안전연구소 선임연구원</div><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] whitespace-nowrap'>발제</span><div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Jerrard Sheehan</strong>OECD Director of Science, Technology and Innovation directorate</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Mingxin Zheng</strong>NVIDIA Sr. Software Engineer</div></div></div><div class='!mb-0'><span class='text-[#055DA5] whitespace-nowrap font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span><strong class='mx-3 max-[500px]:ml-0'>이현진</strong>대외경제정책연구원 부연구위원</div><div> <span class='text-[#055DA5] whitespace-nowrap font-semibold max-[500px]:block max-[500px]:text-[14px] opacity-0 max-[500px]:hidden'>패널</span><strong class='mx-3 max-[500px]:ml-0'>김용기</strong>과학기술정책연구원 부연구위원 </div></div>",
         eighthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION SESSION 1</p>",
         ninthTitle:
-          "<div><strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>패널토의 세션 2 : AI 스타트업 해외진출 및 협력사례</strong><p class='mt-2 text-[18px] text-[#666666]'>글로벌 시장에서의 AI 스타트업 해외 진출전략과 과제</p></div>",
+          "<div><strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>패널토의 세션 2 : AI 스타트업 해외진출 및 협력사례</strong><p class='mt-2 text-[18px] text-[#666666]'></p></div>",
         ninthContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>구진경</strong>산업연구원 실장&middot;선임연구위원</div><div class='!mb-0'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발제</span><strong class='mx-3 max-[500px]:ml-0'>신승용</strong>(주)엔에스데블 이사&middot;위원장</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] opacity-0 max-[500px]:hidden'>발제</span><strong class='mx-3 max-[500px]:ml-0'>이우영</strong>씨이랩 의장</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span><strong class='mx-3 max-[500px]:ml-0'>윤여경</strong>창업진흥원 실장</div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>좌장</span><strong class='mx-3 max-[500px]:ml-0'>구진경</strong>산업연구원 실장&middot;선임연구위원</div><div class='!mb-0'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>발제</span><strong class='mx-3 max-[500px]:ml-0'>신승용</strong>(주)엔에스데블 이사&middot;위원장</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] opacity-0 max-[500px]:hidden'>발제</span><strong class='mx-3 max-[500px]:ml-0'>이우영</strong>씨이랩 의장</div><div class='!mb-0'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>패널</span><strong class='mx-3 max-[500px]:ml-0'>윤여경</strong>창업진흥원 실장</div><div><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] opacity-0 max-[500px]:hidden'>패널</span><strong class='mx-3 max-[500px]:ml-0'>정병윤</strong>IBK투자증권 디지털혁신본부 본부장&middot;상무</div></div>",
         ninthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2'>PANEL DISCUSSION SESSION 2</p>",
       },
@@ -267,7 +267,7 @@ export const translations = {
         },
         mingxinZheng: {
           name: "Mingxin Zheng",
-          position: `NVIDIA \nSenior Engineer`,
+          position: `NVIDIA \nSr. Software Engineer`,
           session: "패널토의 세션1",
           sessionDesc: "발제 (온라인 발표)",
         },
@@ -306,6 +306,12 @@ export const translations = {
         yoonyeokyung: {
           name: "윤여경",
           position: `창업진흥원\n 실장`,
+          session: "패널토의 세션2",
+          sessionDesc: "패널",
+        },
+        jeongbyeongyoon: {
+          name: "정병윤",
+          position: `IBK투자증권 디지털혁신본부\n 본부장&middot;상무`,
           session: "패널토의 세션2",
           sessionDesc: "패널",
         },
@@ -509,7 +515,7 @@ export const translations = {
         secondTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Opening Remark\n Welcoming Remark</strong>",
         secondContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div class='flex max-[500px]:flex-col'> <span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] whitespace-nowrap'>Opening Remark</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Lee Hyoung-Il</strong> 1st Vice Minister, Ministry of Economy and Finance</div></div><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] whitespace-nowrap'>Welcoming Remark</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong></strong></div></div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div class='flex max-[500px]:flex-col'> <span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] whitespace-nowrap'>Opening Remark</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Lee Hyoung-Il</strong> 1st Vice Minister, Ministry of Economy and Finance</div></div><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px] whitespace-nowrap'>Welcoming Remark</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Kim Chun-Kon</strong> Vice President of Research, Korea Institute for Industrial Economics and Trade</div></div></div>",
         secondLabel: "",
         thirdTitle:
           "<strong class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Group Photo</strong>",
@@ -543,11 +549,11 @@ export const translations = {
         eighthTitle:
           "<p class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Panel Discussion Session 1 :<br/>AI and the Future of Industry</p>",
         eighthContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'> <div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><div class='flex flex-col mx-3 max-[500px]:ml-0'> <strong>Song Kyung-Ho</strong> Senior Researcher, Korea AI Safety Institute</div></div> <div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Speaker</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Jerrard Sheehan</strong> Director, Science,Technology and Innovation directorate, OECD</div> </div><div class='!mb-0 flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span> <div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Lee Hyun-Jin</strong> Associate Research Fellow, Korea Institute for International Economic Policy</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Kim Yong-Gi</strong>Associate Research Fellow, Science and Technology Policy Institute </div></div><div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'> <div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><div class='flex flex-col mx-3 max-[500px]:ml-0'> <strong>Song Kyung-Ho</strong> Senior Researcher, Korea AI Safety Institute</div></div> <div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Speaker</span><div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Jerrard Sheehan</strong> Director, Science,Technology and Innovation directorate, OECD</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Mingxin Zheng</strong> Sr. Software Engineer, NVIDIA</div></div></div><div class='!mb-0 flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span> <div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Lee Hyun-Jin</strong> Associate Research Fellow, Korea Institute for International Economic Policy</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Kim Yong-Gi</strong>Associate Research Fellow, Science and Technology Policy Institute </div></div><div></div>",
         ninthTitle:
           "<p class='text-[20px] font-bold text-[#333333] max-[500px]:text-[18px]'>Panel Discussion Session 2 :<br/>Global Expansion and Collaboration of AI Startups</p>",
         ninthContents:
-          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Goo Jin-Kyung</strong>Director, Office of New Growth Engines Research, Korea Institute for Industrial Economics and Trade</div></div><div class='flex max-[500px]:flex-col'> <span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Speaker</span><div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Shin Seung-Yong</strong>CKO · Chairman of global R&D committee, NSDevil CO.,LTD.</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Lee Woo-Yung</strong>President · CSO, XIILAB</div></div></div><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Yoon Yeo-Kyung</strong>Director, Korea Institute of Startup & Entrepreneurship Development</div></div></div>",
+          "<div class='bg-[#F4F7F9] px-6 py-[22px] space-y-3 text-[#666666] max-[500px]:p-4 rounded-[8px]'><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Moderator</span><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Goo Jin-Kyung</strong>Director, Office of New Growth Engines Research, Korea Institute for Industrial Economics and Trade</div></div><div class='flex max-[500px]:flex-col'> <span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Speaker</span><div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Shin Seung-Yong</strong>CKO · Chairman of global R&D committee, NSDevil CO.,LTD.</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Lee Woo-Yung</strong>President &middot; CSO, XIILAB</div></div></div><div class='flex max-[500px]:flex-col'><span class='text-[#055DA5] font-semibold max-[500px]:block max-[500px]:text-[14px]'>Panelist</span><div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Yoon Yeo-Kyung</strong>Director, Korea Institute of Startup & Entrepreneurship Development</div><div class='flex flex-col mx-3 max-[500px]:ml-0'><strong>Jung Byung-Yoon</strong>Managing Director, IBK투자증권 디지털혁신본부</div></div></div></div>",
         ninthLabel:
           "<p class='text-[14px] font-bold text-[#333333] bg-[#66F35C] px-4 py-2 max-[500px]:text-[12px] max-[500px]:px-2 max-[500px]:py-[6px]'>PANEL DISCUSSION SESSION 2</p>",
       },
@@ -602,7 +608,7 @@ export const translations = {
         },
         mingxinZheng: {
           name: "Mingxin Zheng",
-          position: `NVIDIA \nSenior Engineer`,
+          position: `NVIDIA \nSr. Software Engineer`,
           session: "Panel Discussion Session 1",
           sessionDesc: "Speaker (Online Presentation)",
         },
@@ -641,6 +647,12 @@ export const translations = {
         yoonyeokyung: {
           name: "Yoon Yeo-Kyung",
           position: `Korea Institute of Startup & Entrepreneurship Development\n Director`,
+          session: "Panel Discussion Session 2",
+          sessionDesc: "Panelist",
+        },
+        jeongbyeongyoon: {
+          name: "Jung Byung-Yoon",
+          position: `IBK Securities &middot; Digital Innovation Division\n Managing Director`,
           session: "Panel Discussion Session 2",
           sessionDesc: "Panelist",
         },
